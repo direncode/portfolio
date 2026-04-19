@@ -96,9 +96,9 @@ export default function HomePage() {
           <ol className="divide-y divide-ink-800 border-y border-ink-800">
             {[
               { n: "I", t: "The Four Primitives", href: "/primitives", d: "An overview of what each primitive beats, and why." },
-              { n: "II", t: "BTUT — Coordination", href: "/btut", d: "O(N), N-invariant convergence. 1M agents in 9.5s." },
+              { n: "II", t: "BTUT — Coordination", href: "/btut", d: "Phase transition on scale-free networks. 800 vehicles, zero gridlock, 12-iteration N-invariance." },
               { n: "III", t: "Crystara — Structure", href: "/crystara", d: "Three-system loop. Runtime-crystallized H₀/H₁/H₂ modules." },
-              { n: "IV", t: "NIV — Signal", href: "/niv", d: "OOS AUC 0.854 at 18 months. Orthogonal to the Fed spread." },
+              { n: "IV", t: "NIV — Signal", href: "/niv", d: "OOS ROC-AUC 0.847. 3/3 recessions detected with 5.3-month lead." },
               { n: "V", t: "Participatory Data Estate — Ingestion", href: "/participatory-data-estate", d: "Submit → Moderate → Thin → Crystallize, with a transparent ledger." },
               { n: "VI", t: "Convergence & Architecture", href: "/convergence", d: "How the four feed the Latent Ocean." },
               { n: "VII", t: "About / Context", href: "/about", d: "Who is building this, and under what constraints." },
@@ -142,15 +142,15 @@ export default function HomePage() {
               number="01"
               subtitle="Coordination"
               title="BTUT"
-              one_liner="Linear-time multi-agent coordination. Kernel-weighted mean-field dynamics converge in ~20 iterations — independent of N."
-              beat="Beat MASON by 20×, Mesa by 105×. NetLogo crashed at 100K. Addresses DARPA Mathematical Challenge 13."
+              one_liner="Phase-transition coordination on scale-free networks. Hub-weighted Fermi dynamics in the mean-field universality class (β ≈ 0.5), constant 12-iteration convergence from 500 to 10,000 agents."
+              beat="800 vehicles under peak SUMO stress. Zero gridlocks. 99.99% cooperation. Addresses DARPA Mathematical Challenge 13."
               href="/btut"
             />
             <PrimitiveCard
               number="02"
               subtitle="Structure"
               title="Crystara"
-              one_liner="Topological crystallization engine. A three-system loop that grows its own predictor and emits H₀/H₁/H₂ modules from persistent homology."
+              one_liner="Topological crystallization engine. A three-system loop that grows its own predictor and emits typed H₀/H₁/H₂ modules from persistent homology."
               beat="Beat vanilla JEPA by +42.3% relative k-NN on Two Rooms. Built on a 111K-node citation manifold."
               href="/crystara"
             />
@@ -158,16 +158,16 @@ export default function HomePage() {
               number="03"
               subtitle="Signal"
               title="NIV"
-              one_liner="Macro-stress scalar. A transparent, economically interpretable signal compressing thrust, efficiency, slack, and drag."
-              beat="OOS AUC 0.854 at 18 months. Provides orthogonal information the Fed yield curve alone cannot capture."
+              one_liner="Macro-stress scalar built from four transparent economic primitives — thrust, efficiency, slack, drag — over 55+ years of public FRED data."
+              beat="OOS ROC-AUC 0.847 on 25-year walk-forward. 3/3 recessions detected with 5.3-month average lead."
               href="/niv"
             />
             <PrimitiveCard
               number="04"
               subtitle="Ingestion"
               title="Participatory Data Estate"
-              one_liner="Submit → Moderate → Thin → Crystallize. Raw human submissions become a living, auditable, vector-retrievable knowledge base."
-              beat="Shipped as the governance layer of a real UNC-scale policy platform, with a transparent approval ledger."
+              one_liner="Submit → Moderate → Thin → Crystallize. Raw submissions become chunked, embedded, retrievable documents with a public approval ledger."
+              beat="Shipped as the governance layer of a live UNC-scale policy platform, with hybrid pgvector + FTS retrieval."
               href="/participatory-data-estate"
             />
           </div>

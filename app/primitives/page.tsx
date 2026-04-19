@@ -57,8 +57,8 @@ export default function PrimitivesPage() {
           number="01"
           subtitle="Coordination"
           title="BTUT"
-          one_liner="Linear-time multi-agent coordination primitive. Kernel-weighted mean-field dynamics converge in ~20 iterations regardless of N. 1,000,000 agents in 9.5s on a Fly.io API node."
-          beat="20× MASON, 105× Mesa. NetLogo crashes at 100K. Targets DARPA Mathematical Challenge 13."
+          one_liner="Phase-transition coordination on scale-free networks. Stag-Hunt + Prisoner's Dilemma under Fermi updates. Critical exponent β ≈ 0.5 (mean-field class). Constant 12-iteration convergence from 500 to 10,000 agents."
+          beat="800 vehicles under peak SUMO stress, zero gridlock, 99.99% cooperation. 100% cooperation on 50 – 200 drone swarms."
           href="/btut"
         />
         <PrimitiveCard
@@ -73,8 +73,8 @@ export default function PrimitivesPage() {
           number="03"
           subtitle="Signal"
           title="NIV"
-          one_liner="National Impact Velocity — a single-scalar macro-stress signal built transparently from thrust, efficiency, slack, and drag primitives, with walk-forward OOS validation."
-          beat="OOS AUC 0.854 at 18 months; orthogonal information vs. Fed yield spread (76% partial correlation)."
+          one_liner="National Impact Velocity — a single-scalar macro-stress signal composed of thrust, efficiency, slack, and drag, built entirely from 8 public FRED series with published weights."
+          beat="OOS ROC-AUC 0.847 on 25-year walk-forward (2001–2025). 3/3 recessions detected with 5.3-month average lead; yield curve 0.721, GDP growth 0.634."
           href="/niv"
         />
         <PrimitiveCard
