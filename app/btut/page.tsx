@@ -17,7 +17,7 @@ export default function BtutPage() {
         number="II"
         label="Primitive · Coordination"
         title="BTUT."
-        kicker="A new approach to DARPA Mathematical Challenge 13, shipped end-to-end across simulators, robotics, and cloud surfaces. Bivariate Trajectory-Undercurrent Theory replaces the O(N³) PDE with a phase transition on a scale-free network: Stag Hunt + Prisoner's Dilemma under Fermi updates, hub-weighted by τ, critical exponent β ≈ 0.5 in the mean-field universality class. Validated against Eclipse SUMO at 800-vehicle peak stress, 50 – 200 drone swarms, and ROS robot fleets, with Python, REST, Lambda, and WASM surfaces."
+        kicker="A new approach to DARPA Mathematical Challenge 13 — and a cross-domain-comprehensive application of it. Bivariate Trajectory-Undercurrent Theory replaces the O(N³) PDE with a phase transition on a scale-free network: Stag Hunt + Prisoner's Dilemma under Fermi updates, hub-weighted by τ, critical exponent β ≈ 0.5 in the mean-field universality class. One primitive, three validation regimes (abstract, traffic, drone) with matched critical behavior, and four production surfaces (Python SDK, REST, Lambda, WASM). Eclipse SUMO at 800-vehicle peak stress holds zero gridlock. 50 – 200 drone swarms coordinate at 100%. Constant 12 iterations from 500 to 10,000 agents."
         prev={{ href: "/primitives", label: "The Four Primitives" }}
         next={{ href: "/crystara", label: "Crystara — Structure" }}
       />
@@ -39,17 +39,20 @@ export default function BtutPage() {
           three validation regimes (abstract, traffic, drone).
         </p>
         <p>
-          That is the &ldquo;new approach&rdquo; claim. Alongside it, the
-          primitive ships across an unusual breadth of surfaces: an
-          Eclipse SUMO integration (full TraCI client, A/B comparison
-          harness), an ROS integration (rosbridge, agent-state streaming,
-          parameter update channel), a 50 – 200 drone swarm validation
+          That is the &ldquo;new approach&rdquo; claim. The{" "}
+          <strong>cross-domain-comprehensive</strong> claim is where the
+          primitive actually lives. One mathematical object ships today
+          across: an Eclipse SUMO integration (full TraCI client, A/B
+          comparison harness, 800-vehicle stress peak), an ROS
+          integration (rosbridge, agent-state streaming, parameter update
+          channel, Turtlebot3 swarms), a 50 – 200 drone swarm validation
           suite, a Python SDK (<code>pip install btut-sdk</code>), a REST
           API on Fly.io, a serverless Lambda variant, a WASM build for
           in-browser simulation, a full proofs corpus, and a research
-          workbench for parameter sweeps. I have not tried to audit
-          whether that surface area is larger than other Challenge-13
-          attempts, only that it exists and is live.
+          workbench for parameter sweeps. I cannot point to another
+          Challenge-13-style attempt that has shipped live across this
+          many domains on one primitive. If one exists I have not found
+          it.
         </p>
         <h2>The reduction.</h2>
         <p>

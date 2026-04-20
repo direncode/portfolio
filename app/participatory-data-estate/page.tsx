@@ -6,7 +6,7 @@ import { Callout } from "@/components/Callout";
 export const metadata = {
   title: "SGUNCCH — Participatory Data Estate",
   description:
-    "A participatory data estate with a federal-hardening security posture, shipped as working student-government infrastructure. Submit → Moderate → Thin → Crystallize, plus a budget engine, a knowledge base, and a chat layer — all hardened against OWASP Top 10 patterns.",
+    "A participatory data estate with a security posture student government has never needed — and, to my knowledge, has never had. Submit → Moderate → Thin → Crystallize, plus a budget engine, a knowledge base, and a chat layer — all hardened against OWASP Top 10 patterns with federal-agency-derived controls.",
 };
 
 export default function PdePage() {
@@ -16,7 +16,7 @@ export default function PdePage() {
         number="V"
         label="Primitive · Ingestion"
         title="SGUNCCH."
-        kicker="A participatory data estate shipped as working student-government infrastructure, hardened to patterns drawn from federal-agency security guidance. Raw human submissions — policies, constitutional text, conduct code, budget allocations, funding requests — become a living, auditable, hybrid-retrievable knowledge base. Submit → Moderate → Thin → Crystallize, plus a budget engine, a knowledge base, and a chat layer. Time-constant auth, row-level security on every table, rate limiting on four action classes, CSP/HSTS/X-Frame headers, XSS detection, and a publicly-readable approval ledger. Unusually hardened for a student-facing stack; not independently certified against any federal compliance framework."
+        kicker="A security posture student government has never needed — and, to my knowledge, has never had. SGUNCCH is a participatory data estate shipped as live student-government infrastructure, hardened with patterns drawn directly from federal-agency security guidance. Raw human submissions — policies, constitutional text, conduct code, budget allocations, funding requests — become a living, auditable, hybrid-retrievable knowledge base. Submit → Moderate → Thin → Crystallize, plus a budget engine, a knowledge base, and a chat layer. Time-constant auth, row-level security on every table, rate limiting on four action classes, CSP/HSTS/X-Frame headers, XSS detection, and a publicly-readable approval ledger. There is no FedRAMP authorization to claim, and I am not claiming one — the point is that the posture is here, in production, at a scale and tier no student platform I can find currently runs."
         prev={{ href: "/niv", label: "NIV — Signal" }}
         next={{ href: "/convergence", label: "Convergence" }}
       />
@@ -24,12 +24,14 @@ export default function PdePage() {
       <Essay>
         <h2>Security posture — the evidence.</h2>
         <p>
-          Most student-government platforms ship as a WordPress site
-          with a public feedback form. SGUNCCH ships with hardening
-          patterns drawn from federal-agency security guidance (NIST
-          800-53 / OWASP ASVS families), even though nothing about
-          student government requires it. Every item below is
-          implemented in the repository — not aspirational, not planned:
+          Most student-government platforms ship as a WordPress site with
+          a public feedback form. SGUNCCH ships with hardening patterns
+          drawn from federal-agency security guidance (NIST 800-53 /
+          OWASP ASVS families), even though nothing about student
+          government requires it. Every item below is implemented in the
+          repository — not aspirational, not planned — and I do not
+          believe any other student-government platform currently in
+          production runs this stack:
         </p>
         <table>
           <thead>

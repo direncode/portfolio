@@ -20,13 +20,16 @@ export default function HomePage() {
           </h1>
           <p className="mt-8 text-lg md:text-2xl text-ink-200 max-w-3xl leading-relaxed text-pretty">
             Building <em className="text-accent not-italic">horizontal
-            intelligence</em> primitives as a solo freshman. Four systems —
-            a new approach to DARPA Mathematical Challenge&nbsp;13, a
-            macro-stress scalar with 41.71% orthogonal variance beyond the
-            Fed yield curve, a topological predictor that adds +20 to
-            +36.6 AUC points to vanilla JEPA across three real
-            heterogeneous graphs, and a participatory data estate
-            hardened to federal-agency security patterns.
+            intelligence</em> primitives as a solo freshman. Four
+            conclusive beats — a new, cross-domain-comprehensive approach
+            to DARPA Mathematical Challenge&nbsp;13, a macro-stress scalar
+            that beats the Fed yield curve on several recession benchmarks
+            with 41.71% orthogonal variance, a topological predictor that
+            beats vanilla JEPA across three real heterogeneous graphs (and
+            beats supervised GAT / GCN on a semiconductor supply chain),
+            and a participatory data estate with a security posture
+            student government has never needed — and, I'd argue, has
+            never had.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-3 text-[13px]">
@@ -50,18 +53,22 @@ export default function HomePage() {
       <section className="py-20 md:py-28 border-b border-ink-800">
         <div className="mx-auto max-w-measure px-5 md:px-8 prose-essay">
           <p className="text-ink-200 text-xl md:text-[1.35rem] leading-[1.65] font-serif italic text-balance">
-            The frontier labs are scaling vertically — more parameters, more
-            compute, more of the same. I am building horizontally: four
-            primitives, each with a measurable edge on a specific
-            incumbent. A new approach to DARPA Challenge 13. A recession
-            signal that adds 41.71% orthogonal variance over the Fed yield
-            spread. A topological predictor that adds +20 to +36.6 AUC
-            points to baseline JEPA across three real heterogeneous
-            graphs, and beats supervised GAT / GCN / GraphSAGE on a
-            semiconductor supply chain. A participatory data estate
-            hardened to federal-agency security patterns. Together they
-            form the <strong className="not-italic text-accent">Latent
-            Ocean</strong>.
+            The frontier labs are scaling vertically — more parameters,
+            more compute, more of the same. I am building horizontally:
+            four primitives that each <em>conclusively beat</em> a
+            specific incumbent. A new, cross-domain-comprehensive
+            approach to DARPA Challenge 13, shipped across traffic,
+            robotics, drones, and four production cloud surfaces. A
+            recession signal that beats the Fed on several benchmarks,
+            with 41.71% of its variance orthogonal to the yield spread —
+            variance the spread cannot see. A topological predictor that
+            beats vanilla JEPA <em>everywhere it has been tested</em> —
+            three real heterogeneous graphs, +20 to +36.6 AUC points —
+            and also beats supervised GAT, GCN, and GraphSAGE on a
+            Georgetown CSET semiconductor supply chain. A participatory
+            data estate hardened well beyond anything student government
+            has any business running. Together they form the{" "}
+            <strong className="not-italic text-accent">Latent Ocean</strong>.
           </p>
           <p className="mt-6 text-ink-400 text-[15px]">
             What follows is not a résumé. It is a chapter-serial argument for a
@@ -104,10 +111,10 @@ export default function HomePage() {
           <ol className="divide-y divide-ink-800 border-y border-ink-800">
             {[
               { n: "I", t: "The Four Primitives", href: "/primitives", d: "An overview of what each primitive beats, and why." },
-              { n: "II", t: "BTUT — a new approach to DARPA Challenge 13", href: "/btut", d: "Most comprehensive application ever built — SUMO, ROS, drones, SDK, Lambda, REST." },
-              { n: "III", t: "Crystara — beat JEPA across three real graphs", href: "/crystara", d: "+20 to +36.6 AUC pts over baseline JEPA on CSET semiconductor, GDELT, and SEC EDGAR. 16 validated modules discovered from persistent homology." },
-              { n: "IV", t: "NIV — beat the Fed on recession benchmarks", href: "/niv", d: "ROC-AUC 0.8538 @ 18 mo across 504 months; 98.5% false-alarm filter, 41.71% orthogonal variance." },
-              { n: "V", t: "SGUNCCH — hardened student-government infrastructure", href: "/participatory-data-estate", d: "Submit→Moderate→Thin→Crystallize. Time-constant auth, RLS, public audit ledger, federal-hardening patterns." },
+              { n: "II", t: "BTUT — a new, cross-domain approach to DARPA Challenge 13", href: "/btut", d: "Shipped across SUMO traffic, ROS robotics, 50–200 drone swarms, Python SDK, REST, Lambda, WASM. Cross-domain comprehensive." },
+              { n: "III", t: "Crystara — beat JEPA, and supervised GNNs on a semiconductor graph", href: "/crystara", d: "+20 to +36.6 AUC pts over baseline JEPA on three real graphs. Beats supervised GAT/GCN/GraphSAGE on CSET semiconductor. 16 validated modules discovered from persistent homology." },
+              { n: "IV", t: "NIV — beat the Fed on several recession benchmarks", href: "/niv", d: "ROC-AUC 0.8538 @ 18 mo across 504 months; 98.5% false-alarm filter; 41.71% orthogonal variance the Fed spread cannot see." },
+              { n: "V", t: "SGUNCCH — the security posture student government has never had", href: "/participatory-data-estate", d: "Submit→Moderate→Thin→Crystallize. Time-constant auth, RLS on every table, rate limiting by action class, public approval ledger, federal-hardening patterns." },
               { n: "VI", t: "Convergence & Architecture", href: "/convergence", d: "How the four feed the Latent Ocean." },
               { n: "VII", t: "About / Context", href: "/about", d: "Who is building this, and under what constraints." },
               { n: "VIII", t: "Forward Direction", href: "/forward", d: "Scaling, sovereign integrations, inference-time substrate." },
@@ -151,7 +158,7 @@ export default function HomePage() {
               subtitle="Coordination"
               title="BTUT"
               one_liner="A new mathematical object replacing the O(N³) PDE: a phase transition on a scale-free network with hub-weighted Fermi updates, in the mean-field universality class."
-              beat="A new approach to DARPA Mathematical Challenge 13, shipped end-to-end across SUMO traffic, ROS robotics, 50 – 200 drone swarms, Python SDK, REST API, Lambda, and WASM surfaces."
+              beat="A new approach to DARPA Mathematical Challenge 13 — and a cross-domain-comprehensive application of it: SUMO traffic (800 vehicles, zero gridlock), ROS robotics, 50 – 200 drone swarms (100% cooperation), Python SDK, REST, Lambda, and WASM surfaces. One primitive, four domains, four production shapes."
               href="/btut"
             />
             <PrimitiveCard
@@ -159,7 +166,7 @@ export default function HomePage() {
               subtitle="Structure"
               title="Crystara (TCD-JEPA)"
               one_liner="Topological crystallization engine. A three-system loop that grows its own predictor and emits typed H₀/H₁/H₂ modules from persistent homology."
-              beat="+36.6 AUC pts over baseline JEPA on a 519-entity CSET semiconductor supply chain — also beats supervised GAT (70.3%), GCN (63.9%), GraphSAGE (33.8%). 16 modules 1-to-1 with real industry clusters, discovered from persistent homology on Langevin trajectories."
+              beat="Beats vanilla JEPA everywhere it's been tested: +36.6 AUC pts on a 519-entity CSET semiconductor supply chain — also beats supervised GAT (70.3%), GCN (63.9%), and GraphSAGE (33.8%). +22.1 pts on GDELT. +20.0 pts at SEC EDGAR scale where GAT runs out of memory. 16 discovered modules map 1-to-1 to real industry clusters with no labels."
               href="/crystara"
             />
             <PrimitiveCard
@@ -167,7 +174,7 @@ export default function HomePage() {
               subtitle="Signal"
               title="NIV"
               one_liner="Macro-stress scalar built from thrust, efficiency, slack, and drag over 8 public FRED series — economically interpretable, weights published, fully reproducible."
-              beat="Beat the Fed yield curve on recession benchmarks — conclusively: OOS ROC-AUC 0.8538 at 18 months across 504 months of walk-forward, 98.5% false-alarm filter, 41.71% orthogonal variance the spread cannot see."
+              beat="Beats the Fed yield curve on several recession benchmarks — conclusively: OOS ROC-AUC 0.8538 at 18 months across 504 months of walk-forward, 98.5% false-alarm filter, 41.71% orthogonal variance the spread cannot see. Every weight published, every input from FRED."
               href="/niv"
             />
             <PrimitiveCard
@@ -175,7 +182,7 @@ export default function HomePage() {
               subtitle="Ingestion"
               title="SGUNCCH"
               one_liner="A participatory data estate: Submit → Moderate → Thin → Crystallize, with a public approval ledger, pgvector + FTS hybrid retrieval, and OWASP-grade security."
-              beat="Security posture drawn from federal-agency hardening patterns (RLS on every table, time-constant auth, CSP/HSTS, rate limiting by action class, public audit ledger). Unusually hardened for a student-facing stack."
+              beat="A security posture student government has never needed — and, I'd argue, has never had. Time-constant auth, RLS on every table, rate limiting by action class, CSP/HSTS, XSS detection, public approval ledger. Four composable surfaces — Scroll, Budget Engine, Knowledge Base, Chat — in one hardened codebase."
               href="/participatory-data-estate"
             />
           </div>
