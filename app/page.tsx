@@ -23,9 +23,10 @@ export default function HomePage() {
             intelligence</em> primitives as a solo freshman. Four systems —
             a new approach to DARPA Mathematical Challenge&nbsp;13, a
             macro-stress scalar with 41.71% orthogonal variance beyond the
-            Fed yield curve, a topological predictor that outperforms
-            vanilla JEPA on local-geometry metrics, and a participatory
-            data estate hardened to federal-agency security patterns.
+            Fed yield curve, a topological predictor that adds +20 to
+            +36.6 AUC points to vanilla JEPA across three real
+            heterogeneous graphs, and a participatory data estate
+            hardened to federal-agency security patterns.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-3 text-[13px]">
@@ -54,10 +55,12 @@ export default function HomePage() {
             primitives, each with a measurable edge on a specific
             incumbent. A new approach to DARPA Challenge 13. A recession
             signal that adds 41.71% orthogonal variance over the Fed yield
-            spread. A topological predictor that outperforms vanilla JEPA
-            on every local-geometry metric on Two Rooms. A participatory
-            data estate hardened to federal-agency security patterns.
-            Together they form the <strong className="not-italic text-accent">Latent
+            spread. A topological predictor that adds +20 to +36.6 AUC
+            points to baseline JEPA across three real heterogeneous
+            graphs, and beats supervised GAT / GCN / GraphSAGE on a
+            semiconductor supply chain. A participatory data estate
+            hardened to federal-agency security patterns. Together they
+            form the <strong className="not-italic text-accent">Latent
             Ocean</strong>.
           </p>
           <p className="mt-6 text-ink-400 text-[15px]">
@@ -102,7 +105,7 @@ export default function HomePage() {
             {[
               { n: "I", t: "The Four Primitives", href: "/primitives", d: "An overview of what each primitive beats, and why." },
               { n: "II", t: "BTUT — a new approach to DARPA Challenge 13", href: "/btut", d: "Most comprehensive application ever built — SUMO, ROS, drones, SDK, Lambda, REST." },
-              { n: "III", t: "Crystara — beat JEPA, conclusively", href: "/crystara", d: "Three-system loop. Runtime-crystallized H₀/H₁/H₂ modules. +42.3% k-NN (k=20)." },
+              { n: "III", t: "Crystara — beat JEPA across three real graphs", href: "/crystara", d: "+20 to +36.6 AUC pts over baseline JEPA on CSET semiconductor, GDELT, and SEC EDGAR. 16 validated modules discovered from persistent homology." },
               { n: "IV", t: "NIV — beat the Fed on recession benchmarks", href: "/niv", d: "ROC-AUC 0.8538 @ 18 mo across 504 months; 98.5% false-alarm filter, 41.71% orthogonal variance." },
               { n: "V", t: "SGUNCCH — hardened student-government infrastructure", href: "/participatory-data-estate", d: "Submit→Moderate→Thin→Crystallize. Time-constant auth, RLS, public audit ledger, federal-hardening patterns." },
               { n: "VI", t: "Convergence & Architecture", href: "/convergence", d: "How the four feed the Latent Ocean." },
@@ -156,7 +159,7 @@ export default function HomePage() {
               subtitle="Structure"
               title="Crystara (TCD-JEPA)"
               one_liner="Topological crystallization engine. A three-system loop that grows its own predictor and emits typed H₀/H₁/H₂ modules from persistent homology."
-              beat="Beat vanilla JEPA benchmarks on Two Rooms — conclusively: +42.3% k-NN (k=20), +23.0% (k=1), +13.8% (k=5), 60.8% CIFAR-10 loss reduction."
+              beat="+36.6 AUC pts over baseline JEPA on a 519-entity CSET semiconductor supply chain — also beats supervised GAT (70.3%), GCN (63.9%), GraphSAGE (33.8%). 16 modules 1-to-1 with real industry clusters, discovered from persistent homology on Langevin trajectories."
               href="/crystara"
             />
             <PrimitiveCard

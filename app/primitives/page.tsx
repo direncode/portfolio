@@ -16,7 +16,7 @@ export default function PrimitivesPage() {
         number="I"
         label="Chapter"
         title="The Four Primitives"
-        kicker="Four primitives, each with a measurable edge on a specific incumbent, and each stated at the level the evidence supports. BTUT is a new approach to DARPA Mathematical Challenge 13, shipped end-to-end across simulators, robotics, and cloud surfaces. NIV adds 41.71% orthogonal variance to the Fed yield curve on recession benchmarks, with the decomposition published. Crystara outperforms vanilla JEPA on every local-geometry metric of the Two Rooms benchmark, with a mechanistic account. SGUNCCH is a participatory data estate hardened to federal-agency security patterns and shipped as working student-government infrastructure."
+        kicker="Four primitives, each with a measurable edge on a specific incumbent, and each stated at the level the evidence supports. BTUT is a new approach to DARPA Mathematical Challenge 13, shipped end-to-end across simulators, robotics, and cloud surfaces. NIV adds 41.71% orthogonal variance to the Fed yield curve on recession benchmarks, with the decomposition published. Crystara adds +20 to +36.6 AUC points to baseline JEPA across three real heterogeneous graphs, beats supervised GAT / GCN on Georgetown CSET's semiconductor supply chain, and discovers 16 interpretable modules that map 1-to-1 to real industry clusters. SGUNCCH is a participatory data estate hardened to federal-agency security patterns and shipped as working student-government infrastructure."
         prev={{ href: "/", label: "Manifesto" }}
         next={{ href: "/btut", label: "BTUT — Coordination" }}
       />
@@ -40,8 +40,9 @@ export default function PrimitivesPage() {
           end-to-end across Eclipse SUMO, ROS, drone swarms, and a
           Python / REST / Lambda / WASM surface. Crystara (TCD-JEPA) is
           the structure primitive: it grows the predictor at runtime and{" "}
-          <em>outperforms vanilla JEPA on every local-geometry metric of
-          Two Rooms</em>, with a mechanistic explanation for why. NIV is
+          <em>adds +20 to +36.6 AUC points to baseline JEPA across three
+          real heterogeneous graphs</em>, with 16 discovered semiconductor
+          modules validated 1-to-1 against industry clusters. NIV is
           the signal primitive: a single scalar that adds <em>41.71%
           orthogonal variance</em> beyond the Fed yield curve on
           out-of-sample recession benchmarks, with the mechanism
@@ -74,11 +75,17 @@ export default function PrimitivesPage() {
             feature importance at Gini 0.9328; the spread scores 0.0298).
           </li>
           <li>
-            <strong>Crystara — beat JEPA benchmarks.</strong> Two Rooms
-            k-NN: <strong>+42.3%</strong> (k=20), +23.0% (k=1), +13.8%
-            (k=5). CIFAR-10 ablation: <strong>60.8%</strong> loss
-            reduction. Cause: runtime-crystallized H₀/H₁/H₂ modules capture
-            local geometry a single JEPA head cannot.
+            <strong>Crystara — beat JEPA, across three real graphs.</strong>{" "}
+            <strong>+36.6</strong> AUC pts over baseline JEPA on Georgetown
+            CSET&rsquo;s 519-entity semiconductor supply chain (Crystara
+            82.7% vs JEPA 46.1%); also beats supervised GAT (70.3%), GCN
+            (63.9%), GraphSAGE (33.8%). +22.1 pts over JEPA on GDELT
+            (Crystara 69.1%, behind GAT / GCN). +20.0 pts over JEPA on SEC
+            EDGAR where GAT runs out of memory (9,725 entities, ~3.9M
+            edges). <strong>16 interpretable modules</strong> discovered
+            from persistent homology on Langevin trajectories, validated
+            1-to-1 against real semiconductor clusters — no labels, no
+            prompting.
           </li>
           <li>
             <strong>SGUNCCH — hardened student-government infrastructure.</strong>{" "}
@@ -114,7 +121,7 @@ export default function PrimitivesPage() {
           subtitle="Structure"
           title="Crystara"
           one_liner="Topological crystallization engine. Three-system loop — Stream Encoder, Energy Explorer, Module Crystallizer — that grows typed H₀/H₁/H₂ predictors from persistent homology."
-          beat="+42.3% relative k-NN (k=20) over vanilla JEPA on Two Rooms; 60.8% loss reduction on CIFAR-10 ablation."
+          beat="+36.6 AUC pts over baseline JEPA on CSET's 519-entity semiconductor supply chain; also beats supervised GAT / GCN / GraphSAGE. 16 modules 1-to-1 with real industry clusters. Scales to 9,725 entities on SEC EDGAR where GAT OOMs."
           href="/crystara"
         />
         <PrimitiveCard
