@@ -61,12 +61,14 @@ export default function PrimitivesPage() {
             Lambda, full proofs.
           </li>
           <li>
-            <strong>NIV — beat the Fed.</strong> ROC-AUC{" "}
-            <strong>0.847</strong> vs the yield curve&rsquo;s{" "}
-            <strong>0.721</strong> on the same 25-year walk-forward
-            benchmark. 3/3 recessions detected. Orthogonal information
-            quantified at ~24%, mechanistically explained (investment
-            efficiency + capacity slack channels).
+            <strong>NIV — beat the Fed.</strong> Ensemble ROC-AUC{" "}
+            <strong>0.8538</strong> at the 18-month horizon across a
+            504-month (1970 – 2024) walk-forward with six OOS validation
+            tests. <strong>98.5%</strong> false-alarm suppression — 7
+            critical alerts in 42 years. Orthogonal variance versus the
+            Fed 10Y – 3M spread measured at <strong>41.71%</strong>,
+            mechanistically explained (capital efficiency dominates
+            feature importance at Gini 0.9328; the spread scores 0.0298).
           </li>
           <li>
             <strong>Crystara — beat JEPA benchmarks.</strong> Two Rooms
@@ -115,7 +117,7 @@ export default function PrimitivesPage() {
           subtitle="Signal"
           title="NIV"
           one_liner="National Impact Velocity — a single-scalar macro-stress signal composed of thrust, efficiency, slack, and drag, built entirely from 8 public FRED series with published weights."
-          beat="OOS ROC-AUC 0.847 on 25-year walk-forward (2001–2025). 3/3 recessions detected with 5.3-month average lead; yield curve 0.721, GDP growth 0.634."
+          beat="Ensemble ROC-AUC 0.8538 @ 18 mo across 504 months (1970–2024) and six walk-forward OOS tests. 98.5% false-alarm filter; 41.71% orthogonal variance beyond the Fed 10Y – 3M spread."
           href="/niv"
         />
         <PrimitiveCard

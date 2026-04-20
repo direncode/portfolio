@@ -77,6 +77,6 @@ open-source repositories:
 - `direncode/sguncch` (Participatory Data Estate)
 
 Where a specific number was not found in the source repository, the claim
-is either omitted or softened with explicit language (e.g. "~24% orthogonal
-information" is the verified figure from `NIV_Final_OOS_Report.md`, not a
-rounded marketing number).
+is either omitted or softened with explicit language (e.g. "41.71%
+orthogonal variance" is the verified figure from the NIV paper's Test 6
+forensic audit, not a rounded marketing number).

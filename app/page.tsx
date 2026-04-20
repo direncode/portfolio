@@ -103,7 +103,7 @@ export default function HomePage() {
               { n: "I", t: "The Four Primitives", href: "/primitives", d: "An overview of what each primitive beats, and why." },
               { n: "II", t: "BTUT — a new approach to DARPA Challenge 13", href: "/btut", d: "Most comprehensive application ever built — SUMO, ROS, drones, SDK, Lambda, REST." },
               { n: "III", t: "Crystara — beat JEPA, conclusively", href: "/crystara", d: "Three-system loop. Runtime-crystallized H₀/H₁/H₂ modules. +42.3% k-NN (k=20)." },
-              { n: "IV", t: "NIV — beat the Fed on recession benchmarks", href: "/niv", d: "ROC-AUC 0.847 vs 0.721. 3/3 recessions detected with 5.3-month average lead." },
+              { n: "IV", t: "NIV — beat the Fed on recession benchmarks", href: "/niv", d: "ROC-AUC 0.8538 @ 18 mo across 504 months; 98.5% false-alarm filter, 41.71% orthogonal variance." },
               { n: "V", t: "SGUNCCH — federal-agency-level SG infrastructure", href: "/participatory-data-estate", d: "Submit→Moderate→Thin→Crystallize. Time-constant auth, RLS, public audit ledger." },
               { n: "VI", t: "Convergence & Architecture", href: "/convergence", d: "How the four feed the Latent Ocean." },
               { n: "VII", t: "About / Context", href: "/about", d: "Who is building this, and under what constraints." },
@@ -164,7 +164,7 @@ export default function HomePage() {
               subtitle="Signal"
               title="NIV"
               one_liner="Macro-stress scalar built from thrust, efficiency, slack, and drag over 8 public FRED series — economically interpretable, weights published, fully reproducible."
-              beat="Beat the Fed yield curve on recession benchmarks — conclusively: OOS ROC-AUC 0.847 vs 0.721, with 24% orthogonal information the spread cannot see."
+              beat="Beat the Fed yield curve on recession benchmarks — conclusively: OOS ROC-AUC 0.8538 at 18 months across 504 months of walk-forward, 98.5% false-alarm filter, 41.71% orthogonal variance the spread cannot see."
               href="/niv"
             />
             <PrimitiveCard
