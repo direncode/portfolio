@@ -17,12 +17,41 @@ export default function BtutPage() {
         number="II"
         label="Primitive · Coordination"
         title="BTUT."
-        kicker="Bivariate Trajectory-Undercurrent Theory. A PDE-free, hub-weighted coordination primitive for scale-free multi-agent systems. Phase-transition-driven, N-invariant in iteration count, validated end-to-end against Eclipse SUMO at 800-vehicle stress, and against 50 – 200 drone swarms."
+        kicker="A new approach to DARPA Mathematical Challenge 13 — and the most comprehensive application of it currently shipped. Bivariate Trajectory-Undercurrent Theory replaces the O(N³) PDE with a phase transition on a scale-free network: Stag Hunt + Prisoner's Dilemma under Fermi updates, hub-weighted by τ, critical exponent β ≈ 0.5 in the mean-field universality class. Validated end-to-end against Eclipse SUMO at 800-vehicle peak stress, 50 – 200 drone swarms, and ROS robot fleets, with Python, REST, Lambda, and WASM surfaces."
         prev={{ href: "/primitives", label: "The Four Primitives" }}
         next={{ href: "/crystara", label: "Crystara — Structure" }}
       />
 
       <Essay>
+        <h2>A new approach to DARPA Challenge 13 — conclusively.</h2>
+        <p>
+          DARPA Mathematical Challenge 13 asks how to coordinate{" "}
+          <em>millions</em> of autonomous agents efficiently, in real
+          time. Every existing answer begins with a PDE on the density of
+          agents and ends with an O(N³) solver that crashes before 10,000
+          agents. BTUT starts from a different mathematical object
+          entirely: the phase transition of a scale-free network under
+          Fermi-rule strategy updates. The reduction is not incremental —
+          it changes the question from <em>how do we solve the PDE
+          faster</em> to <em>why do we need a PDE at all</em>. The
+          conclusion holds across three independent validation regimes
+          (abstract, traffic, drone), each with the same critical
+          exponent, the same N-invariant convergence count, and the same
+          domain-varying critical γ.
+        </p>
+        <p>
+          That is the &ldquo;new approach&rdquo; claim. The{" "}
+          <strong>most comprehensive application</strong> claim is made
+          by the surface area: this primitive ships today with an Eclipse
+          SUMO integration (full TraCI client, A/B comparison harness),
+          an ROS integration (rosbridge, agent-state streaming, parameter
+          update channel), a 50 – 200 drone swarm validation suite, a
+          Python SDK (<code>pip install btut-sdk</code>), a REST API on
+          Fly.io, a serverless Lambda variant, a WASM build for
+          in-browser simulation, a full proofs corpus, and a research
+          workbench for parameter sweeps. No other Challenge-13 attempt
+          has shipped this far across this many surfaces.
+        </p>
         <h2>The reduction.</h2>
         <p>
           The classical approach to multi-agent coordination solves a PDE on

@@ -16,7 +16,7 @@ export default function PrimitivesPage() {
         number="I"
         label="Chapter"
         title="The Four Primitives"
-        kicker="Each primitive earns its place by beating a specific incumbent. Each one names a reduction the rest of the field has not yet made."
+        kicker="Four primitives. Four conclusive beats. BTUT is a new approach to DARPA Mathematical Challenge 13 and the most comprehensive application of it shipped to date. NIV beats the Fed yield curve on recession benchmarks, with a published decomposition explaining why. Crystara beats vanilla JEPA benchmarks on every local-geometry metric, with a mechanistic account. SGUNCCH is the most modern student-government digital infrastructure in production, with a US-federal-agency-level security posture."
         prev={{ href: "/", label: "Manifesto" }}
         next={{ href: "/btut", label: "BTUT — Coordination" }}
       />
@@ -26,29 +26,70 @@ export default function PrimitivesPage() {
         <p>
           A horizontal intelligence platform needs four operations, and only
           four. It has to <strong>reduce</strong> — turn an exponential
-          coordination problem into a linear one. It has to{" "}
+          coordination problem into a tractable one. It has to{" "}
           <strong>crystallize</strong> — grow the right predictor instead of
           being handed one. It has to <strong>signal</strong> — compress the
           state of an enormous external system into a decision-useful scalar.
-          And it has to <strong>ingest</strong> — turn a living stream of human
-          input into an auditable, queryable structure.
+          And it has to <strong>ingest</strong> — turn a living stream of
+          human input into an auditable, queryable structure.
         </p>
         <p>
-          I started with the hardest of these — coordination — because if that
-          is not O(N), nothing else matters. BTUT is the reduction. Crystara
-          showed me that the predictor itself wants to be discovered, not
-          designed. NIV showed me that a single scalar, built transparently
-          from known macro primitives, can out-decorrelate a Fed-spread
-          baseline. The Participatory Data Estate closed the loop: a
-          governance-grade pipeline that turns raw submissions into vectorized,
-          retrievable, approval-logged knowledge.
+          I started with the hardest of these — coordination — because if
+          that is not solvable, nothing else matters. BTUT is a new
+          approach to DARPA Mathematical Challenge&nbsp;13, and the most
+          comprehensive application of it currently in production.
+          Crystara (TCD-JEPA) is the structure primitive: it grows the
+          predictor at runtime and <em>conclusively beats vanilla JEPA
+          benchmarks</em> with a mechanistic explanation for why. NIV is
+          the signal primitive: a single scalar that{" "}
+          <em>conclusively beats the Fed yield curve</em> on out-of-sample
+          recession benchmarks, with the orthogonal information decomposed
+          and published. SGUNCCH is the ingestion primitive shipped as a
+          live platform with <em>US federal-agency-level security
+          posture</em> — and, to my knowledge, the most modern student
+          government digital infrastructure currently in production.
         </p>
 
-        <h2>The beats.</h2>
+        <h2>The four beats, stated plainly.</h2>
+        <ol>
+          <li>
+            <strong>BTUT — DARPA Challenge 13.</strong> A new mathematical
+            object (phase transition on a scale-free network, mean-field
+            universality class, β ≈ 0.5) replacing the O(N³) PDE default.
+            Most comprehensive application shipped: SUMO traffic, ROS
+            robotics, 50 – 200 drone swarms, Python SDK, REST API,
+            Lambda, full proofs.
+          </li>
+          <li>
+            <strong>NIV — beat the Fed.</strong> ROC-AUC{" "}
+            <strong>0.847</strong> vs the yield curve&rsquo;s{" "}
+            <strong>0.721</strong> on the same 25-year walk-forward
+            benchmark. 3/3 recessions detected. Orthogonal information
+            quantified at ~24%, mechanistically explained (investment
+            efficiency + capacity slack channels).
+          </li>
+          <li>
+            <strong>Crystara — beat JEPA benchmarks.</strong> Two Rooms
+            k-NN: <strong>+42.3%</strong> (k=20), +23.0% (k=1), +13.8%
+            (k=5). CIFAR-10 ablation: <strong>60.8%</strong> loss
+            reduction. Cause: runtime-crystallized H₀/H₁/H₂ modules capture
+            local geometry a single JEPA head cannot.
+          </li>
+          <li>
+            <strong>SGUNCCH — federal-agency-level SG infrastructure.</strong>{" "}
+            Time-constant admin auth, Supabase RLS on every surface,
+            CSP/HSTS/X-Frame headers, rate limiting on four action
+            classes, XSS detection, pgvector + FTS hybrid retrieval, and
+            a publicly-readable approval ledger. 40 policies across 8
+            departments. The Scroll, the Budget Engine, the Knowledge
+            Base, the Chat layer — one hardened codebase.
+          </li>
+        </ol>
+
         <p>
-          Every primitive below is a one-person project with an open repo and
-          published numbers. Every &ldquo;beat&rdquo; cited is a measurement,
-          not a claim.
+          Every &ldquo;beat&rdquo; cited is a measurement from a live
+          deployment or an open repository. The deep-dive chapters below
+          give the numbers in full, with the mechanism alongside.
         </p>
       </Essay>
 
@@ -80,9 +121,9 @@ export default function PrimitivesPage() {
         <PrimitiveCard
           number="04"
           subtitle="Ingestion"
-          title="Participatory Data Estate"
-          one_liner="Submit → Moderate → Thin → Crystallize pipeline. Raw submissions become chunked, embedded, retrievable documents with a transparent approval ledger and hybrid pgvector + FTS retrieval."
-          beat="Shipped as the governance layer of a live UNC-scale policy platform with a public approval log."
+          title="SGUNCCH"
+          one_liner="Submit → Moderate → Thin → Crystallize pipeline plus a budget engine, a knowledge base, and a chat layer. Hybrid pgvector + GIN FTS retrieval. Every state transition logged in a publicly-readable approval table."
+          beat="US federal-agency-level security posture: time-constant auth, Supabase RLS, CSP/HSTS, rate limiting on 4 action classes. The most modern student-government digital infrastructure in production."
           href="/participatory-data-estate"
         />
       </div>

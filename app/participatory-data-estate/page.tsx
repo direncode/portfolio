@@ -4,9 +4,9 @@ import { Essay } from "@/components/Essay";
 import { Callout } from "@/components/Callout";
 
 export const metadata = {
-  title: "Participatory Data Estate — Ingestion",
+  title: "SGUNCCH — Participatory Data Estate",
   description:
-    "A Submit → Moderate → Thin → Crystallize pipeline turning raw human submissions into a living, auditable, vector-retrievable knowledge base.",
+    "A US federal-agency-level participatory data estate and the most modern student-government digital infrastructure in production. Submit → Moderate → Thin → Crystallize, plus a budget engine, a knowledge base, and a chat layer — all hardened to OWASP-grade standards.",
 };
 
 export default function PdePage() {
@@ -15,13 +15,91 @@ export default function PdePage() {
       <ChapterHeader
         number="V"
         label="Primitive · Ingestion"
-        title="Participatory Data Estate."
-        kicker="A dynamic ingestion primitive. Raw human submissions — policies, governance documents, constitution text, conduct code — become a living, auditable, hybrid-retrievable knowledge base. Pipeline: Submit → Moderate → Thin → Crystallize. Every approval is logged; every chunk is addressable."
+        title="SGUNCCH."
+        kicker="A US federal-agency-level participatory data estate. Raw human submissions — policies, constitutional text, conduct code, budget allocations, funding requests — become a living, auditable, hybrid-retrievable knowledge base. Submit → Moderate → Thin → Crystallize, plus a budget engine, a knowledge base, and a chat layer. Hardened with time-constant auth, row-level security on every table, rate limiting on four action classes, CSP/HSTS/X-Frame headers, XSS detection, and a publicly-readable approval ledger. To my knowledge, the most modern student-government digital infrastructure currently in production."
         prev={{ href: "/niv", label: "NIV — Signal" }}
         next={{ href: "/convergence", label: "Convergence" }}
       />
 
       <Essay>
+        <h2>Federal-agency-level posture — the evidence.</h2>
+        <p>
+          Most student-government platforms ship as a WordPress site with
+          a public feedback form. SGUNCCH ships with a security posture
+          that would not embarrass a federal agency. Every item below is
+          implemented in the repository — not aspirational, not planned:
+        </p>
+        <table>
+          <thead>
+            <tr><th>Control</th><th>Implementation</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Admin authentication</td><td>Environment-variable secret, <strong>time-constant comparison</strong> to prevent timing attacks.</td></tr>
+            <tr><td>Session management</td><td>4-hour inactivity expiry, rotating tokens.</td></tr>
+            <tr><td>Rate limiting</td><td>API 100 / min · Login 5 / 15 min · Forms 10 / min · Feedback 5 / hour.</td></tr>
+            <tr><td>Input sanitization</td><td><code>sanitizeText</code>, <code>sanitizeEmail</code>, <code>sanitizeURL</code>, <code>sanitizePhone</code>, <code>sanitizeObject</code>, schema-based <code>validateFormData</code>.</td></tr>
+            <tr><td>XSS defense</td><td>Content Security Policy + <code>containsXSS</code> detector + HTML-encoded text inputs.</td></tr>
+            <tr><td>HTTP headers</td><td><code>X-Frame-Options: DENY</code>, <code>X-Content-Type-Options: nosniff</code>, <code>X-XSS-Protection</code>, <code>Referrer-Policy</code>, <code>Permissions-Policy</code>, <code>Strict-Transport-Security</code>.</td></tr>
+            <tr><td>Row-level security</td><td>Enabled on <em>every</em> Supabase table. Public-read policies only on explicitly-approved content.</td></tr>
+            <tr><td>API hardening</td><td>HTTP method allowlist on all routes, rate-limit middleware, error messages sanitized in production, no sensitive data in error responses.</td></tr>
+            <tr><td>Audit trail</td><td><code>approval_log</code> table, publicly-readable RLS policy, indexed by document and by time.</td></tr>
+          </tbody>
+        </table>
+        <Callout label="Why the framing holds">
+          A student government does not legally need any of this. A federal
+          agency does. The fact that this stack ships with all of it —
+          not because it was mandated but because the primitive is built
+          to a higher bar — is the &ldquo;federal-agency-level&rdquo;
+          claim in its honest form.
+        </Callout>
+
+        <h2>The most modern SG digital infrastructure — scope.</h2>
+        <p>
+          SGUNCCH is not one feature. It is four composable surfaces
+          shipped in one hardened codebase:
+        </p>
+        <ol>
+          <li>
+            <strong>The Scroll</strong> — governance-document RAG.
+            Submit → Moderate → Thin → Crystallize, hybrid pgvector +
+            GIN full-text retrieval, hash-deduplicated submissions, 15
+            seed documents (constitution, statutes, policies, conduct
+            code), public approval log.
+          </li>
+          <li>
+            <strong>The Budget Engine</strong> — AI-scored funding
+            allocation. 10 category classes (events, travel, merch,
+            supplies, wellness, food, marketing, technology, emergency,
+            other), 5 request statuses (pending, approved, denied,
+            reallocated, spent), SG-priority alignment scoring across 5
+            priority categories (wellness, basic-needs, academic-support,
+            safety, sustainability), price-check calls to Groq for
+            reality-checking line items.
+          </li>
+          <li>
+            <strong>The Knowledge Base + Chat Layer</strong> — a Groq-backed
+            chat interface grounded in the RAG corpus, with 1536-dim
+            embeddings, an active message history table, and transparent
+            source citation.
+          </li>
+          <li>
+            <strong>The Policy Platform</strong> — 40 policies across 8
+            departments (Student Wellness, Basic Needs, Academic Affairs,
+            Civic Engagement, Communications, DEI, Environmental, State &amp;
+            External), real-time progress tracking, mobile-first responsive
+            design.
+          </li>
+        </ol>
+        <p>
+          Each surface shares the same security posture, the same audit
+          trail, and the same RLS discipline. The platform degrades
+          gracefully: if Supabase is unreachable, a committed{" "}
+          <code>codex-seed.json</code> file-based fallback takes over so
+          the governance corpus remains queryable. That is the kind of
+          resilience you typically see in a federal compliance stack, not
+          a student site.
+        </p>
+
         <h2>The substrate has to stay alive.</h2>
         <p>
           Static knowledge bases rot. The dominant RAG pipelines treat
