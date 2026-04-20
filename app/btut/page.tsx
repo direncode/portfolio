@@ -17,40 +17,42 @@ export default function BtutPage() {
         number="II"
         label="Primitive · Coordination"
         title="BTUT."
-        kicker="A new approach to DARPA Mathematical Challenge 13 — and the most comprehensive application of it currently shipped. Bivariate Trajectory-Undercurrent Theory replaces the O(N³) PDE with a phase transition on a scale-free network: Stag Hunt + Prisoner's Dilemma under Fermi updates, hub-weighted by τ, critical exponent β ≈ 0.5 in the mean-field universality class. Validated end-to-end against Eclipse SUMO at 800-vehicle peak stress, 50 – 200 drone swarms, and ROS robot fleets, with Python, REST, Lambda, and WASM surfaces."
+        kicker="A new approach to DARPA Mathematical Challenge 13 — and a cross-domain-comprehensive application of it. Bivariate Trajectory-Undercurrent Theory replaces the O(N³) PDE with a phase transition on a scale-free network: Stag Hunt + Prisoner's Dilemma under Fermi updates, hub-weighted by τ, critical exponent β ≈ 0.5 in the mean-field universality class. One primitive, three validation regimes (abstract, traffic, drone) with matched critical behavior, and four production surfaces (Python SDK, REST, Lambda, WASM). Eclipse SUMO at 800-vehicle peak stress holds zero gridlock. 50 – 200 drone swarms coordinate at 100%. Constant 12 iterations from 500 to 10,000 agents."
         prev={{ href: "/primitives", label: "The Four Primitives" }}
         next={{ href: "/crystara", label: "Crystara — Structure" }}
       />
 
       <Essay>
-        <h2>A new approach to DARPA Challenge 13 — conclusively.</h2>
+        <h2>A new approach to DARPA Challenge 13.</h2>
         <p>
           DARPA Mathematical Challenge 13 asks how to coordinate{" "}
           <em>millions</em> of autonomous agents efficiently, in real
-          time. Every existing answer begins with a PDE on the density of
-          agents and ends with an O(N³) solver that crashes before 10,000
-          agents. BTUT starts from a different mathematical object
-          entirely: the phase transition of a scale-free network under
-          Fermi-rule strategy updates. The reduction is not incremental —
-          it changes the question from <em>how do we solve the PDE
-          faster</em> to <em>why do we need a PDE at all</em>. The
-          conclusion holds across three independent validation regimes
-          (abstract, traffic, drone), each with the same critical
-          exponent, the same N-invariant convergence count, and the same
-          domain-varying critical γ.
+          time. The dominant approach begins with a PDE on the density
+          of agents and ends with an O(N³) solver that crashes before
+          10,000 agents. BTUT starts from a different mathematical
+          object entirely: the phase transition of a scale-free network
+          under Fermi-rule strategy updates. The reduction is not
+          incremental — it changes the question from <em>how do we solve
+          the PDE faster</em> to <em>why do we need a PDE at all</em>.
+          The same critical exponent, the same N-invariant convergence
+          count, and a domain-varying critical γ are observed across
+          three validation regimes (abstract, traffic, drone).
         </p>
         <p>
           That is the &ldquo;new approach&rdquo; claim. The{" "}
-          <strong>most comprehensive application</strong> claim is made
-          by the surface area: this primitive ships today with an Eclipse
-          SUMO integration (full TraCI client, A/B comparison harness),
-          an ROS integration (rosbridge, agent-state streaming, parameter
-          update channel), a 50 – 200 drone swarm validation suite, a
-          Python SDK (<code>pip install btut-sdk</code>), a REST API on
-          Fly.io, a serverless Lambda variant, a WASM build for
+          <strong>cross-domain-comprehensive</strong> claim is where the
+          primitive actually lives. One mathematical object ships today
+          across: an Eclipse SUMO integration (full TraCI client, A/B
+          comparison harness, 800-vehicle stress peak), an ROS
+          integration (rosbridge, agent-state streaming, parameter update
+          channel, Turtlebot3 swarms), a 50 – 200 drone swarm validation
+          suite, a Python SDK (<code>pip install btut-sdk</code>), a REST
+          API on Fly.io, a serverless Lambda variant, a WASM build for
           in-browser simulation, a full proofs corpus, and a research
-          workbench for parameter sweeps. No other Challenge-13 attempt
-          has shipped this far across this many surfaces.
+          workbench for parameter sweeps. I cannot point to another
+          Challenge-13-style attempt that has shipped live across this
+          many domains on one primitive. If one exists I have not found
+          it.
         </p>
         <h2>The reduction.</h2>
         <p>
@@ -185,15 +187,16 @@ P( s_i ← s_j )  =  1 / ( 1 + exp( −(U_j − U_i) / κ ) )`}</pre>
           </tbody>
         </table>
         <Callout label="Read this table carefully">
-          This is the baseline-validation harness, not the stress peak. The
-          point it makes is the <em>stability</em> column: Fixed 60% and
-          BTUT variants both score 95 – 100, while the brittle heuristics
-          (Threshold, No Coordination, Greedy) collapse under load. When
-          stress rises to 800 vehicles, stability is the property that
-          matters — which is where BTUT&rsquo;s zero-gridlock stress result
-          comes from. BTUT is not optimizing for peak steady-state speed;
-          it is optimizing for catastrophic-failure immunity under phase
-          transition.
+          This is the baseline-harness single-pass configuration, not the
+          post-convergence τ-sweep below. The BTUT rows here show the
+          cold-start state — identical across τ because the network has
+          not yet undergone the phase transition. The useful column in
+          this view is <em>stability</em>: Fixed 60% and BTUT both score
+          95 – 100, while the brittle heuristics (Threshold, No
+          Coordination, Greedy) collapse under load. Post-convergence
+          cooperation fractions are reported in the τ-sweep table below
+          (49% at τ = 0.0 rising monotonically to 73.4% at τ = 0.8). The
+          table above is a stability floor, not the cooperation result.
         </Callout>
 
         <h3>The τ sweep.</h3>

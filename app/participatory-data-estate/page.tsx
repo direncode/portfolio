@@ -6,7 +6,7 @@ import { Callout } from "@/components/Callout";
 export const metadata = {
   title: "SGUNCCH — Participatory Data Estate",
   description:
-    "A US federal-agency-level participatory data estate and the most modern student-government digital infrastructure in production. Submit → Moderate → Thin → Crystallize, plus a budget engine, a knowledge base, and a chat layer — all hardened to OWASP-grade standards.",
+    "A participatory data estate with a security posture student government has never needed — and, to my knowledge, has never had. Submit → Moderate → Thin → Crystallize, plus a budget engine, a knowledge base, and a chat layer — all hardened against OWASP Top 10 patterns with federal-agency-derived controls.",
 };
 
 export default function PdePage() {
@@ -16,18 +16,22 @@ export default function PdePage() {
         number="V"
         label="Primitive · Ingestion"
         title="SGUNCCH."
-        kicker="A US federal-agency-level participatory data estate. Raw human submissions — policies, constitutional text, conduct code, budget allocations, funding requests — become a living, auditable, hybrid-retrievable knowledge base. Submit → Moderate → Thin → Crystallize, plus a budget engine, a knowledge base, and a chat layer. Hardened with time-constant auth, row-level security on every table, rate limiting on four action classes, CSP/HSTS/X-Frame headers, XSS detection, and a publicly-readable approval ledger. To my knowledge, the most modern student-government digital infrastructure currently in production."
+        kicker="A security posture student government has never needed — and, to my knowledge, has never had. SGUNCCH is a participatory data estate shipped as live student-government infrastructure, hardened with patterns drawn directly from federal-agency security guidance. Raw human submissions — policies, constitutional text, conduct code, budget allocations, funding requests — become a living, auditable, hybrid-retrievable knowledge base. Submit → Moderate → Thin → Crystallize, plus a budget engine, a knowledge base, and a chat layer. Time-constant auth, row-level security on every table, rate limiting on four action classes, CSP/HSTS/X-Frame headers, XSS detection, and a publicly-readable approval ledger. There is no FedRAMP authorization to claim, and I am not claiming one — the point is that the posture is here, in production, at a scale and tier no student platform I can find currently runs."
         prev={{ href: "/niv", label: "NIV — Signal" }}
         next={{ href: "/convergence", label: "Convergence" }}
       />
 
       <Essay>
-        <h2>Federal-agency-level posture — the evidence.</h2>
+        <h2>Security posture — the evidence.</h2>
         <p>
           Most student-government platforms ship as a WordPress site with
-          a public feedback form. SGUNCCH ships with a security posture
-          that would not embarrass a federal agency. Every item below is
-          implemented in the repository — not aspirational, not planned:
+          a public feedback form. SGUNCCH ships with hardening patterns
+          drawn from federal-agency security guidance (NIST 800-53 /
+          OWASP ASVS families), even though nothing about student
+          government requires it. Every item below is implemented in the
+          repository — not aspirational, not planned — and I do not
+          believe any other student-government platform currently in
+          production runs this stack:
         </p>
         <table>
           <thead>
@@ -45,15 +49,17 @@ export default function PdePage() {
             <tr><td>Audit trail</td><td><code>approval_log</code> table, publicly-readable RLS policy, indexed by document and by time.</td></tr>
           </tbody>
         </table>
-        <Callout label="Why the framing holds">
-          A student government does not legally need any of this. A federal
-          agency does. The fact that this stack ships with all of it —
-          not because it was mandated but because the primitive is built
-          to a higher bar — is the &ldquo;federal-agency-level&rdquo;
-          claim in its honest form.
+        <Callout label="Honest framing">
+          There is no FedRAMP authorization, no FISMA control mapping,
+          no STIG audit. What the stack has is the <em>posture</em>{" "}
+          those frameworks try to produce — time-constant auth, RLS on
+          every table, rate limiting by action class, a public audit
+          ledger — implemented because the primitive is built to that
+          bar, not because compliance required it. That is the honest
+          form of the &ldquo;federal-hardening&rdquo; claim.
         </Callout>
 
-        <h2>The most modern SG digital infrastructure — scope.</h2>
+        <h2>Platform scope.</h2>
         <p>
           SGUNCCH is not one feature. It is four composable surfaces
           shipped in one hardened codebase:
@@ -95,9 +101,9 @@ export default function PdePage() {
           trail, and the same RLS discipline. The platform degrades
           gracefully: if Supabase is unreachable, a committed{" "}
           <code>codex-seed.json</code> file-based fallback takes over so
-          the governance corpus remains queryable. That is the kind of
-          resilience you typically see in a federal compliance stack, not
-          a student site.
+          the governance corpus remains queryable. Graceful degradation
+          of this shape is standard in hardened SaaS and uncommon in
+          student-gov infrastructure.
         </p>
 
         <h2>The substrate has to stay alive.</h2>
