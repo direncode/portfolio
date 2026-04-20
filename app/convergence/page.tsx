@@ -27,8 +27,9 @@ export default function ConvergencePage() {
         <p className="text-[13px] text-ink-500 mt-3 max-w-measure">
           Fig. VI · Four primitives converge into Latent Ocean. Reduction
           (BTUT) and crystallization (Crystara) upstream of a signal (NIV)
-          and an ingestion surface (PDE). The engine is the composition,
-          not any one node.
+          and an ingestion surface (PDE — Participatory Data Estate). The
+          engine is the composition, not any one node. Each node is
+          clickable and links to its external site or source repository.
         </p>
       </div>
 
