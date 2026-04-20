@@ -64,10 +64,11 @@ export default function AboutPage() {
             The four primitives are deliberately narrow.
           </li>
           <li>
-            <strong>Validation over claim.</strong> Walk-forward OOS on NIV.
-            R² &gt; 0.98 on BTUT&rsquo;s O(N) fit. Persistent-homology
-            diagnostics on Crystara. Public approval log on PDE. The numbers
-            are cited from the repos, not invented for the deck.
+            <strong>Validation over claim.</strong> Walk-forward OOS on
+            NIV. Constant 12-iteration convergence from 500 to 10,000
+            agents on BTUT. Persistent-homology diagnostics on Crystara.
+            Public approval log on PDE. The numbers are cited from the
+            repos, not invented for the deck.
           </li>
         </ul>
 

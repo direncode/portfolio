@@ -16,7 +16,7 @@ export default function PrimitivesPage() {
         number="I"
         label="Chapter"
         title="The Four Primitives"
-        kicker="Four primitives. Four conclusive beats. BTUT is a new approach to DARPA Mathematical Challenge 13 and the most comprehensive application of it shipped to date. NIV beats the Fed yield curve on recession benchmarks, with a published decomposition explaining why. Crystara beats vanilla JEPA benchmarks on every local-geometry metric, with a mechanistic account. SGUNCCH is the most modern student-government digital infrastructure in production, with a US-federal-agency-level security posture."
+        kicker="Four primitives, each with a measurable edge on a specific incumbent, and each stated at the level the evidence supports. BTUT is a new approach to DARPA Mathematical Challenge 13, shipped end-to-end across simulators, robotics, and cloud surfaces. NIV adds 41.71% orthogonal variance to the Fed yield curve on recession benchmarks, with the decomposition published. Crystara outperforms vanilla JEPA on every local-geometry metric of the Two Rooms benchmark, with a mechanistic account. SGUNCCH is a participatory data estate hardened to federal-agency security patterns and shipped as working student-government infrastructure."
         prev={{ href: "/", label: "Manifesto" }}
         next={{ href: "/btut", label: "BTUT — Coordination" }}
       />
@@ -36,18 +36,20 @@ export default function PrimitivesPage() {
         <p>
           I started with the hardest of these — coordination — because if
           that is not solvable, nothing else matters. BTUT is a new
-          approach to DARPA Mathematical Challenge&nbsp;13, and the most
-          comprehensive application of it currently in production.
-          Crystara (TCD-JEPA) is the structure primitive: it grows the
-          predictor at runtime and <em>conclusively beats vanilla JEPA
-          benchmarks</em> with a mechanistic explanation for why. NIV is
-          the signal primitive: a single scalar that{" "}
-          <em>conclusively beats the Fed yield curve</em> on out-of-sample
-          recession benchmarks, with the orthogonal information decomposed
-          and published. SGUNCCH is the ingestion primitive shipped as a
-          live platform with <em>US federal-agency-level security
-          posture</em> — and, to my knowledge, the most modern student
-          government digital infrastructure currently in production.
+          approach to DARPA Mathematical Challenge&nbsp;13, shipped
+          end-to-end across Eclipse SUMO, ROS, drone swarms, and a
+          Python / REST / Lambda / WASM surface. Crystara (TCD-JEPA) is
+          the structure primitive: it grows the predictor at runtime and{" "}
+          <em>outperforms vanilla JEPA on every local-geometry metric of
+          Two Rooms</em>, with a mechanistic explanation for why. NIV is
+          the signal primitive: a single scalar that adds <em>41.71%
+          orthogonal variance</em> beyond the Fed yield curve on
+          out-of-sample recession benchmarks, with the mechanism
+          decomposed and published. SGUNCCH is the ingestion primitive
+          shipped as a live platform with a <em>federal-hardening
+          security posture</em> — unusually hardened for a student-facing
+          stack, though not independently certified against any federal
+          compliance framework.
         </p>
 
         <h2>The four beats, stated plainly.</h2>
@@ -56,9 +58,10 @@ export default function PrimitivesPage() {
             <strong>BTUT — DARPA Challenge 13.</strong> A new mathematical
             object (phase transition on a scale-free network, mean-field
             universality class, β ≈ 0.5) replacing the O(N³) PDE default.
-            Most comprehensive application shipped: SUMO traffic, ROS
-            robotics, 50 – 200 drone swarms, Python SDK, REST API,
-            Lambda, full proofs.
+            Shipped across SUMO traffic, ROS robotics, 50 – 200 drone
+            swarms, Python SDK, REST API, Lambda, WASM, and a proofs
+            corpus — an unusual breadth of surfaces for a
+            still-young primitive.
           </li>
           <li>
             <strong>NIV — beat the Fed.</strong> Ensemble ROC-AUC{" "}
@@ -78,13 +81,15 @@ export default function PrimitivesPage() {
             local geometry a single JEPA head cannot.
           </li>
           <li>
-            <strong>SGUNCCH — federal-agency-level SG infrastructure.</strong>{" "}
+            <strong>SGUNCCH — hardened student-government infrastructure.</strong>{" "}
             Time-constant admin auth, Supabase RLS on every surface,
             CSP/HSTS/X-Frame headers, rate limiting on four action
             classes, XSS detection, pgvector + FTS hybrid retrieval, and
-            a publicly-readable approval ledger. 40 policies across 8
-            departments. The Scroll, the Budget Engine, the Knowledge
-            Base, the Chat layer — one hardened codebase.
+            a publicly-readable approval ledger — patterns drawn from
+            federal-agency security guidance, with no compliance
+            authorization claimed. 40 policies across 8 departments. The
+            Scroll, the Budget Engine, the Knowledge Base, the Chat
+            layer — one hardened codebase.
           </li>
         </ol>
 
@@ -125,7 +130,7 @@ export default function PrimitivesPage() {
           subtitle="Ingestion"
           title="SGUNCCH"
           one_liner="Submit → Moderate → Thin → Crystallize pipeline plus a budget engine, a knowledge base, and a chat layer. Hybrid pgvector + GIN FTS retrieval. Every state transition logged in a publicly-readable approval table."
-          beat="US federal-agency-level security posture: time-constant auth, Supabase RLS, CSP/HSTS, rate limiting on 4 action classes. The most modern student-government digital infrastructure in production."
+          beat="Security posture drawn from federal-agency hardening patterns: time-constant auth, Supabase RLS on every table, CSP/HSTS, rate limiting on 4 action classes, public approval ledger. Unusually hardened for a student-facing stack; no federal compliance authorization claimed."
           href="/participatory-data-estate"
         />
       </div>
