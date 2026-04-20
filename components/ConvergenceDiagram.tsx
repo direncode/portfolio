@@ -57,6 +57,8 @@ export function ConvergenceDiagram({ className = "" }: Props) {
   const centerHalfW = 100;
   const centerHalfH = 40;
 
+  const delayClasses = ["", "d2", "d3", "d4"];
+
   return (
     <div
       className={`w-full overflow-hidden border border-ink-800 bg-ink-900/30 ${className}`}
@@ -78,7 +80,11 @@ export function ConvergenceDiagram({ className = "" }: Props) {
             markerHeight="6"
             orient="auto-start-reverse"
           >
-            <path d="M 0 0 L 10 5 L 0 10 z" fill="#c8a25a" />
+            <path
+              d="M 0 0 L 10 5 L 0 10 z"
+              fill="#c8a25a"
+              className="conv-arrow-head"
+            />
           </marker>
           <linearGradient id="pulse" x1="0" y1="0" x2="1" y2="0">
             <stop offset="0%" stopColor="#c8a25a" stopOpacity="0.2" />
@@ -87,8 +93,8 @@ export function ConvergenceDiagram({ className = "" }: Props) {
           </linearGradient>
         </defs>
 
-        {/* Edges */}
-        {nodes.map((n) => {
+        {/* Edges — flowing dashes from each primitive into Latent Ocean */}
+        {nodes.map((n, i) => {
           const isLeft = n.x < center.x;
           const x1 = isLeft ? n.x + 160 : n.x;
           const y1 = n.y + 50;
@@ -103,9 +109,11 @@ export function ConvergenceDiagram({ className = "" }: Props) {
               x2={x2}
               y2={y2}
               stroke="#c8a25a"
-              strokeOpacity="0.55"
-              strokeWidth="1"
+              strokeOpacity="0.7"
+              strokeWidth="1.25"
+              strokeLinecap="round"
               markerEnd="url(#arrow)"
+              className={`conv-edge ${delayClasses[i]}`}
             />
           );
         })}
@@ -118,7 +126,7 @@ export function ConvergenceDiagram({ className = "" }: Props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <g className="cursor-pointer">
+            <g className="conv-node cursor-pointer">
               <rect
                 x={n.x}
                 y={n.y}
@@ -182,6 +190,7 @@ export function ConvergenceDiagram({ className = "" }: Props) {
             fill="#1d1d1a"
             stroke="#c8a25a"
             strokeWidth="1.25"
+            className="conv-engine-stroke"
           />
           <text
             x={center.x}
@@ -211,6 +220,7 @@ export function ConvergenceDiagram({ className = "" }: Props) {
             y2={center.y + 26}
             stroke="url(#pulse)"
             strokeWidth="1"
+            className="conv-pulse-line"
           />
         </g>
 

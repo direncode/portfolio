@@ -118,3 +118,68 @@
     text-wrap: pretty;
   }
 }
+
+/* Convergence diagram animations ------------------------------------------- */
+
+@keyframes conv-flow {
+  from { stroke-dashoffset: 9; }
+  to   { stroke-dashoffset: 0; }
+}
+
+@keyframes conv-breathe {
+  0%, 100% { stroke-opacity: 0.55; }
+  50%      { stroke-opacity: 1; }
+}
+
+@keyframes conv-pulse {
+  0%, 100% { opacity: 0.25; }
+  50%      { opacity: 1; }
+}
+
+@keyframes conv-arrow-pulse {
+  0%, 100% { fill-opacity: 0.55; }
+  50%      { fill-opacity: 1; }
+}
+
+.conv-edge {
+  stroke-dasharray: 3 6;
+  animation: conv-flow 1.8s linear infinite;
+}
+.conv-edge.d2 { animation-delay: 0.25s; }
+.conv-edge.d3 { animation-delay: 0.5s; }
+.conv-edge.d4 { animation-delay: 0.75s; }
+
+.conv-engine-stroke {
+  animation: conv-breathe 3.6s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.conv-pulse-line {
+  animation: conv-pulse 2.4s ease-in-out infinite;
+}
+
+.conv-arrow-head {
+  animation: conv-arrow-pulse 1.8s ease-in-out infinite;
+}
+
+.conv-node rect {
+  transition: stroke 240ms ease, stroke-width 240ms ease;
+}
+.conv-node:hover rect,
+.conv-node:focus-visible rect {
+  stroke: #c8a25a;
+  stroke-width: 1.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .conv-edge,
+  .conv-engine-stroke,
+  .conv-pulse-line,
+  .conv-arrow-head {
+    animation: none !important;
+  }
+  .conv-edge {
+    stroke-dasharray: none;
+  }
+}
