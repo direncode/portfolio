@@ -12,24 +12,26 @@ export default function HomePage() {
             <span className="font-mono text-xs tracking-wider">00</span>
             <span className="h-px w-8 bg-accent/60" />
             <span className="uppercase tracking-[0.22em] text-[11px]">
-              Manifesto · April 2026
+              Nineteen · Solo · One year · Four primitives
             </span>
           </div>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-[5.25rem] tracking-tightish leading-[0.98] mt-6 text-ink-50 text-balance">
             Diren Kumaratilleke
           </h1>
           <p className="mt-8 text-lg md:text-2xl text-ink-200 max-w-3xl leading-relaxed text-pretty">
-            Building <em className="text-accent not-italic">horizontal
-            intelligence</em> primitives as a solo freshman. Four
-            conclusive beats — a new, cross-domain-comprehensive approach
-            to DARPA Mathematical Challenge&nbsp;13, a macro-stress scalar
-            that beats the Fed yield curve on several recession benchmarks
-            with 41.71% orthogonal variance, a topological predictor that
-            beats vanilla JEPA across three real heterogeneous graphs (and
-            beats supervised GAT / GCN on a semiconductor supply chain),
-            and a participatory data estate with a security posture
-            student government has never needed — and, I'd argue, has
-            never had.
+            Four live primitives across four subfields. A new approach to{" "}
+            <em className="text-accent not-italic">DARPA Mathematical
+            Challenge&nbsp;13</em>, shipped cross-domain. A macro-stress
+            scalar that <em className="text-accent not-italic">beats the
+            Fed yield curve</em> with 41.71% orthogonal variance and a
+            published paper. A topological predictor that{" "}
+            <em className="text-accent not-italic">beats vanilla JEPA
+            everywhere it has been tested</em> and also beats supervised
+            GAT (DeepMind) and GCN (Google Brain) on a Georgetown CSET
+            semiconductor supply chain. A participatory data estate
+            federally hardened and{" "}
+            <em className="text-accent not-italic">running in production</em>.
+            The tape is the argument.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-3 text-[13px]">
@@ -45,6 +47,28 @@ export default function HomePage() {
             >
               Convergence Architecture
             </Link>
+          </div>
+
+          {/* Delta strip — the age-and-rate context, stated directly */}
+          <div className="mt-14 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 border border-ink-800 divide-x divide-y md:divide-y-0 divide-ink-800">
+            {[
+              { v: "19", l: "Years old" },
+              { v: "1", l: "Calendar year" },
+              { v: "4", l: "Subfields" },
+              { v: "4", l: "Live primitives" },
+              { v: "504", l: "Months OOS" },
+              { v: "3", l: "Real graphs beaten" },
+              { v: "0", l: "Co-authors" },
+            ].map((d, i) => (
+              <div key={i} className="p-4">
+                <div className="font-serif text-2xl md:text-3xl text-ink-50 tracking-tightish">
+                  {d.v}
+                </div>
+                <div className="mt-1 text-[11px] uppercase tracking-[0.16em] text-ink-400">
+                  {d.l}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -151,14 +175,14 @@ export default function HomePage() {
           <p className="text-ink-200 text-xl md:text-[1.35rem] leading-[1.65] font-serif italic text-balance">
             The frontier labs are scaling vertically — more parameters,
             more compute, more of the same. I am building horizontally:
-            four primitives that each <em>conclusively beat</em> a
-            specific incumbent. A new, cross-domain-comprehensive
-            approach to DARPA Challenge 13, shipped across traffic,
-            robotics, drones, and four production cloud surfaces. A
-            recession signal that beats the Fed on several benchmarks,
-            with 41.71% of its variance orthogonal to the yield spread —
-            variance the spread cannot see. A topological predictor that
-            beats vanilla JEPA <em>everywhere it has been tested</em> —
+            four primitives, each one that <em>beats</em> a specific
+            incumbent on its own benchmark. A new, cross-domain approach
+            to DARPA Challenge 13, shipped across traffic, robotics,
+            drones, and four production cloud surfaces. A recession
+            signal that beats the Fed on several benchmarks, with 41.71%
+            of its variance orthogonal to the yield spread — variance
+            the spread cannot see. A topological predictor that beats
+            vanilla JEPA <em>everywhere it has been tested</em> —
             three real heterogeneous graphs, +20 to +36.6 AUC points —
             and also beats supervised GAT, GCN, and GraphSAGE on a
             Georgetown CSET semiconductor supply chain. A participatory
@@ -167,10 +191,12 @@ export default function HomePage() {
             <strong className="not-italic text-accent">Latent Ocean</strong>.
           </p>
           <p className="mt-6 text-ink-400 text-[15px]">
-            What follows is not a résumé. It is a chapter-serial argument for a
-            different shape of AI — one that a solo nineteen-year-old can
-            actually build, because the hard part is the primitive, not the
-            scale.
+            What follows is not a résumé. It is the tape. Nineteen
+            years old. Solo. One calendar year. Four primitives across
+            four subfields — coordination, structure, signal,
+            ingestion — each measured against a named incumbent with
+            every benchmark traceable to an open repository or a public
+            document. The hard part is the primitive, not the scale.
           </p>
         </div>
       </section>

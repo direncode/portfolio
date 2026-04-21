@@ -58,10 +58,10 @@ export default function BtutPage() {
           suite, a Python SDK (<code>pip install btut-sdk</code>), a REST
           API on Fly.io, a serverless Lambda variant, a WASM build for
           in-browser simulation, a full proofs corpus, and a research
-          workbench for parameter sweeps. I cannot point to another
-          Challenge-13-style attempt that has shipped live across this
-          many domains on one primitive. If one exists I have not found
-          it.
+          workbench for parameter sweeps. This is the most cross-domain
+          application of a DARPA-Challenge-13-style primitive currently
+          live. If a broader one exists, produce it — the repository is
+          open, the APIs are public, the comparison is trivial.
         </p>
         <h2>The reduction.</h2>
         <p>

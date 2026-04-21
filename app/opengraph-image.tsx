@@ -73,7 +73,7 @@ export default async function Image() {
             lineHeight: 1.35,
           }}
         >
-          Four converging primitives — one Latent Ocean.
+          Nineteen. Solo. One year. Four primitives across four subfields.
         </div>
 
         {/* Four-primitive grid */}
@@ -172,7 +172,7 @@ export default async function Image() {
         >
           <div style={{ display: "flex" }}>diren.vercel.app</div>
           <div style={{ display: "flex", color: "#c8a25a" }}>
-            Solo · Freshman · Four Primitives
+            The tape is the argument
           </div>
         </div>
       </div>

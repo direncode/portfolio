@@ -1,10 +1,17 @@
 # Diren Kumaratilleke — Portfolio
 
-A chapter-serial manifesto site for four converging horizontal-intelligence
-primitives: **BTUT** (coordination), **Crystara** (structure), **NIV**
-(signal), and the **Participatory Data Estate** (ingestion).
+**Nineteen years old. Solo. One calendar year. Four live primitives across
+four subfields.** A new approach to DARPA Mathematical Challenge 13
+(coordination — **BTUT**). A runtime-discovered predictor architecture that
+beats JEPA and supervised GNNs (structure — **Crystara**). A macro-stress
+scalar that beats the Fed yield curve with 41.71% orthogonal variance
+(signal — **NIV**). A participatory data estate federally hardened in
+production (ingestion — **SGUNCCH**).
 
 > **Live site:** [diren.vercel.app](https://diren.vercel.app)
+>
+> The tape is the argument. Every claim below has a repository, a tear
+> sheet, or a full paper directly linked.
 
 [![Open-graph preview for the portfolio](https://diren.vercel.app/opengraph-image)](https://diren.vercel.app)
 
@@ -34,10 +41,11 @@ primitives: **BTUT** (coordination), **Crystara** (structure), **NIV**
   OOS validation tests, 98.5% false-alarm suppression, **41.71%** orthogonal
   variance beyond the Fed 10Y – 3M spread. Every weight published; every input
   from FRED.
-- **PDE (SGUNCCH)** — a security posture student government has never needed,
-  and (to my knowledge) has never had. Time-constant auth, RLS on every
-  Supabase table, rate limiting by action class, public approval ledger.
-  Submit → Moderate → Thin → Crystallize.
+- **PDE (SGUNCCH)** — a security posture student government has never
+  needed, and has never had. Time-constant auth, RLS on every Supabase
+  table, rate limiting by action class, public approval ledger. Submit →
+  Moderate → Thin → Crystallize. No FedRAMP claim attached; the repository
+  is open. Produce the counter-example.
 
 ## Stack
 
