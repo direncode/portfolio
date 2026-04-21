@@ -18,7 +18,7 @@ export default function CrystaraPage() {
         number="III"
         label="Primitive · Structure"
         title="Crystara."
-        kicker="Crystara beats vanilla JEPA everywhere it has been tested — and on the Georgetown CSET semiconductor supply chain it also beats supervised GAT (DeepMind), GCN (Google Brain), and GraphSAGE. Across three real heterogeneous graphs — CSET semiconductor (519 entities), GDELT global news (380 entities), SEC EDGAR filings (9,725 entities, ~3.9M edges) — Crystara adds +20 to +36.6 AUC points to baseline JEPA on self-supervised link prediction, and scales to entity counts where GAT runs out of memory. On the semiconductor graph, the pipeline crystallizes 16 interpretable modules that map 1-to-1 to real industry clusters — with no labels, no prompting. To my knowledge, the first runtime-discovered predictor for the JEPA family."
+        kicker="A new AI training paradigm past transformers. Transformers scale a fixed architectural object — self-attention — by pouring more parameters, more data, and more compute through it. Crystara (TCD-JEPA) refuses the premise. Instead of scaling the predictor, it grows the predictor: a recursive three-system loop explores the energy landscape with Fisher-information-metric Langevin dynamics, runs Vietoris-Rips persistent homology on the exploration trajectories, and crystallizes the stable topological features into typed H₀ / H₁ / H₂ predictor modules at runtime. The architecture is not designed; it is discovered. Across three real heterogeneous graphs — Georgetown CSET semiconductor (519 entities), GDELT global news (380 entities), SEC EDGAR (9,725 entities / ~3.9M edges) — Crystara adds +20 to +36.6 AUC points to baseline JEPA, beats supervised GAT (DeepMind), GCN (Google Brain), and GraphSAGE on the semiconductor graph, and scales to entity counts where GAT runs out of memory. On the semiconductor graph, the pipeline crystallizes 16 interpretable modules that map 1-to-1 to real industry clusters — with no labels, no prompting. The first runtime-discovered predictor architecture for the JEPA family, and the first concrete instance of a paradigm that moves past transformer scaling."
         prev={{ href: "/btut", label: "BTUT — Coordination" }}
         next={{ href: "/niv", label: "NIV — Signal" }}
       />
@@ -30,24 +30,54 @@ export default function CrystaraPage() {
       />
 
       <Essay>
+        <h2>Past transformers.</h2>
+        <p>
+          The dominant paradigm of the 2020s is transformer scaling:
+          fix the architecture at self-attention, pour more parameters
+          and more tokens through it, and ride the loss curve
+          downward. The paradigm has worked — and it is also
+          paradigmatically conservative. Every frontier model is the{" "}
+          <em>same object</em> at a bigger size. The architecture is
+          static; only the compute moves.
+        </p>
+        <p>
+          TCD-JEPA proposes a different paradigm. Instead of scaling a
+          fixed predictor, <em>grow the predictor</em>. Let the model
+          explore the places it is currently most uncertain, run
+          topological analysis on the trajectories, and crystallize
+          stable geometric features into typed predictor modules{" "}
+          <em>at training time</em>. The architecture is not handed
+          down; it is <strong>discovered</strong> — typed by the
+          homology group the feature was born from (H₀ attractors,
+          H₁ cycles, H₂ boundaries), lifecycle-managed by a registry,
+          and routed at inference by a learned gate. This is a
+          post-transformer move because it changes the object. It does
+          not scale the transformer; it replaces the fixed-architecture
+          assumption underneath.
+        </p>
+
         <h2>The problem with JEPA.</h2>
         <p>
-          Joint Embedding Predictive Architectures are the right shape for
-          self-supervised representation learning. They are also static: a
-          single predictor head tries to span the entire structure of the
+          Joint Embedding Predictive Architectures are the right shape
+          for self-supervised representation learning. They are also
+          static in exactly the transformer-paradigm way: a single
+          predictor head tries to span the entire structure of the
           input distribution. When that distribution is geometrically
           rich — clusters, loops, voids, room transitions, citation
           communities, supply-chain hierarchies — one head is wrong on
-          average in more than one way, and you can see it in the k-NN
-          quality of the embeddings and in link-prediction AUC.
+          average in more than one way, and the error is visible in
+          the k-NN quality of the embeddings and in link-prediction
+          AUC.
         </p>
         <p>
-          Crystara (implemented as <code>tcd-jepa</code>) keeps the JEPA
-          backbone and replaces the single predictor with a runtime-grown
-          family. The family is not designed. It is <em>crystallized</em>{" "}
-          — in the literal topological sense — out of where the model is
-          currently most wrong. To my knowledge it is the first
-          runtime-discovered predictor architecture for the JEPA family.
+          Crystara (implemented as <code>tcd-jepa</code>) keeps the
+          JEPA backbone and replaces the single predictor with a
+          runtime-grown family. The family is not designed. It is{" "}
+          <em>crystallized</em> — in the literal topological sense — out
+          of where the model is currently most wrong. It is the first
+          runtime-discovered predictor architecture for the JEPA family,
+          and the first concrete instance of a post-transformer paradigm
+          that moves by changing the object rather than scaling it.
         </p>
 
         <h2>The three-system loop.</h2>

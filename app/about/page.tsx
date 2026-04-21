@@ -26,11 +26,32 @@ export default function AboutPage() {
           Diren Kumaratilleke. Nineteen. International freshman at the
           University of North Carolina at Chapel Hill, majoring in
           Information Science. The four projects on this site — BTUT,
-          Crystara, NIV, Participatory Data Estate — are solo work, zero
+          Crystara (TCD-JEPA), NIV (Regenerationism), and the
+          Participatory Data Estate (SGUNCCH) — are solo work, zero
           co-authors, shipped under open-source licenses in the same
           calendar year classes were in session. No lab, no advisor on
           the byline, no outside funding for the research. One desk.
         </p>
+        <h3>The four paradigms, named.</h3>
+        <ul>
+          <li>
+            <strong>BTUT</strong> — a new substrate for complex
+            multi-agent systems.
+          </li>
+          <li>
+            <strong>TCD-JEPA (Crystara)</strong> — a new AI training
+            paradigm past transformers.
+          </li>
+          <li>
+            <strong>Regenerationism (NIV)</strong> — a new economic
+            philosophy; NIV is its first operational instrument.
+          </li>
+          <li>
+            <strong>Participatory Data Estate</strong> — a new framework
+            for digital data governance; SGUNCCH is its first live
+            deployment.
+          </li>
+        </ul>
 
         <h2>Working method.</h2>
         <p>

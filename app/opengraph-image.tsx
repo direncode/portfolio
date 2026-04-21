@@ -73,7 +73,7 @@ export default async function Image() {
             lineHeight: 1.35,
           }}
         >
-          Nineteen. Solo. One year. Four primitives across four subfields.
+          Four paradigms. Four fields. Nineteen. Solo. One year.
         </div>
 
         {/* Four-primitive grid */}
@@ -87,23 +87,23 @@ export default async function Image() {
           {[
             {
               name: "BTUT",
-              role: "COORDINATION",
-              beat: "New approach to DARPA Challenge 13 · cross-domain",
+              role: "MULTI-AGENT SYSTEMS",
+              beat: "A new coordination substrate · 6 live applied domains",
             },
             {
-              name: "Crystara",
-              role: "STRUCTURE",
-              beat: "Beats JEPA + GAT/GCN · +36.6 AUC pts",
+              name: "TCD-JEPA",
+              role: "POST-TRANSFORMER AI",
+              beat: "Grow the predictor · beats JEPA + DeepMind / Google Brain GNNs",
             },
             {
               name: "NIV",
-              role: "SIGNAL",
-              beat: "Beats Fed yield curve · 41.71% orthogonal",
+              role: "REGENERATIONISM",
+              beat: "A new economic school · beats the Fed yield curve",
             },
             {
               name: "PDE",
-              role: "INGESTION",
-              beat: "Participatory Data Estate · federal-hardening",
+              role: "DATA GOVERNANCE",
+              beat: "A new governance framework · SGUNCCH is the first live deployment",
             },
           ].map((p) => (
             <div
