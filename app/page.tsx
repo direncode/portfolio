@@ -92,8 +92,10 @@ export default function HomePage() {
                 Reduction (BTUT) collapses coordination to linear time.
                 Crystallization (Crystara) grows the predictor at runtime.
                 Signal (NIV) compresses macro stress into a single scalar.
-                Ingestion (PDE) makes the knowledge base a living,
-                auditable structure. Latent Ocean is the composition.
+                Ingestion (PDE — Participatory Data Estate) makes the
+                knowledge base a living, auditable structure. Latent
+                Ocean is the composition. Each node in the diagram links
+                to its external site or repository.
               </p>
             </div>
             <ConvergenceDiagram />
