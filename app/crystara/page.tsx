@@ -3,6 +3,7 @@ import { ChapterFooter } from "@/components/ChapterFooter";
 import { Essay } from "@/components/Essay";
 import { StatBlock } from "@/components/StatBlock";
 import { Callout } from "@/components/Callout";
+import { SourceBar } from "@/components/SourceBar";
 
 export const metadata = {
   title: "Crystara — Structure",
@@ -20,6 +21,12 @@ export default function CrystaraPage() {
         kicker="Crystara beats vanilla JEPA everywhere it has been tested — and on the Georgetown CSET semiconductor supply chain it also beats supervised GAT (DeepMind), GCN (Google Brain), and GraphSAGE. Across three real heterogeneous graphs — CSET semiconductor (519 entities), GDELT global news (380 entities), SEC EDGAR filings (9,725 entities, ~3.9M edges) — Crystara adds +20 to +36.6 AUC points to baseline JEPA on self-supervised link prediction, and scales to entity counts where GAT runs out of memory. On the semiconductor graph, the pipeline crystallizes 16 interpretable modules that map 1-to-1 to real industry clusters — with no labels, no prompting. To my knowledge, the first runtime-discovered predictor for the JEPA family."
         prev={{ href: "/btut", label: "BTUT — Coordination" }}
         next={{ href: "/niv", label: "NIV — Signal" }}
+      />
+
+      <SourceBar
+        resources={[
+          { kind: "repo", label: "github.com/direncode/tcd-jepa", href: "https://github.com/direncode/tcd-jepa" },
+        ]}
       />
 
       <Essay>

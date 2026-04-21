@@ -15,7 +15,7 @@ export default function AboutPage() {
         number="VII"
         label="Chapter"
         title="About / Context."
-        kicker="The facts of the operation: a solo freshman, one desk, four primitives, four open repositories."
+        kicker="Nineteen years old. Solo. One calendar year. Four live primitives across four subfields. Every claim on this site has a table, a tear sheet, or a repository directly underneath it. The tape is the argument."
         prev={{ href: "/convergence", label: "Convergence" }}
         next={{ href: "/forward", label: "Forward Direction" }}
       />
@@ -26,8 +26,10 @@ export default function AboutPage() {
           Diren Kumaratilleke. Nineteen. International freshman at the
           University of North Carolina at Chapel Hill, majoring in
           Information Science. The four projects on this site — BTUT,
-          Crystara, NIV, Participatory Data Estate — are solo work, shipped
-          under open-source licenses while classes are in session.
+          Crystara, NIV, Participatory Data Estate — are solo work, zero
+          co-authors, shipped under open-source licenses in the same
+          calendar year classes were in session. No lab, no advisor on
+          the byline, no outside funding for the research. One desk.
         </p>
 
         <h2>Working method.</h2>

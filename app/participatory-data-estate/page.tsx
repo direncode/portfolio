@@ -2,6 +2,7 @@ import { ChapterHeader } from "@/components/ChapterHeader";
 import { ChapterFooter } from "@/components/ChapterFooter";
 import { Essay } from "@/components/Essay";
 import { Callout } from "@/components/Callout";
+import { SourceBar } from "@/components/SourceBar";
 
 export const metadata = {
   title: "SGUNCCH — Participatory Data Estate",
@@ -16,9 +17,15 @@ export default function PdePage() {
         number="V"
         label="Primitive · Ingestion"
         title="SGUNCCH."
-        kicker="A security posture student government has never needed — and, to my knowledge, has never had. SGUNCCH is a participatory data estate shipped as live student-government infrastructure, hardened with patterns drawn directly from federal-agency security guidance. Raw human submissions — policies, constitutional text, conduct code, budget allocations, funding requests — become a living, auditable, hybrid-retrievable knowledge base. Submit → Moderate → Thin → Crystallize, plus a budget engine, a knowledge base, and a chat layer. Time-constant auth, row-level security on every table, rate limiting on four action classes, CSP/HSTS/X-Frame headers, XSS detection, and a publicly-readable approval ledger. There is no FedRAMP authorization to claim, and I am not claiming one — the point is that the posture is here, in production, at a scale and tier no student platform I can find currently runs."
+        kicker="A security posture student government has never needed — and has never had. SGUNCCH is a participatory data estate shipped as live student-government infrastructure, hardened with patterns drawn directly from federal-agency security guidance. Raw human submissions — policies, constitutional text, conduct code, budget allocations, funding requests — become a living, auditable, hybrid-retrievable knowledge base. Submit → Moderate → Thin → Crystallize, plus a budget engine, a knowledge base, and a chat layer. Time-constant auth, row-level security on every table, rate limiting on four action classes, CSP/HSTS/X-Frame headers, XSS detection, and a publicly-readable approval ledger. There is no FedRAMP authorization to claim, and I am not claiming one — the point is that the posture is here, in production, at a tier no other student platform currently runs. The repository is open; produce the counter-example."
         prev={{ href: "/niv", label: "NIV — Signal" }}
         next={{ href: "/convergence", label: "Convergence" }}
+      />
+
+      <SourceBar
+        resources={[
+          { kind: "repo", label: "github.com/direncode/sguncch", href: "https://github.com/direncode/sguncch" },
+        ]}
       />
 
       <Essay>

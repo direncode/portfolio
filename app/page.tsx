@@ -12,24 +12,26 @@ export default function HomePage() {
             <span className="font-mono text-xs tracking-wider">00</span>
             <span className="h-px w-8 bg-accent/60" />
             <span className="uppercase tracking-[0.22em] text-[11px]">
-              Manifesto · April 2026
+              Nineteen · Solo · One year · Four primitives
             </span>
           </div>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-[5.25rem] tracking-tightish leading-[0.98] mt-6 text-ink-50 text-balance">
             Diren Kumaratilleke
           </h1>
           <p className="mt-8 text-lg md:text-2xl text-ink-200 max-w-3xl leading-relaxed text-pretty">
-            Building <em className="text-accent not-italic">horizontal
-            intelligence</em> primitives as a solo freshman. Four
-            conclusive beats — a new, cross-domain-comprehensive approach
-            to DARPA Mathematical Challenge&nbsp;13, a macro-stress scalar
-            that beats the Fed yield curve on several recession benchmarks
-            with 41.71% orthogonal variance, a topological predictor that
-            beats vanilla JEPA across three real heterogeneous graphs (and
-            beats supervised GAT / GCN on a semiconductor supply chain),
-            and a participatory data estate with a security posture
-            student government has never needed — and, I'd argue, has
-            never had.
+            Four live primitives across four subfields. A new approach to{" "}
+            <em className="text-accent not-italic">DARPA Mathematical
+            Challenge&nbsp;13</em>, shipped cross-domain. A macro-stress
+            scalar that <em className="text-accent not-italic">beats the
+            Fed yield curve</em> with 41.71% orthogonal variance and a
+            published paper. A topological predictor that{" "}
+            <em className="text-accent not-italic">beats vanilla JEPA
+            everywhere it has been tested</em> and also beats supervised
+            GAT (DeepMind) and GCN (Google Brain) on a Georgetown CSET
+            semiconductor supply chain. A participatory data estate
+            federally hardened and{" "}
+            <em className="text-accent not-italic">running in production</em>.
+            The tape is the argument.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-3 text-[13px]">
@@ -46,6 +48,124 @@ export default function HomePage() {
               Convergence Architecture
             </Link>
           </div>
+
+          {/* Delta strip — the age-and-rate context, stated directly */}
+          <div className="mt-14 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 border border-ink-800 divide-x divide-y md:divide-y-0 divide-ink-800">
+            {[
+              { v: "19", l: "Years old" },
+              { v: "1", l: "Calendar year" },
+              { v: "4", l: "Subfields" },
+              { v: "4", l: "Live primitives" },
+              { v: "504", l: "Months OOS" },
+              { v: "3", l: "Real graphs beaten" },
+              { v: "0", l: "Co-authors" },
+            ].map((d, i) => (
+              <div key={i} className="p-4">
+                <div className="font-serif text-2xl md:text-3xl text-ink-50 tracking-tightish">
+                  {d.v}
+                </div>
+                <div className="mt-1 text-[11px] uppercase tracking-[0.16em] text-ink-400">
+                  {d.l}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Sources — front-and-center: every external site, repo, and PDF */}
+      <section className="py-16 md:py-20 border-b border-ink-800 bg-ink-900/30">
+        <div className="mx-auto max-w-5xl px-5 md:px-8">
+          <div className="flex flex-wrap items-end justify-between gap-4 mb-8">
+            <div>
+              <div className="chapter-label">Sources</div>
+              <h2 className="font-serif text-2xl md:text-3xl tracking-tightish text-ink-50 mt-2 leading-tight">
+                Live sites, repositories, raw documents.
+              </h2>
+              <p className="mt-3 text-ink-400 text-[15px] max-w-measure">
+                Every claim on this site is traceable to the four open
+                repositories below — and, for NIV, to the published tear sheet
+                and the full paper. Click anything.
+              </p>
+            </div>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              {
+                id: "btut",
+                title: "BTUT",
+                role: "Coordination",
+                href: "/btut",
+                links: [
+                  { k: "Live site", label: "btut.ai", href: "https://btut.ai", ext: true },
+                  { k: "Repository", label: "direncode/btut", href: "https://github.com/direncode/btut", ext: true },
+                  { k: "Tear sheet", label: "BTUT_Tear_Sheet.pdf", href: "/BTUT_Tear_Sheet.pdf", ext: true },
+                ],
+              },
+              {
+                id: "crystara",
+                title: "Crystara",
+                role: "Structure",
+                href: "/crystara",
+                links: [
+                  { k: "Repository", label: "direncode/tcd-jepa", href: "https://github.com/direncode/tcd-jepa", ext: true },
+                ],
+              },
+              {
+                id: "niv",
+                title: "NIV",
+                role: "Signal",
+                href: "/niv",
+                links: [
+                  { k: "Live site", label: "regenerationism.ai", href: "https://regenerationism.ai", ext: true },
+                  { k: "Repository", label: "direncode/regenerationism", href: "https://github.com/direncode/regenerationism", ext: true },
+                  { k: "Tear sheet", label: "NIV_TearSheet.pdf", href: "/NIV_TearSheet.pdf", ext: true },
+                  { k: "Paper", label: "NIV_Paper.pdf", href: "/NIV_Paper.pdf", ext: true },
+                ],
+              },
+              {
+                id: "pde",
+                title: "PDE",
+                role: "Participatory Data Estate · Ingestion",
+                href: "/participatory-data-estate",
+                links: [
+                  { k: "Repository", label: "direncode/sguncch", href: "https://github.com/direncode/sguncch", ext: true },
+                ],
+              },
+            ].map((g) => (
+              <div
+                key={g.id}
+                className="group border border-ink-800 bg-ink-950/70 hover:border-accent/50 transition-colors p-5"
+              >
+                <Link href={g.href} className="block">
+                  <div className="font-serif text-xl text-ink-50 group-hover:text-accent transition-colors">
+                    {g.title}
+                  </div>
+                  <div className="chapter-label mt-1">{g.role}</div>
+                </Link>
+                <ul className="mt-4 space-y-2 border-t border-ink-800 pt-4">
+                  {g.links.map((l, i) => (
+                    <li key={i}>
+                      <a
+                        href={l.href}
+                        target={l.ext ? "_blank" : undefined}
+                        rel={l.ext ? "noopener noreferrer" : undefined}
+                        className="flex items-baseline justify-between gap-3 text-sm text-ink-200 hover:text-accent transition-colors"
+                      >
+                        <span className="flex-1 truncate">
+                          <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-accent mr-2">
+                            {l.k}
+                          </span>
+                          {l.label}
+                        </span>
+                        <span className="text-accent text-xs shrink-0">↗</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -55,14 +175,14 @@ export default function HomePage() {
           <p className="text-ink-200 text-xl md:text-[1.35rem] leading-[1.65] font-serif italic text-balance">
             The frontier labs are scaling vertically — more parameters,
             more compute, more of the same. I am building horizontally:
-            four primitives that each <em>conclusively beat</em> a
-            specific incumbent. A new, cross-domain-comprehensive
-            approach to DARPA Challenge 13, shipped across traffic,
-            robotics, drones, and four production cloud surfaces. A
-            recession signal that beats the Fed on several benchmarks,
-            with 41.71% of its variance orthogonal to the yield spread —
-            variance the spread cannot see. A topological predictor that
-            beats vanilla JEPA <em>everywhere it has been tested</em> —
+            four primitives, each one that <em>beats</em> a specific
+            incumbent on its own benchmark. A new, cross-domain approach
+            to DARPA Challenge 13, shipped across traffic, robotics,
+            drones, and four production cloud surfaces. A recession
+            signal that beats the Fed on several benchmarks, with 41.71%
+            of its variance orthogonal to the yield spread — variance
+            the spread cannot see. A topological predictor that beats
+            vanilla JEPA <em>everywhere it has been tested</em> —
             three real heterogeneous graphs, +20 to +36.6 AUC points —
             and also beats supervised GAT, GCN, and GraphSAGE on a
             Georgetown CSET semiconductor supply chain. A participatory
@@ -71,10 +191,12 @@ export default function HomePage() {
             <strong className="not-italic text-accent">Latent Ocean</strong>.
           </p>
           <p className="mt-6 text-ink-400 text-[15px]">
-            What follows is not a résumé. It is a chapter-serial argument for a
-            different shape of AI — one that a solo nineteen-year-old can
-            actually build, because the hard part is the primitive, not the
-            scale.
+            What follows is not a résumé. It is the tape. Nineteen
+            years old. Solo. One calendar year. Four primitives across
+            four subfields — coordination, structure, signal,
+            ingestion — each measured against a named incumbent with
+            every benchmark traceable to an open repository or a public
+            document. The hard part is the primitive, not the scale.
           </p>
         </div>
       </section>

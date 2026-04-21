@@ -10,16 +10,33 @@ export const metadata: Metadata = {
     template: "%s — Diren Kumaratilleke",
   },
   description:
-    "Four primitives converging into one horizontal intelligence platform: BTUT (coordination), Crystara (structure discovery), NIV (macro signal), Participatory Data Estate (living ingestion).",
+    "Four primitives converging into one horizontal intelligence platform: BTUT (coordination), Crystara (structure discovery), NIV (macro signal), Participatory Data Estate (living ingestion). A new approach to DARPA Challenge 13; NIV beats the Fed yield curve with 41.71% orthogonal variance; Crystara beats JEPA and supervised GNNs across three real heterogeneous graphs.",
+  keywords: [
+    "horizontal intelligence",
+    "DARPA Mathematical Challenge 13",
+    "BTUT",
+    "Crystara",
+    "TCD-JEPA",
+    "National Impact Velocity",
+    "Participatory Data Estate",
+    "SGUNCCH",
+    "Latent Ocean",
+    "Diren Kumaratilleke",
+  ],
+  authors: [{ name: "Diren Kumaratilleke" }],
   openGraph: {
     title: "Diren Kumaratilleke — Horizontal Intelligence Primitives",
     description:
-      "A manifesto of four converging primitives: BTUT, Crystara, NIV, and the Participatory Data Estate.",
+      "Four converging primitives — BTUT, Crystara, NIV, Participatory Data Estate — one Latent Ocean. Every claim traceable to an open repository, a published tear sheet, or a walk-forward-validated number.",
     type: "website",
+    siteName: "Diren Kumaratilleke",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: "Diren Kumaratilleke — Horizontal Intelligence Primitives",
+    description:
+      "Four converging primitives. BTUT · Crystara · NIV · PDE. Repos, tear sheets, and full paper linked.",
   },
   robots: { index: true, follow: true },
 };
