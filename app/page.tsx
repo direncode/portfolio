@@ -120,7 +120,7 @@ export default function HomePage() {
               {
                 id: "niv",
                 title: "NIV",
-                role: "Signal",
+                role: "Signal · Regenerative-capital thesis",
                 href: "/niv",
                 links: [
                   { k: "Live site", label: "regenerationism.ai", href: "https://regenerationism.ai", ext: true },
@@ -303,8 +303,8 @@ export default function HomePage() {
               number="03"
               subtitle="Signal"
               title="NIV"
-              one_liner="Macro-stress scalar built from thrust, efficiency, slack, and drag over 8 public FRED series — economically interpretable, weights published, fully reproducible."
-              beat="Beats the Fed yield curve on several recession benchmarks — conclusively: OOS ROC-AUC 0.8538 at 18 months across 504 months of walk-forward, 98.5% false-alarm filter, 41.71% orthogonal variance the spread cannot see. Every weight published, every input from FRED."
+              one_liner="Macro-stress scalar operationalizing the regenerative-capital thesis — velocity of compounding-margin capital formation against cumulative friction. Thrust · Efficiency (P²) · Slack · Drag, from 8 public FRED series, weights published."
+              beat="Beats the Fed yield curve on several recession benchmarks — conclusively: ROC-AUC 0.8538 @ 18 mo across 504 months, 98.5% false-alarm filter, 41.71% orthogonal variance the spread cannot see. Under Gini importance the regenerative-capital term scores 0.9328; the spread scores 0.0298. The model picked the thesis unprompted."
               href="/niv"
             />
             <PrimitiveCard

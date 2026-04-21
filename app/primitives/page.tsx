@@ -47,10 +47,12 @@ export default function PrimitivesPage() {
           three real heterogeneous graphs, +20 to +36.6 AUC points — and
           also beats supervised GAT, GCN, and GraphSAGE on the CSET
           semiconductor supply chain. NIV is the signal primitive: a
-          single scalar that <em>beats the Fed yield curve on several
-          recession benchmarks</em>, with 41.71% orthogonal variance
-          the spread cannot see and the mechanism decomposed and
-          published. SGUNCCH is the ingestion primitive shipped as a
+          single scalar, built on a <em>regenerative-capital thesis</em>
+          (the velocity of compounding-margin capital formation, measured
+          against cumulative friction), that <em>beats the Fed yield
+          curve on several recession benchmarks</em>. 41.71% orthogonal
+          variance the spread cannot see; the ensemble's own Gini
+          importance picks the thesis unprompted at 0.9328. SGUNCCH is the ingestion primitive shipped as a
           live platform with a <em>security posture student government
           has never needed — and, I&rsquo;d argue, has never had</em>.
           No FedRAMP claim attached; the posture is simply here.
@@ -72,14 +74,20 @@ export default function PrimitivesPage() {
             convergence from 500 to 10,000 agents.
           </li>
           <li>
-            <strong>NIV — beat the Fed.</strong> Ensemble ROC-AUC{" "}
-            <strong>0.8538</strong> at the 18-month horizon across a
-            504-month (1970 – 2024) walk-forward with six OOS validation
-            tests. <strong>98.5%</strong> false-alarm suppression — 7
-            critical alerts in 42 years. Orthogonal variance versus the
-            Fed 10Y – 3M spread measured at <strong>41.71%</strong>,
-            mechanistically explained (capital efficiency dominates
-            feature importance at Gini 0.9328; the spread scores 0.0298).
+            <strong>NIV — beat the Fed, on the regenerative-capital
+            thesis.</strong> The claim: the leading indicator of
+            macroeconomic regime health is the velocity of capital
+            formation with compounding margins, measured against
+            cumulative friction — not bond-market sentiment. Ensemble
+            ROC-AUC <strong>0.8538</strong> at 18 months across 504
+            months (1970 – 2024) and six OOS tests.{" "}
+            <strong>98.5%</strong> false-alarm suppression — 7 critical
+            alerts in 42 years. <strong>41.71%</strong> orthogonal
+            variance to the Fed 10Y – 3M spread. Under Gini importance,
+            the regenerative-capital term scores{" "}
+            <strong>0.9328</strong> and the yield spread scores{" "}
+            <strong>0.0298</strong> — the model picked the thesis
+            unprompted.
           </li>
           <li>
             <strong>Crystara — beat JEPA, and supervised GNNs.</strong>{" "}
@@ -139,8 +147,8 @@ export default function PrimitivesPage() {
           number="03"
           subtitle="Signal"
           title="NIV"
-          one_liner="National Impact Velocity — a single-scalar macro-stress signal composed of thrust, efficiency, slack, and drag, built entirely from 8 public FRED series with published weights."
-          beat="Ensemble ROC-AUC 0.8538 @ 18 mo across 504 months (1970–2024) and six walk-forward OOS tests. 98.5% false-alarm filter; 41.71% orthogonal variance beyond the Fed 10Y – 3M spread."
+          one_liner="National Impact Velocity — a single-scalar macro-stress signal operationalizing the regenerative-capital thesis: velocity of compounding-margin capital formation measured against cumulative friction. Thrust · Efficiency (P²) · Slack · Drag, from 8 public FRED series with published weights."
+          beat="Ensemble ROC-AUC 0.8538 @ 18 mo across 504 months (1970–2024) and six OOS tests. 98.5% false-alarm filter; 41.71% orthogonal variance beyond the Fed 10Y – 3M spread. Under Gini importance the regenerative-capital term scores 0.9328; the yield spread 0.0298."
           href="/niv"
         />
         <PrimitiveCard

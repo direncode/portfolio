@@ -8,7 +8,7 @@ import { SourceBar } from "@/components/SourceBar";
 export const metadata = {
   title: "NIV — Signal",
   description:
-    "National Impact Velocity: a transparent, economically interpretable macro-stress scalar. OOS ROC-AUC 0.8538 at the 18-month horizon across 504 months (1970–2024), 98.5% false-alarm suppression, 41.71% orthogonal variance beyond the Fed yield curve.",
+    "National Impact Velocity: a macro-stress scalar built on the regenerative-capital thesis — the velocity of capital formation with compounding margins, measured against cumulative friction. OOS ROC-AUC 0.8538 at 18 months across 504 months (1970–2024), 98.5% false-alarm suppression, 41.71% orthogonal variance beyond the Fed yield curve. Under Gini importance the regenerative-capital term scores 0.9328; the yield spread scores 0.0298.",
 };
 
 export default function NivPage() {
@@ -18,7 +18,7 @@ export default function NivPage() {
         number="IV"
         label="Primitive · Signal"
         title="NIV."
-        kicker="National Impact Velocity conclusively beats the Fed yield curve on the standard recession benchmark. Across 504 months (1970 – 2024) and six out-of-sample validation tests, NIV reaches ROC-AUC 0.8538 at the 18-month horizon, suppresses 98.5% of false alarms via an L2-regularized ensemble, and contributes 41.71% orthogonal variance beyond the Fed 10Y – 3M spread. Composed from four known economic primitives — thrust, efficiency, slack, drag — with all weights published and every input drawn from public FRED series. Interpretable. Reproducible. Decomposable."
+        kicker="National Impact Velocity conclusively beats the Fed yield curve on the standard recession benchmark — because it measures something the Fed spread cannot. NIV is built on a regenerative-capital thesis: the economy's leading indicator is not sentiment priced into bonds, it is the velocity of capital flowing into formation with exponentially compounding margins. Across 504 months (1970 – 2024) and six out-of-sample validation tests, NIV reaches ROC-AUC 0.8538 at the 18-month horizon, suppresses 98.5% of false alarms via an L2-regularized ensemble, and contributes 41.71% orthogonal variance beyond the Fed 10Y – 3M spread. The ensemble's own Gini importance ranks efficiency_sq — the regenerative-capital term — at 0.9328, against the yield spread at 0.0298. The thesis is the formula; the formula is the signal."
         prev={{ href: "/crystara", label: "Crystara — Structure" }}
         next={{ href: "/participatory-data-estate", label: "PDE — Ingestion" }}
       />
@@ -33,6 +33,60 @@ export default function NivPage() {
       />
 
       <Essay>
+        <h2>The regenerative-capital thesis.</h2>
+        <p>
+          The entire architecture of NIV rests on one economic claim: the
+          most leading indicator of macroeconomic regime health is the{" "}
+          <strong>velocity of regenerative capital formation</strong>{" "}
+          — capital flowing into areas of the economy with{" "}
+          <em>exponentially compounding margins of value generation</em>{" "}
+          (non-residential investment, residential investment, and
+          inventory accumulation that feeds productive capacity),
+          measured against the cumulative friction that impedes its
+          circulation (yield inversion, positive real rates, rate
+          volatility, and idle capacity).
+        </p>
+        <p>
+          This is a direct challenge to the dominant frames. The Fed
+          yield curve is a <em>sentiment signal</em> — it measures what
+          bond traders expect the Fed to do next. The Conference Board
+          LEI is a <em>linear average</em> of coincident indicators. DSGE
+          models assume an equilibrium that does not exist. None of them
+          measure where the money actually <em>goes</em>: into
+          regenerative capital, or away from it. NIV does, and the
+          repository is named <a
+            href="https://github.com/direncode/regenerationism"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <code>regenerationism</code>
+          </a>{" "}
+          for exactly this reason — the thesis precedes the signal.
+        </p>
+        <p>
+          The formula below operationalizes the thesis in four terms:{" "}
+          <strong>thrust</strong> (the kinetic impulse mobilizing capital
+          — investment growth, M2, policy rate), <strong>efficiency
+          P²</strong> (the regenerative-capital kernel itself — the
+          productivity of investment as a share of GDP, squared to
+          reward compounding allocation), <strong>slack</strong> (the
+          headroom regenerative capital has to fill), and{" "}
+          <strong>drag</strong> (the friction that choked its
+          circulation). NIV is what happens when you write the thesis
+          as a scalar and hand it 504 months of walk-forward history.
+        </p>
+        <p>
+          The empirical validation of the thesis comes from the model
+          itself. Under Gini-impurity feature importance, the
+          regenerative-capital term <code>efficiency_sq</code> scores{" "}
+          <strong>0.9328</strong> — the highest in the entire
+          framework. The Fed yield spread scores <strong>0.0298</strong>,
+          which is 31.2× smaller. The model was not told to prefer
+          regenerative capital. It was asked which feature best predicts
+          macroeconomic regime shifts, and it answered with the
+          thesis.
+        </p>
+
         <h2>What a macro primitive looks like.</h2>
         <p>
           The Fed yield-curve spread is the canonical macro stress signal.
@@ -45,10 +99,11 @@ export default function NivPage() {
         <p>
           NIV is built from four primitives that are already, on their
           own, understood by macroeconomists. The work was in composing
-          them in a way that remains economically interpretable,
-          differentiable, and reproducible from public data only — then
-          validating the composition across 42 years and six stress tests
-          with strict walk-forward discipline.
+          them around the regenerative-capital thesis in a way that
+          remains economically interpretable, differentiable, and
+          reproducible from public data only — then validating the
+          composition across 42 years and six stress tests with strict
+          walk-forward discipline.
         </p>
 
         <h3>The formula.</h3>
@@ -413,9 +468,13 @@ export default function NivPage() {
             signal for any structural system.
           </li>
           <li>
-            <strong>Efficiency (P²)</strong> — investment-to-output
-            ratio, a nonlinear capital-efficiency kernel. Squared to
-            reward productive allocation, punish hollow growth.
+            <strong>Efficiency (P²) — the regenerative-capital kernel.</strong>{" "}
+            Investment-to-output ratio with a 1.15 R&amp;D / education
+            multiplier, squared to reward capital flowing into
+            compounding-margin formation and punish hollow growth. This
+            is where the regenerative-capital thesis lives inside the
+            formula; the Gini-importance result (0.9328) is the
+            empirical receipt.
           </li>
           <li>
             <strong>Slack (X)</strong> — complement of utilization; how

@@ -39,11 +39,17 @@ production (ingestion — **SGUNCCH**).
   GAT (DeepMind), GCN (Google Brain), GraphSAGE. +22.1 pts on GDELT. +20.0 pts
   at 9,725-entity SEC EDGAR scale where GAT runs out of memory. 16 modules
   discovered 1-to-1 with real industry clusters — no labels, no prompting.
-- **NIV** — beats the Fed yield curve on several recession benchmarks.
-  Ensemble ROC-AUC **0.8538** at 18 months across 504 months (1970–2024), six
-  OOS validation tests, 98.5% false-alarm suppression, **41.71%** orthogonal
-  variance beyond the Fed 10Y – 3M spread. Every weight published; every input
-  from FRED.
+- **NIV** — built on a **regenerative-capital thesis**: the leading indicator
+  of macroeconomic regime health is the velocity of capital formation with
+  compounding margins, measured against cumulative friction — not bond-market
+  sentiment. Ensemble ROC-AUC **0.8538** at 18 months across 504 months
+  (1970 – 2024), six OOS validation tests, 98.5% false-alarm suppression,
+  **41.71%** orthogonal variance beyond the Fed 10Y – 3M spread. Under Gini
+  importance the regenerative-capital term scores **0.9328**; the yield
+  spread scores 0.0298 — the model picked the thesis unprompted. Every
+  weight published; every input from FRED. The repo is named
+  [`regenerationism`](https://github.com/direncode/regenerationism) for a
+  reason.
 - **PDE (SGUNCCH)** — a security posture student government has never
   needed, and has never had. Time-constant auth, RLS on every Supabase
   table, rate limiting by action class, public approval ledger. Submit →
