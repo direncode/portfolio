@@ -49,6 +49,102 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Sources — front-and-center: every external site, repo, and PDF */}
+      <section className="py-16 md:py-20 border-b border-ink-800 bg-ink-900/30">
+        <div className="mx-auto max-w-5xl px-5 md:px-8">
+          <div className="flex flex-wrap items-end justify-between gap-4 mb-8">
+            <div>
+              <div className="chapter-label">Sources</div>
+              <h2 className="font-serif text-2xl md:text-3xl tracking-tightish text-ink-50 mt-2 leading-tight">
+                Live sites, repositories, raw documents.
+              </h2>
+              <p className="mt-3 text-ink-400 text-[15px] max-w-measure">
+                Every claim on this site is traceable to the four open
+                repositories below — and, for NIV, to the published tear sheet
+                and the full paper. Click anything.
+              </p>
+            </div>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              {
+                id: "btut",
+                title: "BTUT",
+                role: "Coordination",
+                href: "/btut",
+                links: [
+                  { k: "Live site", label: "btut.ai", href: "https://btut.ai", ext: true },
+                  { k: "Repository", label: "direncode/btut", href: "https://github.com/direncode/btut", ext: true },
+                  { k: "Tear sheet", label: "BTUT_Tear_Sheet.pdf", href: "/BTUT_Tear_Sheet.pdf", ext: true },
+                ],
+              },
+              {
+                id: "crystara",
+                title: "Crystara",
+                role: "Structure",
+                href: "/crystara",
+                links: [
+                  { k: "Repository", label: "direncode/tcd-jepa", href: "https://github.com/direncode/tcd-jepa", ext: true },
+                ],
+              },
+              {
+                id: "niv",
+                title: "NIV",
+                role: "Signal",
+                href: "/niv",
+                links: [
+                  { k: "Live site", label: "regenerationism.ai", href: "https://regenerationism.ai", ext: true },
+                  { k: "Repository", label: "direncode/regenerationism", href: "https://github.com/direncode/regenerationism", ext: true },
+                  { k: "Tear sheet", label: "NIV_TearSheet.pdf", href: "/NIV_TearSheet.pdf", ext: true },
+                  { k: "Paper", label: "NIV_Paper.pdf", href: "/NIV_Paper.pdf", ext: true },
+                ],
+              },
+              {
+                id: "pde",
+                title: "PDE",
+                role: "Participatory Data Estate · Ingestion",
+                href: "/participatory-data-estate",
+                links: [
+                  { k: "Repository", label: "direncode/sguncch", href: "https://github.com/direncode/sguncch", ext: true },
+                ],
+              },
+            ].map((g) => (
+              <div
+                key={g.id}
+                className="group border border-ink-800 bg-ink-950/70 hover:border-accent/50 transition-colors p-5"
+              >
+                <Link href={g.href} className="block">
+                  <div className="font-serif text-xl text-ink-50 group-hover:text-accent transition-colors">
+                    {g.title}
+                  </div>
+                  <div className="chapter-label mt-1">{g.role}</div>
+                </Link>
+                <ul className="mt-4 space-y-2 border-t border-ink-800 pt-4">
+                  {g.links.map((l, i) => (
+                    <li key={i}>
+                      <a
+                        href={l.href}
+                        target={l.ext ? "_blank" : undefined}
+                        rel={l.ext ? "noopener noreferrer" : undefined}
+                        className="flex items-baseline justify-between gap-3 text-sm text-ink-200 hover:text-accent transition-colors"
+                      >
+                        <span className="flex-1 truncate">
+                          <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-accent mr-2">
+                            {l.k}
+                          </span>
+                          {l.label}
+                        </span>
+                        <span className="text-accent text-xs shrink-0">↗</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Intro paragraph */}
       <section className="py-20 md:py-28 border-b border-ink-800">
         <div className="mx-auto max-w-measure px-5 md:px-8 prose-essay">

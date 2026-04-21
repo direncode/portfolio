@@ -4,16 +4,47 @@ A chapter-serial manifesto site for four converging horizontal-intelligence
 primitives: **BTUT** (coordination), **Crystara** (structure), **NIV**
 (signal), and the **Participatory Data Estate** (ingestion).
 
-Built as a text-first, long-form essay site modeled after
-[situational-awareness.ai](https://situational-awareness.ai) — minimalist
-dark theme, clean sans-serif body (Inter), serif headings (Source Serif 4),
-generous whitespace, hierarchical chapter structure.
+> **Live site:** [diren.vercel.app](https://diren.vercel.app)
+
+[![Open-graph preview for the portfolio](https://diren.vercel.app/opengraph-image)](https://diren.vercel.app)
+
+## The four primitives
+
+| Primitive    | Role          | Live site                                            | Repository                                                                  | Tear sheet / paper                                                          |
+| ------------ | ------------- | ---------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| **BTUT**     | Coordination  | [btut.ai](https://btut.ai)                           | [direncode/btut](https://github.com/direncode/btut)                         | [Tear sheet (PDF)](./public/BTUT_Tear_Sheet.pdf)                            |
+| **Crystara** | Structure     | —                                                    | [direncode/tcd-jepa](https://github.com/direncode/tcd-jepa)                 | —                                                                           |
+| **NIV**      | Signal        | [regenerationism.ai](https://regenerationism.ai)     | [direncode/regenerationism](https://github.com/direncode/regenerationism)   | [Tear sheet (PDF)](./public/NIV_TearSheet.pdf) · [Paper (PDF)](./public/NIV_Paper.pdf) |
+| **SGUNCCH**  | Ingestion (PDE) | —                                                  | [direncode/sguncch](https://github.com/direncode/sguncch)                   | —                                                                           |
+
+## Headlines, stated at evidence density
+
+- **BTUT** — a new approach to DARPA Mathematical Challenge 13. Cross-domain
+  comprehensive: one primitive shipped across Eclipse SUMO traffic, ROS robot
+  fleets, 50 – 200 drone swarms, Python SDK, REST, Lambda, WASM. 800-vehicle
+  SUMO peak stress, zero gridlock. β ≈ 0.5 (mean-field). Constant 12-iteration
+  convergence from 500 to 10,000 agents.
+- **Crystara** — beats vanilla JEPA everywhere tested. +36.6 AUC pts on a
+  519-entity Georgetown CSET semiconductor supply chain; also beats supervised
+  GAT (DeepMind), GCN (Google Brain), GraphSAGE. +22.1 pts on GDELT. +20.0 pts
+  at 9,725-entity SEC EDGAR scale where GAT runs out of memory. 16 modules
+  discovered 1-to-1 with real industry clusters — no labels, no prompting.
+- **NIV** — beats the Fed yield curve on several recession benchmarks.
+  Ensemble ROC-AUC **0.8538** at 18 months across 504 months (1970–2024), six
+  OOS validation tests, 98.5% false-alarm suppression, **41.71%** orthogonal
+  variance beyond the Fed 10Y – 3M spread. Every weight published; every input
+  from FRED.
+- **PDE (SGUNCCH)** — a security posture student government has never needed,
+  and (to my knowledge) has never had. Time-constant auth, RLS on every
+  Supabase table, rate limiting by action class, public approval ledger.
+  Submit → Moderate → Thin → Crystallize.
 
 ## Stack
 
 - **Next.js 14** (App Router) + **TypeScript**
 - **Tailwind CSS** with a custom `prose-essay` typography layer
 - **React 18** client components only where navigation state is needed
+- **next/og** for dynamic OpenGraph image generation
 - Zero external runtime services — pure static pages, Vercel-ready
 
 ## Structure
@@ -21,8 +52,9 @@ generous whitespace, hierarchical chapter structure.
 ```
 app/
   layout.tsx                       Root layout, fonts, metadata
-  globals.css                      Tailwind + essay typography
-  page.tsx                         Hero, convergence diagram, TOC, preview grid
+  opengraph-image.tsx              Dynamic OG image (1200×630)
+  globals.css                      Tailwind + essay typography + diagram animations
+  page.tsx                         Hero, sources grid, convergence diagram, TOC, preview grid
   primitives/page.tsx              Chapter I — Four Primitives overview
   btut/page.tsx                    Chapter II — BTUT deep dive
   crystara/page.tsx                Chapter III — Crystara deep dive
@@ -36,8 +68,13 @@ components/
   SiteNav.tsx / SiteFooter.tsx
   ChapterHeader.tsx / ChapterFooter.tsx
   Essay.tsx / Callout.tsx / StatBlock.tsx
-  ConvergenceDiagram.tsx           Inline SVG of the four-primitive convergence
+  SourceBar.tsx                    Per-chapter link strip (live site, repo, PDFs)
+  ConvergenceDiagram.tsx           Animated SVG of the four-primitive convergence
   PrimitiveCard.tsx
+public/
+  BTUT_Tear_Sheet.pdf
+  NIV_TearSheet.pdf
+  NIV_Paper.pdf
 tailwind.config.ts
 next.config.mjs
 postcss.config.mjs
@@ -64,17 +101,19 @@ npm run start        # serve prod build
 5. Click **Deploy**. First build takes ~1 minute.
 6. Assign a custom domain under **Project → Settings → Domains** if desired.
 
-The site is fully static per-route; there is no server runtime dependency.
+The site is fully dynamic per-route, but every page is statically renderable;
+the only edge-runtime surface is `opengraph-image.tsx`, which generates the
+social-share PNG on demand.
 
 ## Editorial policy
 
 Every quantitative claim on the site is drawn from one of the four
-open-source repositories:
+open-source repositories or the two PDFs in `public/`:
 
-- `direncode/btut`
-- `direncode/tcd-jepa` (Crystara)
-- `direncode/regenerationism` (NIV)
-- `direncode/sguncch` (Participatory Data Estate)
+- `direncode/btut` — coordination
+- `direncode/tcd-jepa` — Crystara (structure)
+- `direncode/regenerationism` — NIV (signal)
+- `direncode/sguncch` — Participatory Data Estate (ingestion)
 
 Where a specific number was not found in the source repository, the claim
 is either omitted or softened with explicit language (e.g. "41.71%

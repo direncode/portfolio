@@ -3,6 +3,7 @@ import { ChapterFooter } from "@/components/ChapterFooter";
 import { Essay } from "@/components/Essay";
 import { StatBlock } from "@/components/StatBlock";
 import { Callout } from "@/components/Callout";
+import { SourceBar } from "@/components/SourceBar";
 
 export const metadata = {
   title: "BTUT — Coordination",
@@ -20,6 +21,14 @@ export default function BtutPage() {
         kicker="A new approach to DARPA Mathematical Challenge 13 — and a cross-domain-comprehensive application of it. Bivariate Trajectory-Undercurrent Theory replaces the O(N³) PDE with a phase transition on a scale-free network: Stag Hunt + Prisoner's Dilemma under Fermi updates, hub-weighted by τ, critical exponent β ≈ 0.5 in the mean-field universality class. One primitive, three validation regimes (abstract, traffic, drone) with matched critical behavior, and four production surfaces (Python SDK, REST, Lambda, WASM). Eclipse SUMO at 800-vehicle peak stress holds zero gridlock. 50 – 200 drone swarms coordinate at 100%. Constant 12 iterations from 500 to 10,000 agents."
         prev={{ href: "/primitives", label: "The Four Primitives" }}
         next={{ href: "/crystara", label: "Crystara — Structure" }}
+      />
+
+      <SourceBar
+        resources={[
+          { kind: "site", label: "btut.ai", href: "https://btut.ai" },
+          { kind: "repo", label: "github.com/direncode/btut", href: "https://github.com/direncode/btut" },
+          { kind: "tear", label: "BTUT Tear Sheet", href: "/BTUT_Tear_Sheet.pdf" },
+        ]}
       />
 
       <Essay>

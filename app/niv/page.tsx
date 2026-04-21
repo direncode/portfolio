@@ -3,6 +3,7 @@ import { ChapterFooter } from "@/components/ChapterFooter";
 import { Essay } from "@/components/Essay";
 import { StatBlock } from "@/components/StatBlock";
 import { Callout } from "@/components/Callout";
+import { SourceBar } from "@/components/SourceBar";
 
 export const metadata = {
   title: "NIV — Signal",
@@ -20,6 +21,15 @@ export default function NivPage() {
         kicker="National Impact Velocity conclusively beats the Fed yield curve on the standard recession benchmark. Across 504 months (1970 – 2024) and six out-of-sample validation tests, NIV reaches ROC-AUC 0.8538 at the 18-month horizon, suppresses 98.5% of false alarms via an L2-regularized ensemble, and contributes 41.71% orthogonal variance beyond the Fed 10Y – 3M spread. Composed from four known economic primitives — thrust, efficiency, slack, drag — with all weights published and every input drawn from public FRED series. Interpretable. Reproducible. Decomposable."
         prev={{ href: "/crystara", label: "Crystara — Structure" }}
         next={{ href: "/participatory-data-estate", label: "PDE — Ingestion" }}
+      />
+
+      <SourceBar
+        resources={[
+          { kind: "site", label: "regenerationism.ai", href: "https://regenerationism.ai" },
+          { kind: "repo", label: "github.com/direncode/regenerationism", href: "https://github.com/direncode/regenerationism" },
+          { kind: "tear", label: "NIV Tear Sheet", href: "/NIV_TearSheet.pdf" },
+          { kind: "paper", label: "NIV — Full Paper", href: "/NIV_Paper.pdf" },
+        ]}
       />
 
       <Essay>
