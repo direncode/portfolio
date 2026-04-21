@@ -18,7 +18,7 @@ export default function BtutPage() {
         number="II"
         label="Primitive · Coordination"
         title="BTUT."
-        kicker="A new approach to DARPA Mathematical Challenge 13 — and a cross-domain-comprehensive application of it. Bivariate Trajectory-Undercurrent Theory replaces the O(N³) PDE with a phase transition on a scale-free network: Stag Hunt + Prisoner's Dilemma under Fermi updates, hub-weighted by τ, critical exponent β ≈ 0.5 in the mean-field universality class. One primitive, six live domains — traffic simulation (Eclipse SUMO at 800-vehicle peak stress, zero gridlock), robotics (ROS / Turtlebot3), 50 – 200 drone swarms (100% cooperation), civic data (franklinstreetdata.com), game modeling (bigdunc.com), and four production cloud surfaces (Python SDK, REST, Lambda, WASM). Constant 12 iterations from 500 to 10,000 agents."
+        kicker="A new substrate for complex multi-agent systems — the class of systems the 21st century cannot run without. Traffic networks, power grids, drone swarms, logistics fleets, distributed sensors, financial market participants, autonomous vehicles, civic coordination: all of it is coordination at scale, and the dominant mathematical default — PDEs on agent density — breaks above 10,000 agents. BTUT replaces that default. Bivariate Trajectory-Undercurrent Theory is a phase transition on a scale-free network: Stag Hunt + Prisoner's Dilemma under Fermi updates, hub-weighted by τ, with a closed-form critical exponent β ≈ 0.5 in the mean-field universality class. It is also a new approach to DARPA Mathematical Challenge 13. One primitive, six live domains — traffic simulation (Eclipse SUMO at 800-vehicle peak stress, zero gridlock), robotics (ROS / Turtlebot3), 50 – 200 drone swarms (100% cooperation), civic data (franklinstreetdata.com), game modeling (bigdunc.com), and four production cloud surfaces (Python SDK, REST, Lambda, WASM). Constant 12-iteration convergence from 500 to 10,000 agents. The reduction is not an engineering optimization. It is a new coordination substrate."
         prev={{ href: "/primitives", label: "The Four Primitives" }}
         next={{ href: "/crystara", label: "Crystara — Structure" }}
       />
@@ -36,16 +36,30 @@ export default function BtutPage() {
       />
 
       <Essay>
-        <h2>A new approach to DARPA Challenge 13.</h2>
+        <h2>Why complex multi-agent systems matter — and why the default fails.</h2>
         <p>
-          DARPA Mathematical Challenge 13 asks how to coordinate{" "}
-          <em>millions</em> of autonomous agents efficiently, in real
-          time. The dominant approach begins with a PDE on the density
-          of agents and ends with an O(N³) solver that crashes before
-          10,000 agents. BTUT starts from a different mathematical
-          object entirely: the phase transition of a scale-free network
-          under Fermi-rule strategy updates. The reduction is not
-          incremental — it changes the question from <em>how do we solve
+          Complex multi-agent systems are the operating substrate of
+          modern civilization. Traffic networks with millions of
+          vehicles. Power grids with millions of generation / load
+          nodes. Autonomous fleets — drones, trucks, ships — coordinating
+          without a central planner. Financial markets where millions
+          of agents converge or diverge on prices. Sensor networks,
+          robotic fleets, distributed compute, civic-scale behavioral
+          coordination. All of it is <em>the same mathematical
+          problem</em>: how do many agents reach a cooperative
+          equilibrium fast enough to be useful, and robustly enough not
+          to collapse under stress.
+        </p>
+        <p>
+          DARPA Mathematical Challenge 13 names this problem directly.
+          The dominant academic answer is a PDE on the density of
+          agents, solved with O(N³) numerics, which crashes before
+          10,000 agents. That is not a coordination substrate for a
+          civilization; it is a coordination substrate for a laboratory.
+          BTUT starts from a different mathematical object entirely — a
+          phase transition of a scale-free network under Fermi-rule
+          strategy updates — and the reduction is categorical, not
+          incremental. The question changes from <em>how do we solve
           the PDE faster</em> to <em>why do we need a PDE at all</em>.
           The same critical exponent, the same N-invariant convergence
           count, and a domain-varying critical γ are observed across

@@ -12,28 +12,28 @@ export default function HomePage() {
             <span className="font-mono text-xs tracking-wider">00</span>
             <span className="h-px w-8 bg-accent/60" />
             <span className="uppercase tracking-[0.22em] text-[11px]">
-              Nineteen · Solo · One year · Four primitives
+              Four paradigms · Four fields · Nineteen · Solo · One year
             </span>
           </div>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-[5.25rem] tracking-tightish leading-[0.98] mt-6 text-ink-50 text-balance">
             Diren Kumaratilleke
           </h1>
           <p className="mt-8 text-lg md:text-2xl text-ink-200 max-w-3xl leading-relaxed text-pretty">
-            Four live primitives across four subfields. A new approach to{" "}
-            <em className="text-accent not-italic">DARPA Mathematical
-            Challenge&nbsp;13</em>, shipped across six live applied
-            domains — traffic, robotics, drones, civic data, game
-            modeling, and cloud. A macro-stress scalar that{" "}
-            <em className="text-accent not-italic">beats the Fed yield
-            curve</em> with 41.71% orthogonal variance and a published
-            paper. A topological predictor that{" "}
-            <em className="text-accent not-italic">beats vanilla JEPA
-            everywhere it has been tested</em> and also beats supervised
-            GAT (DeepMind) and GCN (Google Brain) on a Georgetown CSET
-            semiconductor supply chain. A participatory data estate
-            federally hardened and{" "}
-            <em className="text-accent not-italic">running in production</em>.
-            The tape is the argument.
+            Four paradigms, four different fields.{" "}
+            <em className="text-accent not-italic">BTUT</em> — a new
+            substrate for complex multi-agent systems, shipped across six
+            live domains.{" "}
+            <em className="text-accent not-italic">TCD-JEPA / Crystara</em> —
+            a new AI training paradigm past transformers, beating
+            vanilla JEPA and supervised GAT (DeepMind) / GCN (Google
+            Brain) on real heterogeneous graphs.{" "}
+            <em className="text-accent not-italic">Regenerationism</em> —
+            a new economic philosophy, its first operational instrument
+            (NIV) beating the Fed yield curve with 41.71% orthogonal
+            variance.{" "}
+            <em className="text-accent not-italic">Participatory Data
+            Estate</em> — a new framework for digital data governance,
+            running in production. The tape is the argument.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-3 text-[13px]">
@@ -96,7 +96,7 @@ export default function HomePage() {
               {
                 id: "btut",
                 title: "BTUT",
-                role: "Coordination",
+                role: "Multi-agent systems · Coordination",
                 href: "/btut",
                 links: [
                   { k: "Live site", label: "btut.ai", href: "https://btut.ai", ext: true },
@@ -111,7 +111,7 @@ export default function HomePage() {
               {
                 id: "crystara",
                 title: "Crystara",
-                role: "Structure",
+                role: "Post-transformer AI paradigm · TCD-JEPA",
                 href: "/crystara",
                 links: [
                   { k: "Repository", label: "direncode/tcd-jepa", href: "https://github.com/direncode/tcd-jepa", ext: true },
@@ -120,7 +120,7 @@ export default function HomePage() {
               {
                 id: "niv",
                 title: "NIV",
-                role: "Signal · Regenerative-capital thesis",
+                role: "Regenerationism · New economic school",
                 href: "/niv",
                 links: [
                   { k: "Live site", label: "regenerationism.ai", href: "https://regenerationism.ai", ext: true },
@@ -131,8 +131,8 @@ export default function HomePage() {
               },
               {
                 id: "pde",
-                title: "PDE",
-                role: "Participatory Data Estate · Ingestion",
+                title: "Participatory Data Estate",
+                role: "Digital data governance · SGUNCCH is the first live deployment",
                 href: "/participatory-data-estate",
                 links: [
                   { k: "Repository", label: "direncode/sguncch", href: "https://github.com/direncode/sguncch", ext: true },
@@ -181,28 +181,31 @@ export default function HomePage() {
           <p className="text-ink-200 text-xl md:text-[1.35rem] leading-[1.65] font-serif italic text-balance">
             The frontier labs are scaling vertically — more parameters,
             more compute, more of the same. I am building horizontally:
-            four primitives, each one that <em>beats</em> a specific
-            incumbent on its own benchmark. A new, cross-domain approach
-            to DARPA Challenge 13, shipped across traffic, robotics,
-            drones, and four production cloud surfaces. A recession
-            signal that beats the Fed on several benchmarks, with 41.71%
-            of its variance orthogonal to the yield spread — variance
-            the spread cannot see. A topological predictor that beats
+            four <em>paradigms</em>, each one naming a field and proposing
+            a new shape for it. A new substrate for complex multi-agent
+            systems (BTUT), shipped across six live domains and
+            answering DARPA Mathematical Challenge 13. A new AI training
+            paradigm past transformers (TCD-JEPA / Crystara), beating
             vanilla JEPA <em>everywhere it has been tested</em> —
             three real heterogeneous graphs, +20 to +36.6 AUC points —
-            and also beats supervised GAT, GCN, and GraphSAGE on a
-            Georgetown CSET semiconductor supply chain. A participatory
-            data estate hardened well beyond anything student government
-            has any business running. Together they form the{" "}
+            and also beats supervised GAT / GCN / GraphSAGE on a
+            Georgetown CSET semiconductor supply chain. A new economic
+            philosophy named Regenerationism, with NIV as its first
+            operational instrument (a macro-stress scalar beating the
+            Fed yield curve on several recession benchmarks). A new
+            framework for digital data governance — the Participatory
+            Data Estate — with SGUNCCH as its first live deployment.
+            Together the four paradigms converge into the{" "}
             <strong className="not-italic text-accent">Latent Ocean</strong>.
           </p>
           <p className="mt-6 text-ink-400 text-[15px]">
             What follows is not a résumé. It is the tape. Nineteen
-            years old. Solo. One calendar year. Four primitives across
-            four subfields — coordination, structure, signal,
-            ingestion — each measured against a named incumbent with
-            every benchmark traceable to an open repository or a public
-            document. The hard part is the primitive, not the scale.
+            years old. Solo. One calendar year. Four paradigms across
+            four fields — multi-agent coordination, post-transformer AI
+            training, a new economic school, digital data governance —
+            each proposed as a shape, each tested against a named
+            incumbent, each traceable to an open repository or a public
+            document. The hard part is the paradigm, not the scale.
           </p>
         </div>
       </section>
@@ -241,10 +244,10 @@ export default function HomePage() {
           <ol className="divide-y divide-ink-800 border-y border-ink-800">
             {[
               { n: "I", t: "The Four Primitives", href: "/primitives", d: "An overview of what each primitive beats, and why." },
-              { n: "II", t: "BTUT — a new, cross-domain approach to DARPA Challenge 13", href: "/btut", d: "Shipped across SUMO traffic, ROS robotics, 50–200 drone swarms, Python SDK, REST, Lambda, WASM. Cross-domain comprehensive." },
-              { n: "III", t: "Crystara — beat JEPA, and supervised GNNs on a semiconductor graph", href: "/crystara", d: "+20 to +36.6 AUC pts over baseline JEPA on three real graphs. Beats supervised GAT/GCN/GraphSAGE on CSET semiconductor. 16 validated modules discovered from persistent homology." },
-              { n: "IV", t: "NIV — beat the Fed on several recession benchmarks", href: "/niv", d: "ROC-AUC 0.8538 @ 18 mo across 504 months; 98.5% false-alarm filter; 41.71% orthogonal variance the Fed spread cannot see." },
-              { n: "V", t: "SGUNCCH — the security posture student government has never had", href: "/participatory-data-estate", d: "Submit→Moderate→Thin→Crystallize. Time-constant auth, RLS on every table, rate limiting by action class, public approval ledger, federal-hardening patterns." },
+              { n: "II", t: "BTUT — a new substrate for complex multi-agent systems", href: "/btut", d: "Answers DARPA Mathematical Challenge 13. Shipped across six live domains: traffic, robotics, drones, civic data, game modeling, cloud." },
+              { n: "III", t: "Crystara (TCD-JEPA) — a new AI training paradigm past transformers", href: "/crystara", d: "Grow the predictor instead of scaling attention. Beats vanilla JEPA + supervised GAT/GCN on three real graphs. 16 modules 1-to-1 with real industry clusters." },
+              { n: "IV", t: "NIV — Regenerationism, a new economic school", href: "/niv", d: "First operational instrument of Regenerationism. Beats the Fed yield curve. ROC-AUC 0.8538 @ 18 mo; 41.71% orthogonal; Gini 0.9328." },
+              { n: "V", t: "Participatory Data Estate — a new framework for digital data governance", href: "/participatory-data-estate", d: "Submit→Moderate→Thin→Crystallize + public approval ledger + federal-hardening. SGUNCCH is the first live deployment." },
               { n: "VI", t: "Convergence & Architecture", href: "/convergence", d: "How the four feed the Latent Ocean." },
               { n: "VII", t: "About / Context", href: "/about", d: "Who is building this, and under what constraints." },
               { n: "VIII", t: "Forward Direction", href: "/forward", d: "Scaling, sovereign integrations, inference-time substrate." },
@@ -285,34 +288,34 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-5">
             <PrimitiveCard
               number="01"
-              subtitle="Coordination"
+              subtitle="Multi-agent systems · Coordination"
               title="BTUT"
-              one_liner="A new mathematical object replacing the O(N³) PDE: a phase transition on a scale-free network with hub-weighted Fermi updates, in the mean-field universality class."
-              beat="A new approach to DARPA Mathematical Challenge 13 — and a cross-domain-comprehensive application of it: SUMO traffic (800 vehicles, zero gridlock), ROS robotics, 50 – 200 drone swarms (100% cooperation), Python SDK, REST, Lambda, and WASM surfaces. One primitive, four domains, four production shapes."
+              one_liner="A new substrate for complex multi-agent systems — the class of systems (traffic, grids, drones, logistics, markets, civic coordination) the 21st century cannot run without. Phase transition on a scale-free network, hub-weighted Fermi updates, mean-field universality class."
+              beat="A new approach to DARPA Mathematical Challenge 13, shipped across six live applied domains: traffic (SUMO, 800 vehicles, zero gridlock), robotics (ROS), drone swarms (100% cooperation at 200 agents), civic data (franklinstreetdata.com), game modeling (bigdunc.com), and four production cloud surfaces."
               href="/btut"
             />
             <PrimitiveCard
               number="02"
-              subtitle="Structure"
-              title="Crystara (TCD-JEPA)"
-              one_liner="Topological crystallization engine. A three-system loop that grows its own predictor and emits typed H₀/H₁/H₂ modules from persistent homology."
-              beat="Beats vanilla JEPA everywhere it's been tested: +36.6 AUC pts on a 519-entity CSET semiconductor supply chain — also beats supervised GAT (70.3%), GCN (63.9%), and GraphSAGE (33.8%). +22.1 pts on GDELT. +20.0 pts at SEC EDGAR scale where GAT runs out of memory. 16 discovered modules map 1-to-1 to real industry clusters with no labels."
+              subtitle="Post-transformer AI paradigm · TCD-JEPA"
+              title="Crystara"
+              one_liner="A new AI training paradigm past transformers. Instead of scaling a fixed architecture, grow the architecture: a recursive loop explores the energy landscape with Fisher-information Langevin dynamics, runs persistent homology on the trajectories, and crystallizes stable features into typed H₀/H₁/H₂ predictor modules at runtime."
+              beat="Beats vanilla JEPA everywhere tested: +36.6 AUC on CSET semiconductor (519 entities) — also beats supervised GAT (DeepMind), GCN (Google Brain), GraphSAGE. +22.1 on GDELT. +20.0 at 9,725-entity SEC EDGAR scale where GAT OOMs. 16 discovered modules 1-to-1 with real industry clusters, no labels."
               href="/crystara"
             />
             <PrimitiveCard
               number="03"
-              subtitle="Signal"
+              subtitle="Regenerationism · New economic school"
               title="NIV"
-              one_liner="Macro-stress scalar operationalizing the regenerative-capital thesis — velocity of compounding-margin capital formation against cumulative friction. Thrust · Efficiency (P²) · Slack · Drag, from 8 public FRED series, weights published."
-              beat="Beats the Fed yield curve on several recession benchmarks — conclusively: ROC-AUC 0.8538 @ 18 mo across 504 months, 98.5% false-alarm filter, 41.71% orthogonal variance the spread cannot see. Under Gini importance the regenerative-capital term scores 0.9328; the spread scores 0.0298. The model picked the thesis unprompted."
+              one_liner="Regenerationism is a new economic philosophy: the leading indicator of regime health is the velocity of compounding-margin capital formation against cumulative friction, not bond-market sentiment. NIV is its first operational instrument — Thrust · Efficiency (P²) · Slack · Drag, from 8 public FRED series."
+              beat="Beats the Fed yield curve on several recession benchmarks — conclusively: ROC-AUC 0.8538 @ 18 mo across 504 months (1970 – 2024), 98.5% false-alarm filter, 41.71% orthogonal variance the spread cannot see. Under Gini importance the regenerative-capital term scores 0.9328; the spread scores 0.0298. The model picked the school unprompted."
               href="/niv"
             />
             <PrimitiveCard
               number="04"
-              subtitle="Ingestion"
-              title="SGUNCCH"
-              one_liner="A participatory data estate: Submit → Moderate → Thin → Crystallize, with a public approval ledger, pgvector + FTS hybrid retrieval, and OWASP-grade security."
-              beat="A security posture student government has never needed — and, I'd argue, has never had. Time-constant auth, RLS on every table, rate limiting by action class, CSP/HSTS, XSS detection, public approval ledger. Four composable surfaces — Scroll, Budget Engine, Knowledge Base, Chat — in one hardened codebase."
+              subtitle="Digital data governance · New framework"
+              title="Participatory Data Estate"
+              one_liner="A new framework for digital data governance. Continuous ingestion (Submit → Moderate → Thin → Crystallize), moderation as a public transition (publicly-readable approval ledger via RLS), hybrid pgvector + GIN FTS retrieval, federal-hardening controls. Any governance corpus — municipal, NGO, regulatory, scholarly — needs exactly this shape."
+              beat="First live deployment: SGUNCCH, a full UNC student-government stack running the framework end-to-end. Time-constant auth, RLS on every table, rate limiting by action class, CSP/HSTS, public approval ledger. A security posture student government has never needed and has never had."
               href="/participatory-data-estate"
             />
           </div>

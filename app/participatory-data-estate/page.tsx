@@ -5,9 +5,9 @@ import { Callout } from "@/components/Callout";
 import { SourceBar } from "@/components/SourceBar";
 
 export const metadata = {
-  title: "SGUNCCH — Participatory Data Estate",
+  title: "Participatory Data Estate",
   description:
-    "A participatory data estate with a security posture student government has never needed — and, to my knowledge, has never had. Submit → Moderate → Thin → Crystallize, plus a budget engine, a knowledge base, and a chat layer — all hardened against OWASP Top 10 patterns with federal-agency-derived controls.",
+    "A new framework for digital data governance. Submit → Moderate → Thin → Crystallize, over pgvector + GIN FTS hybrid retrieval, with a publicly-readable approval ledger and federal-hardening controls. SGUNCCH is the first live deployment — a full-platform UNC student-government stack running the framework end-to-end.",
 };
 
 export default function PdePage() {
@@ -16,8 +16,8 @@ export default function PdePage() {
       <ChapterHeader
         number="V"
         label="Primitive · Ingestion"
-        title="SGUNCCH."
-        kicker="A security posture student government has never needed — and has never had. SGUNCCH is a participatory data estate shipped as live student-government infrastructure, hardened with patterns drawn directly from federal-agency security guidance. Raw human submissions — policies, constitutional text, conduct code, budget allocations, funding requests — become a living, auditable, hybrid-retrievable knowledge base. Submit → Moderate → Thin → Crystallize, plus a budget engine, a knowledge base, and a chat layer. Time-constant auth, row-level security on every table, rate limiting on four action classes, CSP/HSTS/X-Frame headers, XSS detection, and a publicly-readable approval ledger. There is no FedRAMP authorization to claim, and I am not claiming one — the point is that the posture is here, in production, at a tier no other student platform currently runs. The repository is open; produce the counter-example."
+        title="Participatory Data Estate."
+        kicker="A new framework for digital data governance. Most data-governance stacks treat ingestion as a one-time batch, moderation as a private workflow, and the audit trail as a compliance tax. The Participatory Data Estate inverts all three: ingestion is a continuous pipeline (Submit → Moderate → Thin → Crystallize), every moderation transition is a row in a publicly-readable approval ledger, and the retrieval substrate is hybrid pgvector + GIN full-text with graceful FTS-only fallback. Security is drawn from federal-agency guidance (NIST 800-53 / OWASP ASVS): time-constant auth, row-level security on every table, rate limiting by action class, CSP/HSTS/X-Frame, XSS detection. The first live deployment, SGUNCCH, runs the full framework as UNC student-government infrastructure — a security posture student government has never needed and has never had. No FedRAMP authorization is claimed; the point is that the framework is operating, in production, and the repository is open. Produce the counter-example."
         prev={{ href: "/niv", label: "NIV — Signal" }}
         next={{ href: "/convergence", label: "Convergence" }}
       />
@@ -29,16 +29,64 @@ export default function PdePage() {
       />
 
       <Essay>
-        <h2>Security posture — the evidence.</h2>
+        <h2>The Participatory Data Estate — what the framework is.</h2>
         <p>
-          Most student-government platforms ship as a WordPress site with
-          a public feedback form. SGUNCCH ships with hardening patterns
-          drawn from federal-agency security guidance (NIST 800-53 /
-          OWASP ASVS families), even though nothing about student
-          government requires it. Every item below is implemented in the
-          repository — not aspirational, not planned — and I do not
-          believe any other student-government platform currently in
-          production runs this stack:
+          Standard data-governance architectures assume three things
+          that modern governance environments can no longer afford:
+          that data ingestion is a <em>batch</em> (scrape, chunk,
+          embed, freeze), that moderation is a <em>private</em>{" "}
+          workflow, and that the audit trail is a{" "}
+          <em>compliance artifact</em> collected for regulators rather
+          than shared with constituents. Each of those assumptions
+          fails the moment the governance substrate is amended, contested,
+          reorganized, or audited in public.
+        </p>
+        <p>
+          The Participatory Data Estate inverts all three. Ingestion is
+          a <em>continuous pipeline</em> — Submit → Moderate → Thin →
+          Crystallize — in which raw human submissions are accepted
+          without being trusted, moderated through an explicit approval
+          surface, chunked into independently-retrievable units, and
+          embedded into a hybrid vector + full-text index. Moderation
+          is a <em>public transition</em>: every state change is a row
+          in a{" "}
+          <code>approval_log</code> table with a public-read RLS policy,
+          so the full provenance chain of any document — who submitted,
+          when it was approved, by whom, with what notes — is queryable
+          by anyone with SQL. Retrieval never sees pending or rejected
+          content. Security is federal-agency-derived, not
+          student-gov-derived: time-constant auth, RLS on every table,
+          rate limits on four action classes, CSP/HSTS/X-Frame, XSS
+          detection. That combination — participatory ingestion +
+          public audit ledger + federal-hardening controls — does not
+          exist in the dominant data-governance stacks. It is what the
+          framework proposes: a new shape for digital data governance.
+        </p>
+        <p>
+          The framework generalizes. Any organization whose
+          knowledge-corpus is amended through human submissions (a
+          municipal agency, an NGO, a standards body, a scholarly
+          society, a regulator, a policy platform) needs exactly this
+          shape. SGUNCCH, below, is the <strong>first live
+          deployment</strong> — a full-platform UNC student-government
+          stack running the framework end-to-end. It exists because
+          student governance is an unusually severe test: amendments
+          are frequent, contests are real, the electorate is the same
+          size as a small city, and the platform must degrade
+          gracefully when a central service is unreachable. If the
+          framework runs here, it runs elsewhere.
+        </p>
+
+        <h2>SGUNCCH — the first live deployment.</h2>
+        <p>
+          Most student-government platforms ship as a WordPress site
+          with a public feedback form. SGUNCCH ships with every element
+          of the Participatory Data Estate framework, hardened with
+          patterns drawn from federal-agency security guidance (NIST
+          800-53 / OWASP ASVS families). Every item below is implemented
+          in the repository — not aspirational, not planned — and I do
+          not believe any other student-government platform currently
+          in production runs this stack:
         </p>
         <table>
           <thead>

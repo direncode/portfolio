@@ -1,60 +1,81 @@
 # Diren Kumaratilleke — Portfolio
 
-**Nineteen years old. Solo. One calendar year. Four live primitives across
-four subfields.** A new approach to DARPA Mathematical Challenge 13
-(coordination — **BTUT**). A runtime-discovered predictor architecture that
-beats JEPA and supervised GNNs (structure — **Crystara**). A macro-stress
-scalar that beats the Fed yield curve with 41.71% orthogonal variance
-(signal — **NIV**). A participatory data estate federally hardened in
-production (ingestion — **SGUNCCH**).
+**Four paradigms. Four fields. Nineteen years old. Solo. One calendar year.**
+
+- **BTUT** — *a new substrate for complex multi-agent systems* (traffic,
+  grids, drones, logistics, markets — the class civilization cannot run
+  without). Also: a new approach to DARPA Mathematical Challenge 13.
+- **TCD-JEPA (Crystara)** — *a new AI training paradigm past transformers.*
+  Grow the predictor at runtime via topological crystallization instead of
+  scaling a fixed attention architecture.
+- **Regenerationism** — *a new economic philosophy.* NIV is its first
+  operational instrument; the Fed yield curve is the first benchmark it
+  beats.
+- **Participatory Data Estate** — *a new framework for digital data
+  governance.* SGUNCCH is the first live deployment.
 
 > **Live site:** [diren.vercel.app](https://diren.vercel.app)
 >
-> The tape is the argument. Every claim below has a repository, a tear
+> The tape is the argument. Every paradigm below has a repository, a tear
 > sheet, or a full paper directly linked.
 
 [![Open-graph preview for the portfolio](https://diren.vercel.app/opengraph-image)](https://diren.vercel.app)
 
-## The four primitives
+## The four paradigms
 
-| Primitive    | Role          | Live site                                            | Repository                                                                  | Tear sheet / paper                                                          |
-| ------------ | ------------- | ---------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| **BTUT**     | Coordination  | [btut.ai](https://btut.ai) · [franklinstreetdata.com](https://www.franklinstreetdata.com) · [bigdunc.com](https://www.bigdunc.com) | [direncode/btut](https://github.com/direncode/btut) · [framklnstdata](https://github.com/direncode/framklnstdata) · [game-model](https://github.com/direncode/game-model) | [Tear sheet (PDF)](./public/BTUT_Tear_Sheet.pdf)                            |
-| **Crystara** | Structure     | —                                                    | [direncode/tcd-jepa](https://github.com/direncode/tcd-jepa)                 | —                                                                           |
-| **NIV**      | Signal        | [regenerationism.ai](https://regenerationism.ai)     | [direncode/regenerationism](https://github.com/direncode/regenerationism)   | [Tear sheet (PDF)](./public/NIV_TearSheet.pdf) · [Paper (PDF)](./public/NIV_Paper.pdf) |
-| **SGUNCCH**  | Ingestion (PDE) | —                                                  | [direncode/sguncch](https://github.com/direncode/sguncch)                   | —                                                                           |
+| Paradigm                       | Field                                | Live sites                                                                                                                               | Repositories                                                                                                                                                                   | Tear sheet / paper                                                                           |
+| ------------------------------ | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| **BTUT**                       | Complex multi-agent systems          | [btut.ai](https://btut.ai) · [franklinstreetdata.com](https://www.franklinstreetdata.com) · [bigdunc.com](https://www.bigdunc.com)       | [direncode/btut](https://github.com/direncode/btut) · [framklnstdata](https://github.com/direncode/framklnstdata) · [game-model](https://github.com/direncode/game-model)      | [Tear sheet (PDF)](./public/BTUT_Tear_Sheet.pdf)                                             |
+| **TCD-JEPA (Crystara)**        | Post-transformer AI training         | —                                                                                                                                        | [direncode/tcd-jepa](https://github.com/direncode/tcd-jepa)                                                                                                                    | —                                                                                            |
+| **Regenerationism (NIV)**      | New school of economics              | [regenerationism.ai](https://regenerationism.ai)                                                                                         | [direncode/regenerationism](https://github.com/direncode/regenerationism)                                                                                                      | [Tear sheet (PDF)](./public/NIV_TearSheet.pdf) · [Paper (PDF)](./public/NIV_Paper.pdf)       |
+| **Participatory Data Estate**  | Digital data governance              | —                                                                                                                                        | [direncode/sguncch](https://github.com/direncode/sguncch) *(SGUNCCH — first live deployment)*                                                                                  | —                                                                                            |
 
-## Headlines, stated at evidence density
+## Headlines, stated at paradigm scale
 
-- **BTUT** — a new approach to DARPA Mathematical Challenge 13. Cross-domain
-  comprehensive: one primitive shipped across **six live domains** — Eclipse
-  SUMO traffic, ROS robot fleets, 50 – 200 drone swarms, civic / urban data
+- **BTUT — a new coordination substrate for complex multi-agent systems.**
+  The dominant PDE-on-density approach crashes before 10,000 agents. BTUT
+  replaces it with a phase transition on a scale-free network under
+  Fermi-rule updates, β ≈ 0.5 (mean-field universality), constant
+  12-iteration convergence from 500 to 10,000 agents. **Six live applied
+  domains:** Eclipse SUMO traffic (800 vehicles, zero gridlock), ROS robot
+  fleets, 50 – 200 drone swarms (100% cooperation), civic data
   ([franklinstreetdata.com](https://www.franklinstreetdata.com)), game
   modeling ([bigdunc.com](https://www.bigdunc.com)), and four production
-  cloud surfaces (Python SDK, REST, Lambda, WASM). 800-vehicle SUMO peak
-  stress, zero gridlock. β ≈ 0.5 (mean-field). Constant 12-iteration
-  convergence from 500 to 10,000 agents.
-- **Crystara** — beats vanilla JEPA everywhere tested. +36.6 AUC pts on a
-  519-entity Georgetown CSET semiconductor supply chain; also beats supervised
-  GAT (DeepMind), GCN (Google Brain), GraphSAGE. +22.1 pts on GDELT. +20.0 pts
-  at 9,725-entity SEC EDGAR scale where GAT runs out of memory. 16 modules
-  discovered 1-to-1 with real industry clusters — no labels, no prompting.
-- **NIV** — built on a **regenerative-capital thesis**: the leading indicator
-  of macroeconomic regime health is the velocity of capital formation with
-  compounding margins, measured against cumulative friction — not bond-market
-  sentiment. Ensemble ROC-AUC **0.8538** at 18 months across 504 months
-  (1970 – 2024), six OOS validation tests, 98.5% false-alarm suppression,
-  **41.71%** orthogonal variance beyond the Fed 10Y – 3M spread. Under Gini
-  importance the regenerative-capital term scores **0.9328**; the yield
-  spread scores 0.0298 — the model picked the thesis unprompted. Every
-  weight published; every input from FRED. The repo is named
+  cloud surfaces. Also a new approach to DARPA Mathematical Challenge 13.
+- **TCD-JEPA (Crystara) — a new AI training paradigm past transformers.**
+  Instead of scaling a fixed attention architecture, grow the architecture:
+  Fisher-information Langevin exploration, Vietoris–Rips persistent
+  homology on the trajectories, typed H₀/H₁/H₂ predictor modules
+  crystallized at runtime. The first runtime-discovered predictor
+  architecture for the JEPA family. Beats vanilla JEPA everywhere tested:
+  **+36.6 AUC** on Georgetown CSET semiconductor (519 entities) — also
+  beats supervised GAT (DeepMind), GCN (Google Brain), GraphSAGE. +22.1 on
+  GDELT. +20.0 at 9,725-entity SEC EDGAR scale where GAT OOMs. 16 modules
+  1-to-1 with real industry clusters — no labels, no prompting.
+- **Regenerationism — a new economic philosophy; NIV is its first
+  operational instrument.** The school's claim: the leading indicator of
+  macroeconomic regime health is the velocity of capital formation with
+  compounding margins, measured against cumulative friction — not
+  bond-market sentiment, not linear averages of coincident series, not
+  equilibrium-return dynamics. NIV writes the school as a scalar.
+  Ensemble ROC-AUC **0.8538** at 18 months across 504 months (1970 – 2024),
+  six OOS validation tests, 98.5% false-alarm suppression, **41.71%**
+  orthogonal variance beyond the Fed 10Y – 3M spread. Under Gini importance
+  the regenerative-capital term scores **0.9328**; the yield spread scores
+  0.0298 — the model picked the school unprompted. The repository is named
   [`regenerationism`](https://github.com/direncode/regenerationism) for a
-  reason.
-- **PDE (SGUNCCH)** — a security posture student government has never
-  needed, and has never had. Time-constant auth, RLS on every Supabase
-  table, rate limiting by action class, public approval ledger. Submit →
-  Moderate → Thin → Crystallize. No FedRAMP claim attached; the repository
-  is open. Produce the counter-example.
+  reason — the school precedes the signal.
+- **Participatory Data Estate — a new framework for digital data
+  governance.** Dominant data-governance stacks treat ingestion as batched,
+  moderation as private, and audit trails as compliance tax. The
+  Participatory Data Estate inverts all three: continuous ingestion
+  (Submit → Moderate → Thin → Crystallize), moderation as a public
+  transition (publicly-readable approval ledger via RLS), hybrid pgvector
+  + GIN FTS retrieval, federal-hardening controls (time-constant auth,
+  RLS on every table, rate limiting on 4 action classes, CSP/HSTS, XSS
+  detection). **SGUNCCH** is the first live deployment — a full UNC
+  student-government stack running the framework end-to-end. A security
+  posture student government has never needed, and has never had.
 
 ## Stack
 

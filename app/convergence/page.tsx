@@ -17,7 +17,7 @@ export default function ConvergencePage() {
         number="VI"
         label="Chapter"
         title="Convergence &amp; Architecture."
-        kicker="Four primitives are interesting on their own. They are only a platform once they compose. This chapter is the composition argument — how reduction, crystallization, signal, and living ingestion become one engine."
+        kicker="Four paradigms are interesting on their own. They are only a platform once they compose. This chapter is the composition argument — how a new coordination substrate (BTUT), a new AI training paradigm past transformers (TCD-JEPA), a new economic philosophy (Regenerationism, operationalized by NIV), and a new framework for digital data governance (Participatory Data Estate) become one inference-time engine: the Latent Ocean."
         prev={{ href: "/participatory-data-estate", label: "PDE — Ingestion" }}
         next={{ href: "/about", label: "About / Context" }}
       />

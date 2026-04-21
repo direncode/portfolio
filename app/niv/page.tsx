@@ -18,7 +18,7 @@ export default function NivPage() {
         number="IV"
         label="Primitive · Signal"
         title="NIV."
-        kicker="National Impact Velocity conclusively beats the Fed yield curve on the standard recession benchmark — because it measures something the Fed spread cannot. NIV is built on a regenerative-capital thesis: the economy's leading indicator is not sentiment priced into bonds, it is the velocity of capital flowing into formation with exponentially compounding margins. Across 504 months (1970 – 2024) and six out-of-sample validation tests, NIV reaches ROC-AUC 0.8538 at the 18-month horizon, suppresses 98.5% of false alarms via an L2-regularized ensemble, and contributes 41.71% orthogonal variance beyond the Fed 10Y – 3M spread. The ensemble's own Gini importance ranks efficiency_sq — the regenerative-capital term — at 0.9328, against the yield spread at 0.0298. The thesis is the formula; the formula is the signal."
+        kicker="Regenerationism is a new economic philosophy. Its claim: the leading indicator of macroeconomic regime health is not bond-market sentiment, not arithmetic averages of coincident series, and not equilibrium-return dynamics — it is the velocity of capital formation with compounding margins, measured against cumulative friction. NIV is its first operational instrument. Across 504 months (1970 – 2024) and six out-of-sample validation tests, NIV reaches ROC-AUC 0.8538 at the 18-month horizon, suppresses 98.5% of false alarms, and contributes 41.71% orthogonal variance beyond the Fed 10Y – 3M spread. Under Gini importance the regenerative-capital term scores 0.9328 against the Fed spread's 0.0298. The thesis precedes the signal — the repository is named regenerationism for a reason. NIV is the signal a new school of economics looks like when written as a scalar."
         prev={{ href: "/crystara", label: "Crystara — Structure" }}
         next={{ href: "/participatory-data-estate", label: "PDE — Ingestion" }}
       />
@@ -33,58 +33,65 @@ export default function NivPage() {
       />
 
       <Essay>
-        <h2>The regenerative-capital thesis.</h2>
+        <h2>Regenerationism — a new economic philosophy.</h2>
         <p>
-          The entire architecture of NIV rests on one economic claim: the
-          most leading indicator of macroeconomic regime health is the{" "}
+          Regenerationism is the economic school this chapter proposes.
+          Its foundational claim is that the leading indicator of
+          macroeconomic regime health is the{" "}
           <strong>velocity of regenerative capital formation</strong>{" "}
           — capital flowing into areas of the economy with{" "}
           <em>exponentially compounding margins of value generation</em>{" "}
-          (non-residential investment, residential investment, and
-          inventory accumulation that feeds productive capacity),
-          measured against the cumulative friction that impedes its
-          circulation (yield inversion, positive real rates, rate
-          volatility, and idle capacity).
+          (non-residential investment, residential investment, R&amp;D,
+          productive-capacity-feeding inventory) — measured against the
+          cumulative friction that impedes its circulation (yield
+          inversion, positive real rates, rate volatility, idle
+          capacity). Regenerative capital is the <em>liberator</em>;
+          friction is the <em>drag</em>; the velocity of the first net
+          of the second is what the economy actually does.
         </p>
         <p>
-          This is a direct challenge to the dominant frames. The Fed
-          yield curve is a <em>sentiment signal</em> — it measures what
-          bond traders expect the Fed to do next. The Conference Board
-          LEI is a <em>linear average</em> of coincident indicators. DSGE
-          models assume an equilibrium that does not exist. None of them
-          measure where the money actually <em>goes</em>: into
-          regenerative capital, or away from it. NIV does, and the
-          repository is named <a
+          This is a direct challenge to the three dominant frames in
+          macroeconomics. The <strong>Fed yield curve</strong> is a{" "}
+          <em>sentiment signal</em> — it measures what bond traders
+          expect the Fed to do next, and becomes reflexive during QE and
+          forward guidance. The <strong>Conference Board LEI</strong>{" "}
+          aggregates ten coincident-or-lagging components into a linear
+          arithmetic index and cannot detect non-linear regime shifts.{" "}
+          <strong>Dynamic Stochastic General Equilibrium</strong> models
+          assume an equilibrium return that the credit plumbing of 2008
+          showed does not hold. None of these schools measure where the
+          money actually <em>goes</em>: into regenerative capital, or
+          away from it. Regenerationism measures exactly that, and NIV
+          is what happens when the philosophy is written as a scalar and
+          handed 504 months of walk-forward history.
+        </p>
+        <p>
+          The repository is named{" "}
+          <a
             href="https://github.com/direncode/regenerationism"
             target="_blank"
             rel="noopener noreferrer"
           >
             <code>regenerationism</code>
           </a>{" "}
-          for exactly this reason — the thesis precedes the signal.
+          for exactly this reason — the school precedes the signal. NIV
+          is its first emitted instrument; the next instruments will
+          follow the same template (thrust · regenerative-capital kernel
+          · slack · drag, validated on public data with walk-forward
+          discipline) across monetary, energy-grid, and supply-chain
+          regimes. The methodology is transferable because the
+          philosophy is.
         </p>
         <p>
-          The formula below operationalizes the thesis in four terms:{" "}
-          <strong>thrust</strong> (the kinetic impulse mobilizing capital
-          — investment growth, M2, policy rate), <strong>efficiency
-          P²</strong> (the regenerative-capital kernel itself — the
-          productivity of investment as a share of GDP, squared to
-          reward compounding allocation), <strong>slack</strong> (the
-          headroom regenerative capital has to fill), and{" "}
-          <strong>drag</strong> (the friction that choked its
-          circulation). NIV is what happens when you write the thesis
-          as a scalar and hand it 504 months of walk-forward history.
-        </p>
-        <p>
-          The empirical validation of the thesis comes from the model
+          The empirical receipt for the thesis comes from the ensemble
           itself. Under Gini-impurity feature importance, the
           regenerative-capital term <code>efficiency_sq</code> scores{" "}
           <strong>0.9328</strong> — the highest in the entire
-          framework. The Fed yield spread scores <strong>0.0298</strong>,
-          which is 31.2× smaller. The model was not told to prefer
-          regenerative capital. It was asked which feature best predicts
-          macroeconomic regime shifts, and it answered with the
-          thesis.
+          framework. The Fed yield spread scores{" "}
+          <strong>0.0298</strong>, which is 31.2× smaller. The model was
+          not told to prefer regenerative capital. It was asked which
+          feature best predicts macroeconomic regime shifts, and it
+          picked the school unprompted.
         </p>
 
         <h2>What a macro primitive looks like.</h2>
