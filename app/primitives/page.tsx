@@ -16,7 +16,7 @@ export default function PrimitivesPage() {
         number="I"
         label="Chapter"
         title="The Four Primitives"
-        kicker="Four primitives. Four incumbents outmeasured on their own benchmarks. BTUT is a new, cross-domain approach to DARPA Mathematical Challenge 13 — one mathematical object shipped across traffic simulators, robot fleets, drone swarms, and four production cloud surfaces. NIV beats the Fed yield curve on several recession benchmarks, with 41.71% orthogonal variance the yield spread cannot see and the full paper published. Crystara beats vanilla JEPA everywhere it has been tested — three real heterogeneous graphs, +20 to +36.6 AUC points — and beats supervised GAT (DeepMind), GCN (Google Brain), and GraphSAGE on Georgetown CSET's semiconductor supply chain; along the way it discovers 16 interpretable modules that map 1-to-1 to real industry clusters, with no labels and no prompting. SGUNCCH is a participatory data estate with a security posture student government has never needed, and has never had. Every claim on this chapter has a table, a tear sheet, or a repo directly underneath it."
+        kicker="Four primitives. Four incumbents outmeasured on their own benchmarks. BTUT is a new, cross-domain approach to DARPA Mathematical Challenge 13 — one mathematical object shipped across six live applied domains: traffic simulators, robot fleets, drone swarms, civic data (franklinstreetdata.com), game modeling (bigdunc.com), and four production cloud surfaces. NIV beats the Fed yield curve on several recession benchmarks, with 41.71% orthogonal variance the yield spread cannot see and the full paper published. Crystara beats vanilla JEPA everywhere it has been tested — three real heterogeneous graphs, +20 to +36.6 AUC points — and beats supervised GAT (DeepMind), GCN (Google Brain), and GraphSAGE on Georgetown CSET's semiconductor supply chain; along the way it discovers 16 interpretable modules that map 1-to-1 to real industry clusters, with no labels and no prompting. SGUNCCH is a participatory data estate with a security posture student government has never needed, and has never had. Every claim on this chapter has a table, a tear sheet, or a repo directly underneath it."
         prev={{ href: "/", label: "Manifesto" }}
         next={{ href: "/btut", label: "BTUT — Coordination" }}
       />
@@ -63,12 +63,13 @@ export default function PrimitivesPage() {
             comprehensive.</strong> A new mathematical object (phase
             transition on a scale-free network, mean-field universality
             class, β ≈ 0.5) replacing the O(N³) PDE default. One
-            primitive, four validated domains (abstract, traffic,
-            drone, robotics), four production cloud surfaces (Python
-            SDK, REST, Lambda, WASM). 800 vehicles under peak SUMO
-            stress, zero gridlock. 100% cooperation on 50 – 200 drone
-            swarms. Constant 12-iteration convergence from 500 to
-            10,000 agents.
+            primitive, six live applied domains: traffic (Eclipse SUMO,
+            800-vehicle peak stress, zero gridlock), robotics (ROS /
+            Turtlebot3), drone swarms (50 – 200 drones, 100%
+            cooperation), civic data (franklinstreetdata.com), game
+            modeling (bigdunc.com), and four production cloud surfaces
+            (Python SDK, REST, Lambda, WASM). Constant 12-iteration
+            convergence from 500 to 10,000 agents.
           </li>
           <li>
             <strong>NIV — beat the Fed.</strong> Ensemble ROC-AUC{" "}

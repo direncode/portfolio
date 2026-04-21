@@ -18,7 +18,7 @@ export default function BtutPage() {
         number="II"
         label="Primitive · Coordination"
         title="BTUT."
-        kicker="A new approach to DARPA Mathematical Challenge 13 — and a cross-domain-comprehensive application of it. Bivariate Trajectory-Undercurrent Theory replaces the O(N³) PDE with a phase transition on a scale-free network: Stag Hunt + Prisoner's Dilemma under Fermi updates, hub-weighted by τ, critical exponent β ≈ 0.5 in the mean-field universality class. One primitive, three validation regimes (abstract, traffic, drone) with matched critical behavior, and four production surfaces (Python SDK, REST, Lambda, WASM). Eclipse SUMO at 800-vehicle peak stress holds zero gridlock. 50 – 200 drone swarms coordinate at 100%. Constant 12 iterations from 500 to 10,000 agents."
+        kicker="A new approach to DARPA Mathematical Challenge 13 — and a cross-domain-comprehensive application of it. Bivariate Trajectory-Undercurrent Theory replaces the O(N³) PDE with a phase transition on a scale-free network: Stag Hunt + Prisoner's Dilemma under Fermi updates, hub-weighted by τ, critical exponent β ≈ 0.5 in the mean-field universality class. One primitive, six live domains — traffic simulation (Eclipse SUMO at 800-vehicle peak stress, zero gridlock), robotics (ROS / Turtlebot3), 50 – 200 drone swarms (100% cooperation), civic data (franklinstreetdata.com), game modeling (bigdunc.com), and four production cloud surfaces (Python SDK, REST, Lambda, WASM). Constant 12 iterations from 500 to 10,000 agents."
         prev={{ href: "/primitives", label: "The Four Primitives" }}
         next={{ href: "/crystara", label: "Crystara — Structure" }}
       />
@@ -28,6 +28,10 @@ export default function BtutPage() {
           { kind: "site", label: "btut.ai", href: "https://btut.ai" },
           { kind: "repo", label: "github.com/direncode/btut", href: "https://github.com/direncode/btut" },
           { kind: "tear", label: "BTUT Tear Sheet", href: "/BTUT_Tear_Sheet.pdf" },
+          { kind: "site", label: "franklinstreetdata.com", href: "https://www.franklinstreetdata.com" },
+          { kind: "site", label: "bigdunc.com", href: "https://www.bigdunc.com" },
+          { kind: "repo", label: "github.com/direncode/framklnstdata", href: "https://github.com/direncode/framklnstdata" },
+          { kind: "repo", label: "github.com/direncode/game-model", href: "https://github.com/direncode/game-model" },
         ]}
       />
 
@@ -322,6 +326,65 @@ P( s_i ← s_j )  =  1 / ( 1 + exp( −(U_j − U_i) / κ ) )`}</pre>
           with JSON results, and a Lambda variant provides serverless
           horizontal scaling. The SDK is the same shape for a researcher in
           Jupyter and for a backend under load.
+        </p>
+
+        <h2>Applied deployments.</h2>
+        <p>
+          Beyond the core primitive, BTUT ships in two stand-alone live
+          applications — each a different real-world domain using the
+          same coordination substrate:
+        </p>
+        <ul>
+          <li>
+            <strong>
+              <a
+                href="https://www.franklinstreetdata.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                franklinstreetdata.com
+              </a>
+            </strong>{" "}
+            — a civic / urban-data application of BTUT on Chapel
+            Hill&rsquo;s Franklin Street. Repository:{" "}
+            <a
+              href="https://github.com/direncode/framklnstdata"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              direncode/framklnstdata
+            </a>
+            .
+          </li>
+          <li>
+            <strong>
+              <a
+                href="https://www.bigdunc.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                bigdunc.com
+              </a>
+            </strong>{" "}
+            — a game-modeling application built on the BTUT coordination
+            kernel. Repository:{" "}
+            <a
+              href="https://github.com/direncode/game-model"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              direncode/game-model
+            </a>
+            .
+          </li>
+        </ul>
+        <p>
+          With these two, the count of live domains running the same
+          mathematical object rises to six: traffic simulation, robotics,
+          drone swarms, cloud surfaces, civic data, and game modeling.
+          The cross-domain claim is now backed by public URLs; every
+          deployment is clickable from the source bar at the top of this
+          chapter.
         </p>
 
         <h2>Why this matters.</h2>

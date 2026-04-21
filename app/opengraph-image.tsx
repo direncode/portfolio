@@ -88,7 +88,7 @@ export default async function Image() {
             {
               name: "BTUT",
               role: "COORDINATION",
-              beat: "New approach to DARPA Challenge 13 · cross-domain",
+              beat: "New approach to DARPA 13 · 6 live applied domains",
             },
             {
               name: "Crystara",

@@ -21,10 +21,12 @@ export default function HomePage() {
           <p className="mt-8 text-lg md:text-2xl text-ink-200 max-w-3xl leading-relaxed text-pretty">
             Four live primitives across four subfields. A new approach to{" "}
             <em className="text-accent not-italic">DARPA Mathematical
-            Challenge&nbsp;13</em>, shipped cross-domain. A macro-stress
-            scalar that <em className="text-accent not-italic">beats the
-            Fed yield curve</em> with 41.71% orthogonal variance and a
-            published paper. A topological predictor that{" "}
+            Challenge&nbsp;13</em>, shipped across six live applied
+            domains — traffic, robotics, drones, civic data, game
+            modeling, and cloud. A macro-stress scalar that{" "}
+            <em className="text-accent not-italic">beats the Fed yield
+            curve</em> with 41.71% orthogonal variance and a published
+            paper. A topological predictor that{" "}
             <em className="text-accent not-italic">beats vanilla JEPA
             everywhere it has been tested</em> and also beats supervised
             GAT (DeepMind) and GCN (Google Brain) on a Georgetown CSET
@@ -100,6 +102,10 @@ export default function HomePage() {
                   { k: "Live site", label: "btut.ai", href: "https://btut.ai", ext: true },
                   { k: "Repository", label: "direncode/btut", href: "https://github.com/direncode/btut", ext: true },
                   { k: "Tear sheet", label: "BTUT_Tear_Sheet.pdf", href: "/BTUT_Tear_Sheet.pdf", ext: true },
+                  { k: "Applied · Civic data", label: "franklinstreetdata.com", href: "https://www.franklinstreetdata.com", ext: true },
+                  { k: "Applied · Game model", label: "bigdunc.com", href: "https://www.bigdunc.com", ext: true },
+                  { k: "Applied repo", label: "direncode/framklnstdata", href: "https://github.com/direncode/framklnstdata", ext: true },
+                  { k: "Applied repo", label: "direncode/game-model", href: "https://github.com/direncode/game-model", ext: true },
                 ],
               },
               {

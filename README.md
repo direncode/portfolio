@@ -19,7 +19,7 @@ production (ingestion — **SGUNCCH**).
 
 | Primitive    | Role          | Live site                                            | Repository                                                                  | Tear sheet / paper                                                          |
 | ------------ | ------------- | ---------------------------------------------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-| **BTUT**     | Coordination  | [btut.ai](https://btut.ai)                           | [direncode/btut](https://github.com/direncode/btut)                         | [Tear sheet (PDF)](./public/BTUT_Tear_Sheet.pdf)                            |
+| **BTUT**     | Coordination  | [btut.ai](https://btut.ai) · [franklinstreetdata.com](https://www.franklinstreetdata.com) · [bigdunc.com](https://www.bigdunc.com) | [direncode/btut](https://github.com/direncode/btut) · [framklnstdata](https://github.com/direncode/framklnstdata) · [game-model](https://github.com/direncode/game-model) | [Tear sheet (PDF)](./public/BTUT_Tear_Sheet.pdf)                            |
 | **Crystara** | Structure     | —                                                    | [direncode/tcd-jepa](https://github.com/direncode/tcd-jepa)                 | —                                                                           |
 | **NIV**      | Signal        | [regenerationism.ai](https://regenerationism.ai)     | [direncode/regenerationism](https://github.com/direncode/regenerationism)   | [Tear sheet (PDF)](./public/NIV_TearSheet.pdf) · [Paper (PDF)](./public/NIV_Paper.pdf) |
 | **SGUNCCH**  | Ingestion (PDE) | —                                                  | [direncode/sguncch](https://github.com/direncode/sguncch)                   | —                                                                           |
@@ -27,9 +27,12 @@ production (ingestion — **SGUNCCH**).
 ## Headlines, stated at evidence density
 
 - **BTUT** — a new approach to DARPA Mathematical Challenge 13. Cross-domain
-  comprehensive: one primitive shipped across Eclipse SUMO traffic, ROS robot
-  fleets, 50 – 200 drone swarms, Python SDK, REST, Lambda, WASM. 800-vehicle
-  SUMO peak stress, zero gridlock. β ≈ 0.5 (mean-field). Constant 12-iteration
+  comprehensive: one primitive shipped across **six live domains** — Eclipse
+  SUMO traffic, ROS robot fleets, 50 – 200 drone swarms, civic / urban data
+  ([franklinstreetdata.com](https://www.franklinstreetdata.com)), game
+  modeling ([bigdunc.com](https://www.bigdunc.com)), and four production
+  cloud surfaces (Python SDK, REST, Lambda, WASM). 800-vehicle SUMO peak
+  stress, zero gridlock. β ≈ 0.5 (mean-field). Constant 12-iteration
   convergence from 500 to 10,000 agents.
 - **Crystara** — beats vanilla JEPA everywhere tested. +36.6 AUC pts on a
   519-entity Georgetown CSET semiconductor supply chain; also beats supervised
