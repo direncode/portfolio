@@ -33,7 +33,7 @@ export default async function Image() {
             textTransform: "uppercase",
           }}
         >
-          <div style={{ display: "flex" }}>Manifesto</div>
+          <div style={{ display: "flex" }}>Dubai</div>
           <div
             style={{
               width: "36px",
@@ -44,7 +44,7 @@ export default async function Image() {
             }}
           />
           <div style={{ display: "flex" }}>
-            Horizontal Intelligence Primitives
+            Nineteen · Solo · 7–9 Months
           </div>
         </div>
 
@@ -52,58 +52,64 @@ export default async function Image() {
         <div
           style={{
             display: "flex",
-            fontSize: "92px",
+            fontSize: "62px",
             fontWeight: 700,
-            lineHeight: 1.0,
-            letterSpacing: "-2px",
-            marginTop: "30px",
+            lineHeight: 1.05,
+            letterSpacing: "-1.5px",
+            marginTop: "26px",
+            color: "#c8a25a",
           }}
         >
-          Diren Kumaratilleke
+          I invert the primitive everyone takes as given.
         </div>
 
         {/* Subtitle */}
         <div
           style={{
             display: "flex",
-            fontSize: "26px",
+            fontSize: "25px",
             color: "#d8d8d4",
-            marginTop: "24px",
-            maxWidth: "1000px",
+            marginTop: "20px",
+            maxWidth: "1020px",
             lineHeight: 1.35,
           }}
         >
-          Four paradigms. Four fields. Nineteen. Solo. One year.
+          Diren Kumaratilleke — five inversions across five fields.
         </div>
 
         {/* Four-primitive grid */}
         <div
           style={{
             display: "flex",
-            gap: "14px",
-            marginTop: "44px",
+            gap: "12px",
+            marginTop: "38px",
           }}
         >
           {[
             {
-              name: "BTUT",
-              role: "MULTI-AGENT SYSTEMS",
-              beat: "A new coordination substrate · 6 live applied domains",
+              name: "Latent Ocean",
+              role: "GROUNDING",
+              beat: "Provenance as the primitive · refusal as the third state",
             },
             {
-              name: "TCD-JEPA",
-              role: "POST-TRANSFORMER AI",
-              beat: "Grow the predictor · beats JEPA + DeepMind / Google Brain GNNs",
+              name: "BTUT",
+              role: "COORDINATION",
+              beat: "Decline the coupled equation · find the O(N) formulation",
+            },
+            {
+              name: "Crystara",
+              role: "AI TRAINING",
+              beat: "Grow the architecture at runtime, don't scale a fixed one",
             },
             {
               name: "NIV",
               role: "REGENERATIONISM",
-              beat: "A new economic school · beats the Fed yield curve",
+              beat: "Read capital formation, not bond sentiment",
             },
             {
               name: "PDE",
               role: "DATA GOVERNANCE",
-              beat: "A new governance framework · SGUNCCH is the first live deployment",
+              beat: "Governance corpora auditable by construction",
             },
           ].map((p) => (
             <div
@@ -112,18 +118,19 @@ export default async function Image() {
                 flex: 1,
                 border: "1px solid #32322d",
                 background: "#121210",
-                padding: "22px",
+                padding: "16px",
                 display: "flex",
                 flexDirection: "column",
-                gap: "4px",
+                gap: "2px",
               }}
             >
               <div
                 style={{
                   display: "flex",
-                  fontSize: "30px",
+                  fontSize: "21px",
                   fontWeight: 700,
                   color: "#eeeeec",
+                  lineHeight: 1.15,
                 }}
               >
                 {p.name}
@@ -131,10 +138,10 @@ export default async function Image() {
               <div
                 style={{
                   display: "flex",
-                  fontSize: "11px",
+                  fontSize: "9px",
                   color: "#c8a25a",
-                  letterSpacing: "3px",
-                  marginTop: "2px",
+                  letterSpacing: "2px",
+                  marginTop: "4px",
                 }}
               >
                 {p.role}
@@ -142,7 +149,7 @@ export default async function Image() {
               <div
                 style={{
                   display: "flex",
-                  fontSize: "14px",
+                  fontSize: "12px",
                   color: "#b4b4ad",
                   marginTop: "10px",
                   lineHeight: 1.35,
@@ -170,7 +177,7 @@ export default async function Image() {
             textTransform: "uppercase",
           }}
         >
-          <div style={{ display: "flex" }}>diren.vercel.app</div>
+          <div style={{ display: "flex" }}>direncode.com</div>
           <div style={{ display: "flex", color: "#c8a25a" }}>
             The tape is the argument
           </div>

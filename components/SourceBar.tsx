@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export type ResourceKind = "site" | "repo" | "tear" | "paper";
+export type ResourceKind = "site" | "repo" | "tear" | "paper" | "demo";
 
 export type Resource = {
   kind: ResourceKind;
@@ -13,6 +13,7 @@ const KIND_LABEL: Record<ResourceKind, string> = {
   repo: "Repository",
   tear: "Tear Sheet",
   paper: "Paper",
+  demo: "Live Demo",
 };
 
 const KIND_ICON: Record<ResourceKind, string> = {
@@ -20,6 +21,7 @@ const KIND_ICON: Record<ResourceKind, string> = {
   repo: "↗",
   tear: "PDF",
   paper: "PDF",
+  demo: "↗",
 };
 
 type Props = {
