@@ -159,6 +159,18 @@ export default function CrystaraPage() {
             CSET validation mapping, the three-graph benchmark
             configurations, nine data adapters, 186 tests.
           </li>
+          <li>
+            <a href="https://github.com/direncode/tests" target="_blank" rel="noopener noreferrer">
+              github.com/direncode/tests
+            </a>{" "}
+            — Riemannian energy-descent experiments behind the explorer.
+          </li>
+          <li>
+            <a href="https://github.com/direncode/jumpbenchmark" target="_blank" rel="noopener noreferrer">
+              github.com/direncode/jumpbenchmark
+            </a>{" "}
+            — physics-video benchmark harness.
+          </li>
         </ul>
 
         <ChapterFooter
