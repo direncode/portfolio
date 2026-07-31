@@ -1,27 +1,18 @@
 import Link from "next/link";
 
 export type InversionRow = {
-  /** The assumption the field treats as settled. */
   given: string;
-  /** The move. */
   instead: string;
-  /** Which system this instance is. */
   system: string;
   href: string;
 };
 
 export const INVERSIONS: InversionRow[] = [
   {
-    given: "Recession indicators read bond sentiment",
-    instead: "Read physical capital formation instead",
-    system: "NIV",
-    href: "/niv",
-  },
-  {
-    given: "Architectures are fixed and scaled",
-    instead: "Grow the architecture at runtime",
-    system: "Crystara",
-    href: "/crystara",
+    given: "Provenance annotates a tuple",
+    instead: "Make it the composing unit — and make refusal a state",
+    system: "Latent Ocean",
+    href: "/latent-ocean",
   },
   {
     given: "Coordination solves the coupled equation",
@@ -30,16 +21,22 @@ export const INVERSIONS: InversionRow[] = [
     href: "/btut",
   },
   {
-    given: "Codd's tuple is provenance-free",
-    instead: "Make provenance the primitive",
-    system: "Latent Ocean",
-    href: "/latent-ocean",
+    given: "Architectures are fixed and scaled",
+    instead: "Grow the architecture at runtime",
+    system: "Crystara",
+    href: "/crystara",
   },
   {
-    given: "Setun's third state is arithmetic",
-    instead: "Make it epistemic: refusal",
-    system: "Latent Ocean",
-    href: "/latent-ocean",
+    given: "Recession indicators read bond sentiment",
+    instead: "Read physical capital formation",
+    system: "NIV",
+    href: "/niv",
+  },
+  {
+    given: "A governance corpus is published, then stale",
+    instead: "Moderation as a public state transition",
+    system: "Participatory Data Estate",
+    href: "/participatory-data-estate",
   },
 ];
 
@@ -51,7 +48,7 @@ export function Inversion({ className = "" }: { className?: string }) {
           <li key={i}>
             <Link
               href={row.href}
-              className="group grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto] gap-2 md:gap-6 items-baseline py-5 -mx-5 md:-mx-8 px-5 md:px-8 hover:bg-ink-900/40 transition-colors"
+              className="group grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto] gap-1 md:gap-6 items-baseline py-4 -mx-5 md:-mx-8 px-5 md:px-8 hover:bg-ink-900/40 transition-colors"
             >
               <span className="text-ink-400 text-[15px] leading-snug">
                 {row.given}
@@ -60,12 +57,10 @@ export function Inversion({ className = "" }: { className?: string }) {
                 →
               </span>
               <span className="text-ink-50 text-[15px] leading-snug group-hover:text-accent transition-colors">
-                <span className="md:hidden text-accent/70 font-mono mr-2">
-                  →
-                </span>
+                <span className="md:hidden text-accent/70 font-mono mr-2">→</span>
                 {row.instead}
               </span>
-              <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-ink-500 group-hover:text-accent transition-colors md:text-right md:w-28">
+              <span className="font-mono text-[10px] uppercase tracking-[0.16em] text-ink-500 group-hover:text-accent transition-colors md:text-right md:w-40">
                 {row.system}
               </span>
             </Link>

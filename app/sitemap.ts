@@ -4,15 +4,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://direncode.com";
   const routes = [
     "",
-    "/primitives",
     "/latent-ocean",
     "/btut",
     "/crystara",
     "/niv",
     "/participatory-data-estate",
-    "/convergence",
-    "/about",
-    "/forward",
   ];
   const now = new Date();
   return routes.map((r) => ({
