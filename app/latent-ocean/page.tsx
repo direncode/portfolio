@@ -133,8 +133,8 @@ min( 0, +1 )  =  0`}
         <p>
           Not all absences are the same object, and treating them as one is
           what makes a compliance layer pass silently. The estate
-          distinguishes five, and <strong>two of them have no remedy</strong>{" "}
-          — no amount of further querying or ingestion resolves them.
+          distinguishes five. Three of them shrink as data and effort are
+          applied. <strong>Two do not move at any price.</strong>
         </p>
         <table>
           <thead>
@@ -159,30 +159,59 @@ min( 0, +1 )  =  0`}
               <td>Resolve or retract the reference</td>
             </tr>
             <tr>
-              <td><strong>Observational</strong></td>
-              <td>Observation window</td>
-              <td>No observation covers the requested interval</td>
-              <td>Take the measurement</td>
-            </tr>
-            <tr>
               <td><strong>Contradictory</strong></td>
               <td>Variance over provenance</td>
               <td>Sources with standing yield incompatible values under the gate</td>
-              <td><strong>None</strong> — requires an authority decision outside the estate</td>
+              <td>Adjudication — a steward decides which source governs, or a rule ranks them</td>
+            </tr>
+            <tr>
+              <td><strong>Observational</strong></td>
+              <td>Right / legal standing</td>
+              <td>The value is void to this estate by another party&rsquo;s legal right</td>
+              <td><strong>None</strong> — no effort on this side obtains it</td>
             </tr>
             <tr>
               <td><strong>Categorical</strong></td>
-              <td>Sort / type</td>
-              <td>The predicate does not apply to this entity&rsquo;s sort</td>
-              <td><strong>None</strong> — the question is not well-formed</td>
+              <td>Grain / sort</td>
+              <td>The path relates to a <em>set</em>; the question asks about an <em>instance</em></td>
+              <td><strong>None</strong> — the record never carried an instance-level link</td>
             </tr>
           </tbody>
         </table>
         <p>
-          A retrieval system returns the same empty result for all five. An
-          estate that names which one it is tells an operator whether to
-          change the schema, chase a reference, send someone to take a
-          reading, escalate to an authority, or stop asking.
+          <strong>Contradictory absence is carried, not resolved silently.</strong>{" "}
+          Where sources with standing disagree, the estate does not pick a
+          winner behind the query — it carries the conflict into the answer,
+          with both derivations intact, where a steward can adjudicate it or
+          a ranking rule can. The coverage act in the{" "}
+          <a href="https://latentocean.com/spacex/off-earth" target="_blank" rel="noopener noreferrer">
+            SpaceX demonstration
+          </a>{" "}
+          shows exactly this. Carrying a conflict is not the same as being
+          unable to resolve one.
+        </p>
+        <h3>The irreducible floor.</h3>
+        <p>
+          The first three recede under investment: extend the schema,
+          resolve the referent, put the conflict in front of an authority.
+          Spend more, ingest more, decide more, and the answerable set
+          grows.
+        </p>
+        <p>
+          The last two do not move. A value void to you by another
+          party&rsquo;s legal right is not obtainable by any effort on your
+          side of that boundary — not with a larger budget, a better
+          pipeline, or more time. And a path relating a contract to a{" "}
+          <em>programme</em> cannot be made to relate it to a specific{" "}
+          <em>flight</em>: the instance-level link was never in the record,
+          and no reconciliation manufactures one. Ever, from that data.
+        </p>
+        <p>
+          That boundary is the <strong>irreducible floor</strong>. Above it,
+          everything is a question of investment; the floor itself is a fact
+          about the data. Emitting a signed proof of where it sits is the
+          durable claim here — it is the one output whose value does not
+          decay as an operator&rsquo;s data improves.
         </p>
 
         <ChapterSection numeral="III" />
@@ -206,16 +235,15 @@ min( 0, +1 )  =  0`}
           moves. Composition rests on 1,404,816 measured triads.
         </p>
         <p>
-          <strong>Five deployed estates.</strong> A refinery (process
-          operations under provenance constraints); an offshore field (where
-          the network cut is an operating condition, not a fixture); an
-          industrial group in which an{" "}
+          <strong>Five deployed estates.</strong> A refinery; an offshore
+          field, where the network cut is an operating condition rather than
+          a fixture; an industrial group in which an{" "}
           <strong>export-controlled programme is provably sealed</strong>{" "}
-          from the rest of the group&rsquo;s estate — the seal is a property
-          the estate demonstrates, not a policy the query layer is trusted
-          to apply; an aerospace estate on public data, so the reasoning is
-          externally checkable; and an energy/maritime corridor spanning
-          jurisdictions with divergent authorities over the same facts.
+          from the rest of the group&rsquo;s estate — a property the estate
+          demonstrates, not a policy the query layer is trusted to apply; an
+          aerospace estate on public data, so the reasoning is externally
+          checkable; and an energy/maritime corridor spanning jurisdictions
+          with divergent authorities over the same facts.
         </p>
         <p>
           <strong>The network-cut gate</strong> at{" "}
@@ -225,8 +253,8 @@ min( 0, +1 )  =  0`}
           runs the estate under a severed network — the condition where
           conventional systems degrade most quietly, answering from cache
           with no sign that contact with ground truth is lost. The estate
-          refuses, names the reason, and the refusal propagates. Under a
-          minute, and the shortest path to the whole argument.
+          refuses and names the reason. Under a minute, and the shortest
+          path to the whole argument.
         </p>
         <p>
           <strong>The agentic systems IDE.</strong> Nothing is generated,
@@ -234,9 +262,13 @@ min( 0, +1 )  =  0`}
           <em>declarative spec</em>; the estate grounds each element or
           refuses it with a named reason; a human steward promotes what
           survives, and that promotion is the write. The surface is{" "}
-          <strong>11 governed MCP tools</strong>, each under the same
-          grounding contract as any query — a tool call that cannot be
-          grounded returns a refusal, not a best effort.
+          <strong>11 governed MCP tools</strong> — enumerated with their
+          individual grounding contracts at{" "}
+          <a href="https://latentocean.com" target="_blank" rel="noopener noreferrer">
+            latentocean.com
+          </a>{" "}
+          — each under the same contract as any query: a tool call that
+          cannot be grounded returns a refusal, not a best effort.
         </p>
 
         <ChapterSection numeral="IV" />
@@ -261,8 +293,14 @@ min( 0, +1 )  =  0`}
           <p>
             <strong>The composition law is measured over 10 corpora.</strong>{" "}
             1,404,816 triads is a large number of measurements drawn from a
-            small number of corpora. Generalisation beyond those domains is
-            not established by the count.
+            small number of corpora — the ten are enumerated with the
+            measurement harness at{" "}
+            <a href="https://latentocean.com" target="_blank" rel="noopener noreferrer">
+              latentocean.com
+            </a>
+            . Generalisation beyond those domains is not established by the
+            triad count, which measures depth of sampling rather than
+            breadth of domain.
           </p>
           <p>
             <strong>Not a replacement where the relational model is
@@ -301,9 +339,15 @@ min( 0, +1 )  =  0`}
           silent pass: a compliance layer that returns clean because no rule
           in it covers the case in front of it, unable to distinguish{" "}
           <em>this was checked and is fine</em> from{" "}
-          <em>nothing here knows how to check this</em>. The two absence
-          classes with no remedy are exactly the cases a confident system
-          answers anyway.
+          <em>nothing here knows how to check this</em>.
+        </p>
+        <p>
+          The commercial form of that is the floor. An organisation that
+          cannot separate absence classes cannot tell which of its reporting
+          gaps are underfunded and which are impossible, so it funds all of
+          them or none. A signed floor turns that into a budget decision —
+          and the proof is portable to a regulator or auditor who asks why a
+          gap was never closed.
         </p>
         <p>
           This matters to any government converting operations to agentic AI

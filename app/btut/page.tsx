@@ -130,11 +130,21 @@ P( s_i ← s_j )  =  1 / ( 1 + exp( −(U_j − U_i) / κ ) )`}
         <p>
           <strong>Against mean-field-game solvers.</strong> Measured
           throughput is <strong>20–105× existing MFG solver frameworks</strong>{" "}
-          over the validated population range, the spread reflecting where
-          in that range the comparison is taken — the advantage widens with
-          N, as the complexity classes diverge. Configurations, baseline
-          identities and the hardware the comparison was run on are recorded
-          in the tear sheet and repository linked in section VI.
+          over the validated population range. The spread reflects where in
+          that range the comparison is taken — the advantage widens with N,
+          as the complexity classes diverge. The identity of each baseline
+          framework, its version and configuration, and the hardware every
+          run was executed on are recorded with the benchmark harness in the{" "}
+          <a href="https://github.com/direncode/btut" target="_blank" rel="noopener noreferrer">
+            repository
+          </a>{" "}
+          and summarised in the{" "}
+          <a href="/BTUT_Tear_Sheet.pdf" target="_blank" rel="noopener noreferrer">
+            tear sheet
+          </a>
+          . A throughput multiple is only meaningful against a named
+          baseline on stated hardware, so both travel with the number rather
+          than with this page.
         </p>
         <p>
           <strong>Critical behaviour.</strong> The transition reproduces
