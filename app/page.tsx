@@ -1,6 +1,16 @@
 import Link from "next/link";
 import { Inversions, Results } from "@/components/Thesis";
 
+const DOCS = [
+  { label: "Latent Ocean live", href: "https://www.latentocean.com/spacex" },
+  { label: "A Successor to Codd", href: "/LatentOcean_SuccessorToCodd.pdf" },
+  { label: "A Successor to Setun", href: "/LatentOcean_SuccessorToSetun.pdf" },
+  { label: "SSRN 6664138", href: "/NIV_SSRN_6664138.pdf" },
+  { label: "NIV tear sheet", href: "/NIV_TearSheet.pdf" },
+  { label: "BTUT tear sheet", href: "/BTUT_Tear_Sheet.pdf" },
+  { label: "GitHub", href: "https://github.com/direncode" },
+];
+
 const STATS = [
   { v: "19", l: "Years old" },
   { v: "7–9", l: "Months building" },
@@ -50,6 +60,24 @@ export default function HomePage() {
         <p className="mt-6 text-[15px] text-ink-400 italic font-serif">
           What follows is not a résumé. It is the tape.
         </p>
+
+        <div className="mt-6 flex flex-wrap items-baseline gap-x-5 gap-y-2 text-[13px]">
+          <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-ink-500">
+            Documents
+          </span>
+          {DOCS.map((d, i) => (
+            <a
+              key={i}
+              href={d.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink-300 hover:text-accent transition-colors"
+            >
+              {d.label}
+              <span className="text-accent ml-1">↗</span>
+            </a>
+          ))}
+        </div>
 
         <div className="mt-8 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 border border-ink-800 divide-x divide-y md:divide-y-0 divide-ink-800">
           {STATS.map((d, i) => (

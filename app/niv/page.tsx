@@ -144,7 +144,7 @@ F  =  0.4·s + 0.4·max(0, r−π) + 0.2·σ           Drag`}</Equation>
               SSRN 6664138
             </a>{" "}
             ·{" "}
-            <a href="/NIV_Paper.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/NIV_SSRN_6664138.pdf" target="_blank" rel="noopener noreferrer">
               full paper (PDF)
             </a>{" "}
             — six validation tests, all tables, the walk-forward protocol,
@@ -164,10 +164,20 @@ F  =  0.4·s + 0.4·max(0, r−π) + 0.2·σ           Drag`}</Equation>
             — live dashboard, parameter simulator, CSV export.
           </li>
           <li>
+            <a href="https://github.com/direncode/niv-engine" target="_blank" rel="noopener noreferrer">
+              github.com/direncode/niv-engine
+            </a>{" "}
+            — the engine: FRED pipeline, ensemble, walk-forward harness.
+          </li>
+          <li>
             <a href="https://github.com/direncode/regenerationism" target="_blank" rel="noopener noreferrer">
               github.com/direncode/regenerationism
             </a>{" "}
-            — FRED pipeline, ensemble, walk-forward harness, notebooks.
+            ·{" "}
+            <a href="https://github.com/direncode/flux-regenerationism" target="_blank" rel="noopener noreferrer">
+              flux-regenerationism
+            </a>{" "}
+            — the dashboard and simulator.
           </li>
         </ul>
 

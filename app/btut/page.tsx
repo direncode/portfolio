@@ -157,13 +157,32 @@ export default function BtutPage() {
           </li>
           <li>
             Applied deployments:{" "}
+            <a href="https://www.franklinstreetdata.com" target="_blank" rel="noopener noreferrer">
+              franklinstreetdata.com
+            </a>{" "}
+            (
             <a href="https://github.com/direncode/framklnstdata" target="_blank" rel="noopener noreferrer">
               framklnstdata
+            </a>
+            ) ·{" "}
+            <a href="https://www.bigdunc.com" target="_blank" rel="noopener noreferrer">
+              bigdunc.com
             </a>{" "}
-            ·{" "}
+            (
             <a href="https://github.com/direncode/game-model" target="_blank" rel="noopener noreferrer">
               game-model
             </a>
+            ,{" "}
+            <a href="https://github.com/direncode/flux-thebigdunc" target="_blank" rel="noopener noreferrer">
+              flux-thebigdunc
+            </a>
+            )
+          </li>
+          <li>
+            <a href="https://github.com/direncode/flux-btut" target="_blank" rel="noopener noreferrer">
+              github.com/direncode/flux-btut
+            </a>{" "}
+            — the btut.ai frontend.
           </li>
         </ul>
 
