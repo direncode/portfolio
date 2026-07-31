@@ -6,11 +6,11 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const metadata: Metadata = {
   metadataBase: new URL("https://direncode.com"),
   title: {
-    default: "Diren Kumaratilleke — I invert the primitive everyone takes as given",
+    default: "Diren Kumaratilleke — The returns are in the representation, not the scale",
     template: "%s — Diren Kumaratilleke",
   },
   description:
-    "Five inversions across five fields. Latent Ocean makes provenance the primitive and refusal the third state. BTUT declines the coupled equation for the O(N) formulation. Crystara grows the architecture at runtime. NIV reads capital formation rather than bond sentiment. The Participatory Data Estate makes governance corpora auditable by construction.",
+    "An economic claim, and five systems that are instances of it. Latent Ocean makes provenance the composing unit rather than adding retrieval. BTUT finds the O(N) formulation rather than adding machines. Crystara grows the architecture rather than adding parameters. NIV measures whether capital formation compounds or accumulates as friction — the same question as whether AI capex is investment or drag.",
   keywords: [
     "Latent Ocean",
     "provenance primitive",
@@ -28,16 +28,16 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Diren Kumaratilleke" }],
   openGraph: {
-    title: "I invert the primitive everyone takes as given",
+    title: "The returns are in the representation, not the scale",
     description:
-      "Five inversions across five fields — grounding, coordination, structure, signal, ingestion. Every impact claim printed beside the condition it has not yet met.",
+      "One economic claim, five systems that instantiate it. Every impact claim is printed beside the condition it has not yet met.",
     type: "website",
     siteName: "Diren Kumaratilleke",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "I invert the primitive everyone takes as given",
+    title: "The returns are in the representation, not the scale",
     description:
       "Latent Ocean · BTUT · Crystara · NIV · Participatory Data Estate. Live systems, repositories, and papers linked.",
   },

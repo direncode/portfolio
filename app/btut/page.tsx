@@ -45,7 +45,9 @@ export default function BtutPage() {
           scale-free network and play two games at once — Stag Hunt and
           Prisoner&rsquo;s Dilemma — updating by the Fermi rule, weighted
           by neighbour degree. No density is transported. Cost per sweep is
-          linear in edges, which on a scale-free graph is linear in N.
+          linear in edges, which on a scale-free graph is linear in N. The
+          gain is not more machines. It is a representation of the same
+          phase transition that costs linearly instead of cubically.
         </p>
         <p>
           The substitution is legitimate because the system has a real

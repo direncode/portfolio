@@ -34,10 +34,9 @@ export default function PdePage() {
         </p>
         <p>
           Live governance is neither. Corpora are amended continuously, so a
-          one-time index is wrong shortly after it is built. And the
-          question a constituent has is rarely what the policy says — it is
-          who approved it, when, and over what objection. Publication
-          discards exactly that.
+          one-time index is wrong shortly after it is built. And the question
+          a constituent has is rarely what the policy says — it is who
+          approved it, when, and over what objection.
         </p>
         <p>
           I made ingestion continuous and moderation public. Four stages,
@@ -60,7 +59,9 @@ export default function PdePage() {
           clears a similarity threshold; below it, the system returns
           nothing rather than the nearest available text. A governance
           question with no covering passage should produce an absence, not
-          a plausible paragraph from an adjacent policy.
+          a plausible paragraph from an adjacent policy. A bigger corpus
+          does not make governance legible. A representation whose changes
+          are public does.
         </p>
 
         <ChapterSection n={2} />
