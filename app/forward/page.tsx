@@ -1,12 +1,12 @@
 import { ChapterHeader } from "@/components/ChapterHeader";
 import { ChapterFooter } from "@/components/ChapterFooter";
 import { Essay } from "@/components/Essay";
-import { Callout } from "@/components/Callout";
+import { ChapterSection, Bound } from "@/components/ChapterSection";
 
 export const metadata = {
   title: "Forward Direction",
   description:
-    "Scaling, sovereign integration potential, and inference-time substrate alignment — what the Latent Ocean becomes next.",
+    "What is being built now — the agentic systems IDE, the shell library, sovereign deployment — and what is needed that cannot be self-supplied: accreditation, IdP integration, and authority as system of record.",
 };
 
 export default function ForwardPage() {
@@ -16,150 +16,111 @@ export default function ForwardPage() {
         number="IX"
         label="Chapter"
         title="Forward Direction."
-        kicker="Where the five inversions are headed, what Latent Ocean becomes once an external operator runs an estate, and — for each direction — the condition that has not yet been met."
+        kicker="Present tense only. What is under construction now, and — more usefully — what this work requires that I cannot supply for myself."
         prev={{ href: "/about", label: "About / Context" }}
       />
 
       <Essay>
-        <h2>The condition that matters most.</h2>
+        <ChapterSection numeral="I" title="What Is Being Built" />
         <p>
-          Everything below is secondary to one thing:{" "}
-          <strong>an external operator running an estate on their own data,
-          under their own network conditions, with their own stewards doing
-          the promotion.</strong> Five estates exist and I built all five.
-          That is the difference between a system that has been
-          demonstrated and a system that has been used, and no amount of
-          additional internal work closes it.
+          <strong>The agentic systems IDE.</strong> The loop described in{" "}
+          <a href="/latent-ocean">Latent Ocean</a> — model proposes a
+          declarative spec, estate grounds or refuses with a named reason,
+          steward promotes — is the current focus. The property being
+          preserved as it grows is that nothing is generated, written, or
+          evaluated by the model: proposal and adjudication stay separate,
+          and the write stays human. The governed MCP surface is where that
+          separation is enforced, so every tool added has to arrive with its
+          grounding contract rather than acquire one later.
         </p>
         <p>
-          The same discipline applies down the list. Each direction below
-          is paired with what would have to be true for it to count.
-        </p>
-
-        <h2>Scaling, without going vertical.</h2>
-        <p>
-          The scaling story for this stack is not more parameters. It is
-          more inversions. Each new addition has to clear the same bar:
-          linear-time or better, composable with the others, transparent,
-          auditable, validated. The roadmap below is the next round and the
-          operations that connect them.
-        </p>
-
-        <h3>Near-term — compounding what exists.</h3>
-        <ul>
-          <li>
-            <strong>Latent Ocean × external estate.</strong> Stand up an
-            estate operated end-to-end by someone other than me.{" "}
-            <em>Would have to be true:</em> a partner willing to run
-            grounding against production data, and a steward on their side
-            performing promotions.
-          </li>
-          <li>
-            <strong>BTUT × Crystara.</strong> Use BTUT-coordinated workers
-            as the energy explorers inside Crystara&rsquo;s System 2.
-            Linear-time coordination over a fleet of samplers is the
-            cheapest way to fill in the blank-space map that the module
-            crystallizer reads from.
-          </li>
-          <li>
-            <strong>Crystara × NIV.</strong> NIV is the first emitted
-            scalar. The recipe transfers: run Crystara&rsquo;s H₀/H₁/H₂
-            pipeline on macro / monetary / energy manifolds, project stable
-            features down to named, interpretable scalars. Each scalar
-            publishes with its walk-forward validation out of the box.
-          </li>
-          <li>
-            <strong>Participatory Data Estate × everything.</strong> Every
-            system produces evidence. The estate is the canonical sink:
-            submissions, approvals, chunks, embeddings, audit trail.
-            Treating BTUT simulation traces and Crystara module
-            genealogies as governance-grade documents — ingested through
-            the same pipeline as a constitution — makes the whole stack
-            walk-backable. <em>Would have to be true:</em> a second live
-            deployment, so the framework is shown to be portable rather
-            than fitted to one organisation.
-          </li>
-          <li>
-            <strong>NIV in forward time.</strong> Publish the signal
-            prospectively and let the record accumulate.{" "}
-            <em>Would have to be true:</em> real-time emissions, timestamped
-            before the outcome, over enough cycles for the out-of-sample
-            claim to become a live one.
-          </li>
-        </ul>
-
-        <h3>Mid-term — new primitives.</h3>
-        <ul>
-          <li>
-            <strong>A planner primitive.</strong> Once coordination is
-            free, planning over coordinated agents is the next linear-time
-            problem. The target is a narrow, transparent planner with the
-            same auditability contract as NIV.
-          </li>
-          <li>
-            <strong>A memory primitive.</strong> PDE is stateful at the
-            document level. The next layer is stateful at the session level
-            — a retrieval substrate that composes cleanly with Crystara
-            modules. Still content-addressable, still auditable.
-          </li>
-          <li>
-            <strong>An observer primitive.</strong> Every primitive should
-            publish its own diagnostics as a first-class artifact. The
-            observer primitive is the one that ingests those diagnostics
-            and emits liveness signals across the stack.
-          </li>
-        </ul>
-
-        <h2>Sovereign integration potential.</h2>
-        <p>
-          A non-trivial fraction of the customers for a substrate like this
-          are governments, regulators, and public institutions — groups
-          that cannot use frontier-lab APIs for legal, compliance, or
-          sovereignty reasons. Latent Ocean was designed to meet them where
-          they are: auditable, deployable on commodity hardware, every
-          scalar signal published with its construction, and — the part
-          that matters for this audience — able to refuse rather than
-          guess when it cannot ground a claim. The transparent approval
-          log is, in effect, an FOIA-native architecture. A single Fly.io
-          region handles a million-agent BTUT simulation. Crystara runs on
-          3–8 GPUs for manifold-scale datasets.
+          <strong>The shell library.</strong> The estate primitives —
+          the closed algebra, the absence classes, the ternary quantiser and
+          the non-membership proof — are being factored out of the estates
+          that currently carry them into a library that an operator can
+          build against directly. This is the work that has to exist before
+          the phrase &ldquo;run your own estate&rdquo; means anything.
         </p>
         <p>
-          This is not a frontier lab in miniature. It is a different shape
-          of AI infrastructure — narrow, composable, inspectable — suited
-          for contexts where the deciding factor is provenance, not
-          benchmark points.
+          <strong>Sovereign deployment.</strong> Packaging an estate to run
+          entirely inside an institution&rsquo;s own boundary — no external
+          API dependency in the grounding path, commodity hardware,
+          inspectable end to end. The constraint that shapes it is that the
+          refusal guarantee must hold under the network conditions the
+          institution actually has, which is the same constraint the
+          network-cut gate demonstrates.
         </p>
 
-        <h2>Inference-time substrate alignment.</h2>
+        <ChapterSection numeral="II" title="What Cannot Be Self-Supplied" />
         <p>
-          When alignment is framed as a training-time problem, the only
-          available levers are RLHF-style. When alignment is framed as an
-          inference-time problem — which is what the Latent Ocean
-          assumes — the levers multiply: the approval ledger, the typed
-          module router, the transparent signal formulas, the hybrid
-          vector+FTS retrieval contract with public provenance. None of
-          those levers require retraining a frontier model. They require
-          primitives that are composable and auditable by construction.
+          The remaining gaps are not engineering. Each of these is something
+          an institution has and an individual does not, and no amount of
+          further building substitutes for them.
         </p>
         <p>
-          This is where I think the serious work is going. The horizontal
-          stack is not a personal preference; it is the only stack whose
-          alignment surface is <em>readable</em> in the first place.
+          <strong>Accreditation.</strong> The controls are built to
+          federal-agency patterns. Turning &ldquo;built to those
+          patterns&rdquo; into an authorisation — FedRAMP, FISMA control
+          mapping, a STIG audit, an external penetration test — requires a
+          sponsoring body and an assessor. I can meet the requirements. I
+          cannot certify that I have met them, and the distinction is the
+          whole point of accreditation.
+        </p>
+        <p>
+          <strong>Identity-provider integration.</strong> An estate inside a
+          real organisation has to bind to that organisation&rsquo;s
+          identity: enterprise or government IdP, its group and clearance
+          model, its session and revocation semantics. The steward role in
+          the promotion loop is only meaningful if the identity behind it is
+          the organisation&rsquo;s own. That integration cannot be built
+          against a hypothetical directory.
+        </p>
+        <p>
+          <strong>Authority as system of record.</strong> This is the
+          largest one. The absence classes distinguish a contradiction
+          between sources with standing from a question that is not
+          well-formed — and both resolve to an authority decision outside
+          the estate. An estate can identify that a decision is required and
+          can prove which sources conflict. It cannot make the decision. For
+          the grounding guarantee to be load-bearing in production, some
+          institution has to designate the estate as the system of record
+          for a defined domain and accept that its refusals have standing.
+          That is a governance act, not a deployment.
         </p>
 
-        <Callout label="What I am looking for">
-          An external operator for an estate — the single condition that
-          would change the most on this site. Beyond that: reviewers who
-          will read proofs at the level of the repository, and
-          institutional partners with a real substrate that needs
-          grounding, coordination, signal, or structure. If one of the five
-          fits a problem you are holding, the email is in the footer.
-        </Callout>
+        <ChapterSection numeral="III" title="What I Am Looking For" />
+        <p>
+          An external operator for an estate, on their own data, under their
+          own network conditions, with their own stewards performing
+          promotion. That single condition would change more on this site
+          than any further work I could do alone — it is the stated bound in{" "}
+          <a href="/latent-ocean">Latent Ocean</a>&rsquo;s section IV and it
+          is the one I cannot remove by building.
+        </p>
+        <p>
+          Beyond it: reviewers who will read the proofs at the level of the
+          repository rather than the summary, and institutional partners
+          with a substrate that needs grounding, coordination, signal, or
+          continuous ingestion. If one of the five fits a problem you are
+          holding, the email is in the footer.
+        </p>
 
-        <ChapterFooter
-          prev={{ href: "/about", label: "About / Context" }}
-        />
+        <ChapterSection numeral="IV" />
+        <Bound>
+          <p>
+            Everything in section I is under construction, which means it is
+            unfinished and none of it has an external user. Nothing on this
+            page should be read as available. Nothing on this page carries a
+            date, because I do not have a basis for one and a roadmap date I
+            cannot support would undermine the rest of the site.
+          </p>
+          <p>
+            Section II is a list of things I have not solved and cannot
+            solve alone. It is deliberately the longest section on the page.
+          </p>
+        </Bound>
+
+        <ChapterFooter prev={{ href: "/about", label: "About / Context" }} />
       </Essay>
     </>
   );

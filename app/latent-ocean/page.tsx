@@ -1,293 +1,348 @@
 import { ChapterHeader } from "@/components/ChapterHeader";
 import { ChapterFooter } from "@/components/ChapterFooter";
 import { Essay } from "@/components/Essay";
-import { StatBlock } from "@/components/StatBlock";
-import { Callout } from "@/components/Callout";
 import { SourceBar } from "@/components/SourceBar";
-import { ImpactBlock } from "@/components/ImpactBlock";
+import { ChapterSection, Bound, Equation } from "@/components/ChapterSection";
 
 export const metadata = {
   title: "Latent Ocean",
   description:
-    "A successor to Codd and to Setun. Provenance as a database primitive rather than a column; refusal as a third state rather than a null. 554 tests on the relational successor, 50 on the ternary successor with an energy factor of 6.99 pinned by a golden test. Five deployed estates. An agentic systems IDE in which nothing is generated or written.",
+    "A successor to Codd and to Setun. Provenance as the composing primitive rather than an annotation; refusal as an epistemic third state rather than an arithmetic one. 554 tests on the relational successor, 50 on the ternary successor with an energy factor of 6.99 pinned by a golden test.",
 };
+
+const SOURCES = [
+  {
+    kind: "demo" as const,
+    label: "latentocean.com/spacex/off-earth — the network-cut gate",
+    href: "https://latentocean.com/spacex/off-earth",
+  },
+  { kind: "site" as const, label: "latentocean.com — the estate", href: "https://latentocean.com" },
+];
 
 export default function LatentOceanPage() {
   return (
     <>
       <ChapterHeader
         number="II"
-        label="System · Grounding"
+        label="Inversion · Grounding"
         title="Latent Ocean."
-        kicker="An agent cannot be trusted with government or enterprise data while it is unable to distinguish a record that does not exist from a record it failed to retrieve. Latent Ocean makes that distinction a primitive. It is a successor to Codd — provenance is not a column, it is the unit — and a successor to Setun — the third state is not arithmetic, it is refusal. When the estate cannot ground a claim it declines and names the reason, and the refusal survives all the way to the actuator instead of being flattened into an empty result."
+        kicker="An agent cannot be trusted with government or enterprise data while it is unable to distinguish a record that does not exist from a record it failed to retrieve. Two settled primitives stand in the way: Codd's tuple, which is provenance-free by design, and Setun's third state, which is arithmetic. Latent Ocean inverts both."
         prev={{ href: "/primitives", label: "The Inversion" }}
-        next={{ href: "/btut", label: "BTUT — Multi-agent systems" }}
+        next={{ href: "/btut", label: "BTUT — Coordination" }}
       />
 
-      <SourceBar
-        resources={[
-          {
-            kind: "demo",
-            label: "latentocean.com/spacex/off-earth — the network-cut gate",
-            href: "https://latentocean.com/spacex/off-earth",
-          },
-          {
-            kind: "site",
-            label: "latentocean.com — the estate",
-            href: "https://latentocean.com",
-          },
-        ]}
-      />
+      <SourceBar resources={SOURCES} />
 
       <Essay>
-        <ImpactBlock
-          ifRight={
-            <>
-              An agent can be permitted to act on enterprise and government
-              data, because for the first time it can prove a record is{" "}
-              <em>absent</em> rather than merely not retrieved — and the
-              refusal survives to the actuator.
-            </>
-          }
-          mattersTo={
-            <>
-              Any government converting operations to agentic AI; any
-              organisation whose compliance layer silently passes cases no
-              rule covers.
-            </>
-          }
-          notEstablished={
-            <>
-              No external user has run it. Five estates, all built by me.
-            </>
-          }
-        />
-
-        <h2>Two inversions.</h2>
+        <ChapterSection numeral="I" />
         <p>
-          Latent Ocean is the only system on this site that inverts two
-          settled primitives rather than one. Both inversions are about
-          the same thing: what a data system is permitted to say when it
-          does not know.
+          Codd&rsquo;s 1970 relational model is provenance-free{" "}
+          <em>deliberately</em>. Data independence was the point: separate
+          the logical content of a relation from everything about how it
+          came to be, so that queries survive changes in storage, source and
+          process. It is one of the most productive abstractions in
+          computing and the omission was a design decision, not an
+          oversight. The consequence is that provenance is something you add
+          beside the data — a lineage column, an audit table — and any query
+          that does not join to it proceeds without it.
+        </p>
+        <p>
+          Setun, built at Moscow State University in 1958, was the working
+          balanced-ternary computer: three states per digit rather than two.
+          But the third state was a <em>number</em>. Ternary hardware,
+          binary epistemics. SQL inherited the same limitation differently —{" "}
+          <code>NULL</code> collapses unknown, inapplicable and absent into
+          one silent token that propagates through joins without announcing
+          itself. Both inversions are the same move on two different
+          primitives: <strong>make provenance the composing unit</strong>,
+          and <strong>make the third state epistemic</strong> — a refusal
+          that carries a reason.
         </p>
 
-        <h3>Codd&rsquo;s tuple is provenance-free.</h3>
+        <ChapterSection numeral="II" />
+        <h3>A successor to Codd.</h3>
         <p>
-          The relational model gives you a tuple: a set of attribute-value
-          pairs. It does not give you a record of where those values came
-          from, under what authority, at what time, or whether their
-          absence means anything. Provenance in a Codd-descended system is
-          something you bolt on — an audit table, a lineage column, a
-          side-channel — and anything bolted on can be bypassed by a query
-          that does not join to it.
+          The estate composes by folding a gate over a provenance lattice
+          rather than by projecting attributes out of tuples. Variance — the
+          quantity that says how much a value depends on where it came from
+          — is the derivative of the base value with respect to its
+          provenance:
         </p>
-        <p>
-          The inversion: <strong>make provenance the primitive.</strong> Not
-          a column beside the fact, but the unit the fact is made of. A
-          value the estate cannot trace is not a value with a missing
-          lineage field — it is not a value the estate will return. The
-          relational successor is covered by <strong>554 tests</strong>.
-        </p>
+        <Equation note="Λ is the provenance lattice; gate is the admission predicate. Relations are expressed as inclusion dependencies over shared values rather than as join keys over opaque identifiers.">
+          {`Σ        =  fold( gate, Λ )
 
-        <h3>Setun&rsquo;s third state is arithmetic.</h3>
+variance =  ∂Base / ∂Provenance`}
+        </Equation>
         <p>
-          Setun, built at Moscow State University in 1958, was the
-          working ternary computer: balanced ternary, three states per
-          digit instead of two. But its third state was a{" "}
-          <em>number</em> — a digit value in an arithmetic system. The
-          machine was ternary; its logic was still about quantity.
+          The algebra is closed, with proven equivalence laws, and variance
+          composition is the provenance set-union law — combining two
+          derivations unions their provenance, and the laws hold under that
+          composition. Closure is what makes this a successor rather than a
+          wrapper: expressions can be rewritten and optimised without
+          leaving the system or losing the guarantee.
         </p>
         <p>
-          The inversion: <strong>make the third state epistemic.</strong>{" "}
-          Not a third digit but a third answer — <em>refusal</em>. True,
-          false, and <em>I cannot ground this, and here is the named
-          reason why</em>. That is a different object from SQL&rsquo;s
-          null, which conflates unknown, inapplicable, and absent into a
-          single silent token that propagates through joins without
-          announcing itself. A refusal is not a missing value. It is a
-          positive statement about the limits of what the estate can
-          support, and it is carried rather than swallowed. The ternary
-          successor is covered by <strong>50 tests</strong>, with an
-          energy factor of <strong>6.99</strong> pinned by a golden test —
-          the number is not a claim in prose, it is an assertion the suite
-          fails on if it moves.
+          The nearest prior work is{" "}
+          <strong>Green, Karvounarakis &amp; Tannen (2007)</strong>, which
+          modelled provenance as semiring annotations on relational tuples
+          and showed positive relational algebra is well-behaved over them —
+          the reason this direction is tractable at all.{" "}
+          <strong>Where this departs:</strong> in the semiring construction
+          the tuple is still the primitive and provenance decorates it. Here
+          the composing quotient <em>is</em> the primitive. There is no
+          underlying provenance-free value for an annotation to attach to,
+          so no query path can drop it and no operator can produce a value
+          whose derivation the estate cannot state.
         </p>
+        <h3>A successor to Setun.</h3>
+        <p>
+          The third state is produced by an <strong>open zero band</strong> —
+          a region around zero that is not a value but an abstention.
+          Quantisation maps a continuous input into the three states with a
+          threshold τ that defines the band&rsquo;s width:
+        </p>
+        <Equation note="Conjunction is Kleene strong three-valued logic: min(0,+1) = 0. An abstention conjoined with a truth yields abstention, so the third state dominates rather than being absorbed — which is what makes it survive composition.">
+          {`quantize(x, τ)  =  +1   if  x >  τ
+                    0   if |x| ≤ τ        (open zero band)
+                   −1   if  x < −τ
 
-        <StatBlock
-          stats={[
-            { value: "554", label: "Tests", note: "Relational successor." },
-            { value: "50", label: "Tests", note: "Ternary successor." },
-            { value: "6.99", label: "Energy factor", note: "Pinned by a golden test." },
-            { value: "5", label: "Deployed estates", note: "All built in-house." },
-          ]}
-        />
-
-        <h2>Why absence is the whole problem.</h2>
+min( 0, +1 )  =  0`}
+        </Equation>
         <p>
-          Retrieval systems answer the question they were asked with the
-          documents they happen to hold. When the answer is not in the
-          index, a retrieval system does not say so — it returns the
-          nearest thing, or nothing, and both are indistinguishable from
-          a correct negative. That is tolerable when a human reads the
-          output and applies judgement. It stops being tolerable the
-          moment the output drives an actuator.
+          That last line is the entire epistemic claim in one identity.
+          Under Kleene conjunction an abstention combined with a true value
+          yields abstention — the uncertainty propagates instead of being
+          swallowed, which is precisely the behaviour <code>NULL</code>{" "}
+          fails to provide. Composition is implemented as a signed lookup
+          over <strong>1,404,816 measured triads</strong> rather than
+          derived analytically, so the composition law is an empirical
+          object the suite can check.
         </p>
         <p>
-          The consequential case is not the hallucinated fact. It is the
-          silent pass: a compliance layer that returns clean because no
-          rule in it covers the case in front of it, and cannot tell the
-          difference between <em>this was checked and is fine</em> and{" "}
-          <em>nothing here knows how to check this</em>. Every governance
-          conversation about agentic AI eventually arrives at this
-          distinction, and almost no data substrate can express it.
+          Proving <em>absence</em> requires more than declining to return a
+          row. The estate emits a{" "}
+          <strong>sorted Merkle non-membership proof</strong>: the two
+          bracketing neighbours of the queried key in sorted order, an
+          inclusion proof for each, the committed root, the set size, and
+          one signature. A verifier checks that the neighbours are adjacent
+          in the committed set and that the key falls strictly between them —
+          which establishes that the key is not in the set, rather than that
+          the search did not find it. That distinction is the whole system.
         </p>
+        <h3>The five absence classes.</h3>
         <p>
-          Latent Ocean expresses it as a first-class outcome. The estate
-          either grounds a claim in traceable provenance or it refuses and
-          names the reason. There is no third path where it quietly
-          produces something plausible.
-        </p>
-
-        <h2>The network-cut gate.</h2>
-        <p>
-          The clearest demonstration is live at{" "}
-          <a
-            href="https://latentocean.com/spacex/off-earth"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            latentocean.com/spacex/off-earth
-          </a>
-          . It runs the estate under a cut network — the condition where a
-          conventional system degrades most quietly, answering from
-          whatever it cached and giving no indication that it has lost
-          contact with ground truth.
-        </p>
-        <p>
-          Under the cut, the estate does not degrade to a guess. It
-          refuses, names the reason, and the refusal propagates. This is
-          the shortest path to understanding the whole system: it takes
-          under a minute, and it shows the difference between a system
-          that returns nothing and a system that says why it is returning
-          nothing.
-        </p>
-
-        <h2>Five deployed estates.</h2>
-        <p>
-          The framework is instantiated five times, across domains chosen
-          because their failure modes are unforgiving:
+          Not all absences are the same object, and treating them as one is
+          what makes a compliance layer pass silently. The estate
+          distinguishes five, and <strong>two of them have no remedy</strong>{" "}
+          — no amount of further querying or ingestion resolves them.
         </p>
         <table>
           <thead>
             <tr>
-              <th>Estate</th>
-              <th>What it exercises</th>
+              <th>Class</th>
+              <th>Primitive</th>
+              <th>Condition</th>
+              <th>Remedy</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Refinery</td>
-              <td>Process operations under provenance constraints.</td>
+              <td><strong>Structural</strong></td>
+              <td>Schema / relation shape</td>
+              <td>No relation in the estate ranges over this predicate</td>
+              <td>Extend the schema</td>
             </tr>
             <tr>
-              <td>Offshore field</td>
-              <td>Remote operations where the network cut is a real condition, not a test fixture.</td>
+              <td><strong>Referential</strong></td>
+              <td>Inclusion dependency</td>
+              <td>Referent absent from the target&rsquo;s active domain</td>
+              <td>Resolve or retract the reference</td>
             </tr>
             <tr>
-              <td>Industrial group</td>
-              <td>An export-controlled programme <strong>provably sealed</strong> from the rest of the group&rsquo;s estate.</td>
+              <td><strong>Observational</strong></td>
+              <td>Observation window</td>
+              <td>No observation covers the requested interval</td>
+              <td>Take the measurement</td>
             </tr>
             <tr>
-              <td>Aerospace</td>
-              <td>Built on public data, so the reasoning is externally checkable.</td>
+              <td><strong>Contradictory</strong></td>
+              <td>Variance over provenance</td>
+              <td>Sources with standing yield incompatible values under the gate</td>
+              <td><strong>None</strong> — requires an authority decision outside the estate</td>
             </tr>
             <tr>
-              <td>Energy / maritime corridor</td>
-              <td>Cross-jurisdiction operations with divergent authorities over the same facts.</td>
+              <td><strong>Categorical</strong></td>
+              <td>Sort / type</td>
+              <td>The predicate does not apply to this entity&rsquo;s sort</td>
+              <td><strong>None</strong> — the question is not well-formed</td>
             </tr>
           </tbody>
         </table>
         <p>
-          The export-controlled case is the sharpest of the five. A
-          compartment inside a wider estate is not merely access-filtered
-          — the seal is a property the estate can demonstrate, rather than
-          a policy the query layer is trusted to have applied. That is the
-          practical form of making provenance the primitive: the boundary
-          is in the substrate, not in the middleware in front of it.
+          A retrieval system returns the same empty result for all five. An
+          estate that names which one it is tells an operator whether to
+          change the schema, chase a reference, send someone to take a
+          reading, escalate to an authority, or stop asking.
         </p>
 
-        <h2>The agentic systems IDE.</h2>
+        <ChapterSection numeral="III" />
         <p>
-          The estate is not only a store. It is the adjudicating layer of
-          a development loop with a deliberate and unusual property:{" "}
-          <strong>nothing is generated or written</strong>.
-        </p>
-        <ol>
-          <li>
-            <strong>The model proposes a spec.</strong> It does not write
-            code, and it does not write to the estate. It puts forward a
-            specification of what it believes should hold.
-          </li>
-          <li>
-            <strong>The estate grounds it, or refuses with a named
-            reason.</strong> Every element of the proposed spec is either
-            traceable to something the estate can support, or it is
-            declined — with the reason attached, not as a generic
-            failure.
-          </li>
-          <li>
-            <strong>A steward promotes.</strong> A human moves the
-            grounded spec forward. The promotion is the write. The model
-            never performs it.
-          </li>
-        </ol>
-        <p>
-          The result is a development surface where the model&rsquo;s
-          fluency is used for proposal and the estate&rsquo;s provenance
-          is used for adjudication, and neither is asked to do the
-          other&rsquo;s job. Most agentic tooling inverts this — the model
-          both proposes and writes, and the data layer is a passive
-          participant that cannot object.
-        </p>
-
-        <h2>What the four earlier primitives contribute.</h2>
-        <p>
-          Latent Ocean is where the other four systems land, and that
-          relationship is unchanged from how it was first stated.{" "}
-          <a href="/btut">BTUT</a> makes coordination across the estate
-          linear rather than coupled. <a href="/crystara">Crystara</a>{" "}
-          grows structure over a corpus instead of assuming a fixed
-          predictor for it. <a href="/niv">NIV</a> is the worked example
-          of a scalar the estate can emit outward with its construction
-          fully published. The{" "}
-          <a href="/participatory-data-estate">Participatory Data Estate</a>{" "}
-          is the ingestion discipline — continuous, publicly auditable —
-          that keeps an estate current rather than frozen at the moment it
-          was built.
+          <strong>Relational successor — 554 tests.</strong> Coverage
+          includes the closed algebra&rsquo;s equivalence laws and the
+          provenance set-union composition law. Lossless reform is verified
+          as a <strong>total partition</strong>: reforming a relation
+          partitions it completely, with every element accounted for in
+          exactly one block and nothing created or dropped — the property
+          that makes reform safe to apply to a live estate.
         </p>
         <p>
-          What has changed is the weighting. In April the four primitives
-          were the work and Latent Ocean was the vanishing point they
-          converged toward. It is now the largest body of work here, and
-          the one with deployments.
+          <strong>Ternary successor — 50 tests, two independent
+          implementations.</strong> Running one specification through two
+          separately written implementations is what makes the suite
+          evidence about the specification rather than about a codebase. The{" "}
+          <strong>energy factor of 6.99</strong> is pinned by a{" "}
+          <strong>zero-dependency golden test</strong> — no framework, no
+          fixtures, nothing that could drift. The suite fails if the number
+          moves. Composition rests on 1,404,816 measured triads.
+        </p>
+        <p>
+          <strong>Five deployed estates.</strong> A refinery (process
+          operations under provenance constraints); an offshore field (where
+          the network cut is an operating condition, not a fixture); an
+          industrial group in which an{" "}
+          <strong>export-controlled programme is provably sealed</strong>{" "}
+          from the rest of the group&rsquo;s estate — the seal is a property
+          the estate demonstrates, not a policy the query layer is trusted
+          to apply; an aerospace estate on public data, so the reasoning is
+          externally checkable; and an energy/maritime corridor spanning
+          jurisdictions with divergent authorities over the same facts.
+        </p>
+        <p>
+          <strong>The network-cut gate</strong> at{" "}
+          <a href="https://latentocean.com/spacex/off-earth" target="_blank" rel="noopener noreferrer">
+            latentocean.com/spacex/off-earth
+          </a>{" "}
+          runs the estate under a severed network — the condition where
+          conventional systems degrade most quietly, answering from cache
+          with no sign that contact with ground truth is lost. The estate
+          refuses, names the reason, and the refusal propagates. Under a
+          minute, and the shortest path to the whole argument.
+        </p>
+        <p>
+          <strong>The agentic systems IDE.</strong> Nothing is generated,
+          written, or evaluated by the model. It proposes a{" "}
+          <em>declarative spec</em>; the estate grounds each element or
+          refuses it with a named reason; a human steward promotes what
+          survives, and that promotion is the write. The surface is{" "}
+          <strong>11 governed MCP tools</strong>, each under the same
+          grounding contract as any query — a tool call that cannot be
+          grounded returns a refusal, not a best effort.
         </p>
 
-        <Callout label="Honest assessment">
-          Five estates exist and all five were built by me. No external
-          user has run the system. The 554 and 50 test counts describe
-          coverage of the two successors, not adoption. The energy factor
-          of 6.99 is pinned by a golden test, which means it is stable and
-          checkable — it does not mean it has been independently
-          reproduced. The network-cut gate is the strongest available
-          demonstration and it is a demonstration, not a deployment
-          report. What would change this: an external operator running an
-          estate on their own data, under their own network conditions,
-          with their own stewards doing the promotion.
-        </Callout>
+        <ChapterSection numeral="IV" />
+        <Bound>
+          <p>
+            <strong>No external user has run it.</strong> Five estates
+            exist and I built all five. Nothing here is a deployment report
+            from an operator with their own data, their own network
+            conditions and their own stewards performing promotion. That is
+            the difference between demonstrated and used, and no additional
+            internal work closes it.
+          </p>
+          <p>
+            <strong>Ternary costs accuracy: roughly 40% of full-precision
+            performance on hard continuous data.</strong> The win is energy,
+            not capability. Anyone reading the 6.99 energy factor as a free
+            improvement is reading it wrong — it is a trade, and on
+            difficult continuous problems it is a steep one. The regime
+            where it makes sense is one where energy or verifiability
+            dominates raw accuracy.
+          </p>
+          <p>
+            <strong>The composition law is measured over 10 corpora.</strong>{" "}
+            1,404,816 triads is a large number of measurements drawn from a
+            small number of corpora. Generalisation beyond those domains is
+            not established by the count.
+          </p>
+          <p>
+            <strong>Not a replacement where the relational model is
+            optimal.</strong> For ground-truth facts in a trusted store —
+            where the source is single, authoritative and uncontested —
+            Codd&rsquo;s design is the correct one and the provenance
+            machinery is overhead with no corresponding benefit. This is a
+            successor for contested, multi-source, partially-observed
+            estates, not a general replacement.
+          </p>
+          <p>
+            <strong>554 and 50 are coverage, not adoption.</strong> They
+            describe how thoroughly two successors are exercised by their
+            own suites. They say nothing about behaviour under an
+            adversary, at scale, or on data I did not choose.
+          </p>
+          <p>
+            <strong>What would falsify it:</strong> a case where the estate
+            grounds a claim whose provenance does not in fact support it, or
+            a non-membership proof that verifies for a key that is present.
+            Either breaks the guarantee at its root.
+          </p>
+        </Bound>
+
+        <ChapterSection numeral="V" />
+        <p>
+          If it holds, an agent can be permitted to act on enterprise and
+          government data, because for the first time it can prove a record
+          is <em>absent</em> rather than merely not retrieved — and the
+          refusal survives to the actuator instead of being flattened into
+          an empty result somewhere in the middle.
+        </p>
+        <p>
+          The consequential failure in agentic deployment is not the
+          hallucinated fact, which is visible and gets caught. It is the
+          silent pass: a compliance layer that returns clean because no rule
+          in it covers the case in front of it, unable to distinguish{" "}
+          <em>this was checked and is fine</em> from{" "}
+          <em>nothing here knows how to check this</em>. The two absence
+          classes with no remedy are exactly the cases a confident system
+          answers anyway.
+        </p>
+        <p>
+          This matters to any government converting operations to agentic AI
+          — where what an automated system was permitted to conclude
+          eventually becomes a legal question — and to any organisation
+          whose compliance layer passes silently. Regulators, programmes
+          with compartmentalisation requirements, process operators whose
+          actuators are physical, and multi-jurisdiction operations where
+          two authorities assert different facts about the same object.
+        </p>
+
+        <ChapterSection numeral="VI" />
+        <ul>
+          <li>
+            <a href="https://latentocean.com/spacex/off-earth" target="_blank" rel="noopener noreferrer">
+              latentocean.com/spacex/off-earth
+            </a>{" "}
+            — the network-cut gate. Refusal under a severed network,
+            propagating with a named reason.
+          </li>
+          <li>
+            <a href="https://latentocean.com" target="_blank" rel="noopener noreferrer">
+              latentocean.com
+            </a>{" "}
+            — the estate: the closed algebra, the absence classes, the
+            ternary successor, the governed MCP surface, and the five
+            deployed estates.
+          </li>
+          <li>
+            Prior work this departs from: T. J. Green, G. Karvounarakis and
+            V. Tannen, <em>Provenance Semirings</em>, PODS 2007 — provenance
+            as semiring annotations over relational tuples. The departure is
+            stated in section II.
+          </li>
+        </ul>
 
         <ChapterFooter
           prev={{ href: "/primitives", label: "The Inversion" }}
-          next={{ href: "/btut", label: "BTUT — Multi-agent systems" }}
+          next={{ href: "/btut", label: "BTUT — Coordination" }}
         />
       </Essay>
     </>
