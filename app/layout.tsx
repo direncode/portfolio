@@ -6,11 +6,11 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const metadata: Metadata = {
   metadataBase: new URL("https://direncode.com"),
   title: {
-    default: "Diren Kumaratilleke — The returns are in the representation, not the scale",
+    default: "Diren Kumaratilleke — Representation, not scale",
     template: "%s — Diren Kumaratilleke",
   },
   description:
-    "An economic claim, and five systems that are instances of it. Latent Ocean makes provenance the composing unit rather than adding retrieval. BTUT finds the O(N) formulation rather than adding machines. Crystara grows the architecture rather than adding parameters. NIV measures whether capital formation compounds or accumulates as friction — the same question as whether AI capex is investment or drag.",
+    "The binding constraint is not the magnitude of the input. It is the representation the field committed to early and stopped questioning. Four results across four fields: Latent Ocean, BTUT, Crystara, NIV.",
   keywords: [
     "Latent Ocean",
     "provenance primitive",
@@ -23,23 +23,24 @@ export const metadata: Metadata = {
     "TCD-JEPA",
     "Regenerationism",
     "National Impact Velocity",
-    "Participatory Data Estate",
+    "audit completeness assertion",
+    "non-membership proof",
     "Diren Kumaratilleke",
   ],
   authors: [{ name: "Diren Kumaratilleke" }],
   openGraph: {
-    title: "The returns are in the representation, not the scale",
+    title: "Representation, not scale",
     description:
-      "One economic claim, five systems that instantiate it. Every impact claim is printed beside the condition it has not yet met.",
+      "Four results across four fields, one move. Each recovers something a field made unavailable to itself. Every claim is printed beside the condition it has not yet met.",
     type: "website",
     siteName: "Diren Kumaratilleke",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The returns are in the representation, not the scale",
+    title: "Representation, not scale",
     description:
-      "Latent Ocean · BTUT · Crystara · NIV · Participatory Data Estate. Live systems, repositories, and papers linked.",
+      "Latent Ocean · BTUT · Crystara · NIV. Live systems, repositories and papers linked.",
   },
   robots: { index: true, follow: true },
 };

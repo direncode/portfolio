@@ -26,6 +26,28 @@ export function ChapterSection({ n }: { n: SectionNumber }) {
   );
 }
 
+/** Generic numbered section, for /thesis. */
+export function Section({
+  numeral,
+  title,
+}: {
+  numeral: string;
+  title: string;
+}) {
+  return (
+    <div className="mt-14 mb-5 first:mt-0">
+      <div className="flex items-baseline gap-3 border-b border-ink-800 pb-2">
+        <span className="font-mono text-[11px] tracking-[0.2em] text-accent w-8 shrink-0">
+          {numeral}
+        </span>
+        <h2 className="font-serif text-2xl md:text-[1.75rem] tracking-tightish text-ink-50 leading-tight !mt-0 !mb-0">
+          {title}
+        </h2>
+      </div>
+    </div>
+  );
+}
+
 /** Section 3. Framed so it cannot be skimmed past. Never softened. */
 export function Bound({ children }: { children: React.ReactNode }) {
   return (
