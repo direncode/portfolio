@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 export const alt =
-  "The returns are in the representation, not the scale — Diren Kumaratilleke";
+  "Representation, not scale — Diren Kumaratilleke";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -60,7 +60,7 @@ export default async function Image() {
             color: "#c8a25a",
           }}
         >
-          The returns are in the representation, not the scale.
+          The binding constraint is the representation, not the scale.
         </div>
 
         {/* Subtitle */}
@@ -74,10 +74,10 @@ export default async function Image() {
             lineHeight: 1.35,
           }}
         >
-          Diren Kumaratilleke — one claim, five systems that instantiate it.
+          Diren Kumaratilleke — four results, four fields, one move.
         </div>
 
-        {/* Five systems */}
+        {/* Four results */}
         <div
           style={{
             display: "flex",
@@ -89,27 +89,22 @@ export default async function Image() {
             {
               name: "Latent Ocean",
               role: "GROUNDING",
-              beat: "Prove absence, don't retrieve harder",
+              beat: "The world's first AI systems IDE",
             },
             {
               name: "BTUT",
               role: "COORDINATION",
-              beat: "O(N) instead of more machines",
+              beat: "Coordination without a coordinator, at scale",
             },
             {
               name: "Crystara",
-              role: "AI TRAINING",
-              beat: "Grow the architecture instead of scaling a fixed one",
+              role: "STRUCTURE",
+              beat: "Emergent structure from latent embeddings",
             },
             {
               name: "NIV",
-              role: "REGENERATIONISM",
-              beat: "Does capital compound, or accumulate as friction?",
-            },
-            {
-              name: "PDE",
-              role: "DATA GOVERNANCE",
-              beat: "Governance corpora auditable by construction",
+              role: "SIGNAL",
+              beat: "Thrust as the foundation for regenerative economies",
             },
           ].map((p) => (
             <div
@@ -127,7 +122,7 @@ export default async function Image() {
               <div
                 style={{
                   display: "flex",
-                  fontSize: "21px",
+                  fontSize: "23px",
                   fontWeight: 700,
                   color: "#eeeeec",
                   lineHeight: 1.15,
