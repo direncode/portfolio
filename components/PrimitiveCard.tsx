@@ -36,7 +36,7 @@ export function PrimitiveCard({
       </p>
       <div className="mt-5 pt-4 border-t border-ink-800 text-[13px] text-accent-soft">
         <span className="text-ink-500 font-sans uppercase tracking-[0.18em] text-[10px] mr-2">
-          Beat
+          Evidence
         </span>
         {beat}
       </div>

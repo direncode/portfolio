@@ -5,14 +5,15 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const LINKS: { href: string; label: string }[] = [
-  { href: "/primitives", label: "Primitives" },
+  { href: "/primitives", label: "The Inversion" },
+  { href: "/latent-ocean", label: "Latent Ocean" },
   { href: "/btut", label: "BTUT" },
   { href: "/crystara", label: "Crystara" },
   { href: "/niv", label: "NIV" },
   { href: "/participatory-data-estate", label: "PDE" },
   { href: "/convergence", label: "Convergence" },
-  { href: "/forward", label: "Forward" },
   { href: "/about", label: "About" },
+  { href: "/forward", label: "Forward" },
 ];
 
 export function SiteNav() {
@@ -46,7 +47,7 @@ export function SiteNav() {
         >
           Diren Kumaratilleke
           <span className="hidden sm:inline text-ink-500 font-sans ml-2 text-xs uppercase tracking-[0.18em]">
-            / primitives
+            / the inversion
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-[13px]">

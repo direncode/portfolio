@@ -13,25 +13,47 @@ export default function ForwardPage() {
   return (
     <>
       <ChapterHeader
-        number="VIII"
+        number="IX"
         label="Chapter"
         title="Forward Direction."
-        kicker="Where the four primitives are headed, and what the Latent Ocean becomes once the composition is load-bearing."
+        kicker="Where the five inversions are headed, what Latent Ocean becomes once an external operator runs an estate, and — for each direction — the condition that has not yet been met."
         prev={{ href: "/about", label: "About / Context" }}
       />
 
       <Essay>
+        <h2>The condition that matters most.</h2>
+        <p>
+          Everything below is secondary to one thing:{" "}
+          <strong>an external operator running an estate on their own data,
+          under their own network conditions, with their own stewards doing
+          the promotion.</strong> Five estates exist and I built all five.
+          That is the difference between a system that has been
+          demonstrated and a system that has been used, and no amount of
+          additional internal work closes it.
+        </p>
+        <p>
+          The same discipline applies down the list. Each direction below
+          is paired with what would have to be true for it to count.
+        </p>
+
         <h2>Scaling, without going vertical.</h2>
         <p>
           The scaling story for this stack is not more parameters. It is
-          more primitives. Each new addition has to clear the same bar:
-          linear-time or better, composable with the other three,
-          transparent, auditable, validated. The roadmap below is the next
-          round of primitives and the operations that connect them.
+          more inversions. Each new addition has to clear the same bar:
+          linear-time or better, composable with the others, transparent,
+          auditable, validated. The roadmap below is the next round and the
+          operations that connect them.
         </p>
 
-        <h3>Near-term — compounding the four.</h3>
+        <h3>Near-term — compounding what exists.</h3>
         <ul>
+          <li>
+            <strong>Latent Ocean × external estate.</strong> Stand up an
+            estate operated end-to-end by someone other than me.{" "}
+            <em>Would have to be true:</em> a partner willing to run
+            grounding against production data, and a steward on their side
+            performing promotions.
+          </li>
           <li>
             <strong>BTUT × Crystara.</strong> Use BTUT-coordinated workers
             as the energy explorers inside Crystara&rsquo;s System 2.
@@ -47,13 +69,22 @@ export default function ForwardPage() {
             publishes with its walk-forward validation out of the box.
           </li>
           <li>
-            <strong>PDE × everything.</strong> Every primitive produces
-            evidence. PDE is the canonical sink: submissions, approvals,
-            chunks, embeddings, audit trail. Treating BTUT simulation
-            traces and Crystara module genealogies as governance-grade
-            documents — ingested through the same pipeline as the
-            constitution — is cheap and it makes the whole stack
-            walk-backable.
+            <strong>Participatory Data Estate × everything.</strong> Every
+            system produces evidence. The estate is the canonical sink:
+            submissions, approvals, chunks, embeddings, audit trail.
+            Treating BTUT simulation traces and Crystara module
+            genealogies as governance-grade documents — ingested through
+            the same pipeline as a constitution — makes the whole stack
+            walk-backable. <em>Would have to be true:</em> a second live
+            deployment, so the framework is shown to be portable rather
+            than fitted to one organisation.
+          </li>
+          <li>
+            <strong>NIV in forward time.</strong> Publish the signal
+            prospectively and let the record accumulate.{" "}
+            <em>Would have to be true:</em> real-time emissions, timestamped
+            before the outcome, over enough cycles for the out-of-sample
+            claim to become a live one.
           </li>
         </ul>
 
@@ -84,13 +115,14 @@ export default function ForwardPage() {
           A non-trivial fraction of the customers for a substrate like this
           are governments, regulators, and public institutions — groups
           that cannot use frontier-lab APIs for legal, compliance, or
-          sovereignty reasons. The Latent Ocean was designed to meet them
-          where they are: open source, auditable, deployable on commodity
-          hardware, every scalar signal published with its construction.
-          PDE&rsquo;s transparent approval log is, in effect, an
-          FOIA-native architecture. A single Fly.io region handles a
-          million-agent BTUT simulation. Crystara runs on 3–8 GPUs for
-          manifold-scale datasets.
+          sovereignty reasons. Latent Ocean was designed to meet them where
+          they are: auditable, deployable on commodity hardware, every
+          scalar signal published with its construction, and — the part
+          that matters for this audience — able to refuse rather than
+          guess when it cannot ground a claim. The transparent approval
+          log is, in effect, an FOIA-native architecture. A single Fly.io
+          region handles a million-agent BTUT simulation. Crystara runs on
+          3–8 GPUs for manifold-scale datasets.
         </p>
         <p>
           This is not a frontier lab in miniature. It is a different shape
@@ -117,12 +149,12 @@ export default function ForwardPage() {
         </p>
 
         <Callout label="What I am looking for">
-          Collaborators who care about primitives. Reviewers who will read
-          proofs at the level of the repo. Institutional partners —
-          research groups, student governments, municipal agencies — with a
-          real substrate that needs ingestion, coordination, signal, or
-          structure. If any of the four primitives fits a problem you are
-          holding, I want to hear about it.
+          An external operator for an estate — the single condition that
+          would change the most on this site. Beyond that: reviewers who
+          will read proofs at the level of the repository, and
+          institutional partners with a real substrate that needs
+          grounding, coordination, signal, or structure. If one of the five
+          fits a problem you are holding, the email is in the footer.
         </Callout>
 
         <ChapterFooter

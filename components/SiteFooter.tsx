@@ -9,15 +9,23 @@ export function SiteFooter() {
             Diren Kumaratilleke
           </div>
           <p className="text-ink-400 leading-relaxed max-w-sm">
-            Building horizontal intelligence primitives — coordination,
-            structure, signal, and ingestion — from a single desk at UNC.
+            Five inversions — grounding, coordination, structure, signal,
+            ingestion. Built full time from Dubai, on a gap semester from
+            UNC.
           </p>
+          <a
+            href="mailto:direnkumaratilleke@gmail.com"
+            className="inline-block mt-4 text-ink-200 hover:text-accent transition-colors"
+          >
+            direnkumaratilleke@gmail.com
+          </a>
         </div>
         <div>
           <div className="uppercase text-[11px] tracking-[0.18em] text-ink-500 mb-3">
-            Primitives
+            Systems
           </div>
           <ul className="space-y-1.5">
+            <li><Link href="/latent-ocean" className="hover:text-accent">Latent Ocean</Link></li>
             <li><Link href="/btut" className="hover:text-accent">BTUT</Link></li>
             <li><Link href="/crystara" className="hover:text-accent">Crystara</Link></li>
             <li><Link href="/niv" className="hover:text-accent">NIV</Link></li>
@@ -29,6 +37,16 @@ export function SiteFooter() {
             Elsewhere
           </div>
           <ul className="space-y-1.5">
+            <li>
+              <a
+                href="https://latentocean.com/spacex/off-earth"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-accent"
+              >
+                The network-cut gate
+              </a>
+            </li>
             <li>
               <a
                 href="https://github.com/direncode"
@@ -53,8 +71,10 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="mx-auto max-w-6xl px-5 md:px-8 pb-10 text-[12px] text-ink-500">
-        © {new Date().getFullYear()} Diren Kumaratilleke. All numbers cited on
-        this site are drawn from the respective open-source repositories.
+        © {new Date().getFullYear()} Diren Kumaratilleke. Every number cited
+        on this site resolves to an open repository, a published tear sheet,
+        or a live system. Impact claims are printed beside the condition
+        they have not yet met.
       </div>
     </footer>
   );

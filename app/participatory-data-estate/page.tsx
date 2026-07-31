@@ -3,6 +3,7 @@ import { ChapterFooter } from "@/components/ChapterFooter";
 import { Essay } from "@/components/Essay";
 import { Callout } from "@/components/Callout";
 import { SourceBar } from "@/components/SourceBar";
+import { ImpactBlock } from "@/components/ImpactBlock";
 
 export const metadata = {
   title: "Participatory Data Estate",
@@ -14,11 +15,11 @@ export default function PdePage() {
   return (
     <>
       <ChapterHeader
-        number="V"
-        label="Primitive · Ingestion"
+        number="VI"
+        label="Inversion · Governance corpora by construction"
         title="Participatory Data Estate."
-        kicker="A new framework for digital data governance. Most data-governance stacks treat ingestion as a one-time batch, moderation as a private workflow, and the audit trail as a compliance tax. The Participatory Data Estate inverts all three: ingestion is a continuous pipeline (Submit → Moderate → Thin → Crystallize), every moderation transition is a row in a publicly-readable approval ledger, and the retrieval substrate is hybrid pgvector + GIN full-text with graceful FTS-only fallback. Security is drawn from federal-agency guidance (NIST 800-53 / OWASP ASVS): time-constant auth, row-level security on every table, rate limiting by action class, CSP/HSTS/X-Frame, XSS detection. The first live deployment, SGUNCCH, runs the full framework as UNC student-government infrastructure — a security posture student government has never needed and has never had. No FedRAMP authorization is claimed; the point is that the framework is operating, in production, and the repository is open. Produce the counter-example."
-        prev={{ href: "/niv", label: "NIV — Signal" }}
+        kicker="Most data-governance stacks treat ingestion as a one-time batch, moderation as a private workflow, and the audit trail as a compliance tax paid to a regulator. All three assumptions fail the moment a governance corpus is amended, contested, or audited in public. The Participatory Data Estate inverts them: ingestion is continuous (Submit → Moderate → Thin → Crystallize), every moderation transition is a row in a publicly-readable approval ledger, and retrieval runs over hybrid pgvector + GIN full-text with graceful FTS-only fallback. Security is drawn from federal-agency guidance — time-constant auth, row-level security on every table, rate limiting by action class, CSP/HSTS/X-Frame, XSS detection. SGUNCCH is the first live deployment."
+        prev={{ href: "/niv", label: "NIV — Read capital formation" }}
         next={{ href: "/convergence", label: "Convergence" }}
       />
 
@@ -29,6 +30,17 @@ export default function PdePage() {
       />
 
       <Essay>
+        <ImpactBlock
+          ifRight={
+            <>
+              Governance corpora become continuously ingested and publicly
+              auditable by construction.
+            </>
+          }
+          mattersTo={<>Municipal, regulatory, NGO, scholarly bodies.</>}
+          notEstablished={<>One live deployment.</>}
+        />
+
         <h2>The Participatory Data Estate — what the framework is.</h2>
         <p>
           Standard data-governance architectures assume three things
@@ -330,7 +342,7 @@ LIMIT  10;`}</pre>
         </Callout>
 
         <ChapterFooter
-          prev={{ href: "/niv", label: "NIV — Signal" }}
+          prev={{ href: "/niv", label: "NIV — Read capital formation" }}
           next={{ href: "/convergence", label: "Convergence" }}
         />
       </Essay>

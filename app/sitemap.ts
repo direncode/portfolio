@@ -1,10 +1,11 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://diren.vercel.app";
+  const base = "https://direncode.com";
   const routes = [
     "",
     "/primitives",
+    "/latent-ocean",
     "/btut",
     "/crystara",
     "/niv",
@@ -18,6 +19,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${base}${r}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
-    priority: r === "" ? 1.0 : 0.7,
+    priority: r === "" ? 1.0 : r === "/latent-ocean" ? 0.9 : 0.7,
   }));
 }

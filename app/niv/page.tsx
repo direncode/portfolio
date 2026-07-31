@@ -4,6 +4,7 @@ import { Essay } from "@/components/Essay";
 import { StatBlock } from "@/components/StatBlock";
 import { Callout } from "@/components/Callout";
 import { SourceBar } from "@/components/SourceBar";
+import { ImpactBlock } from "@/components/ImpactBlock";
 
 export const metadata = {
   title: "NIV — Signal",
@@ -15,12 +16,12 @@ export default function NivPage() {
   return (
     <>
       <ChapterHeader
-        number="IV"
-        label="Primitive · Signal"
+        number="V"
+        label="Inversion · Read capital formation, not sentiment"
         title="NIV."
-        kicker="Regenerationism is a new economic philosophy. Its claim: the leading indicator of macroeconomic regime health is not bond-market sentiment, not arithmetic averages of coincident series, and not equilibrium-return dynamics — it is the velocity of capital formation with compounding margins, measured against cumulative friction. NIV is its first operational instrument. Across 504 months (1970 – 2024) and six out-of-sample validation tests, NIV reaches ROC-AUC 0.8538 at the 18-month horizon, suppresses 98.5% of false alarms, and contributes 41.71% orthogonal variance beyond the Fed 10Y – 3M spread. Under Gini importance the regenerative-capital term scores 0.9328 against the Fed spread's 0.0298. The thesis precedes the signal — the repository is named regenerationism for a reason. NIV is the signal a new school of economics looks like when written as a scalar."
-        prev={{ href: "/crystara", label: "Crystara — Structure" }}
-        next={{ href: "/participatory-data-estate", label: "PDE — Ingestion" }}
+        kicker="Every mainstream recession indicator reads sentiment. The yield curve reads what bond traders expect the Fed to do; the LEI averages coincident series; DSGE assumes a return to equilibrium. None of them read where capital physically goes. Regenerationism inverts that: regime health is the velocity of capital formation with compounding margins, measured against cumulative friction. NIV is the school's first operational instrument — the philosophy written as a scalar and handed 504 months of walk-forward history. Every weight is published; every input is a public FRED series."
+        prev={{ href: "/crystara", label: "Crystara — Grow the architecture" }}
+        next={{ href: "/participatory-data-estate", label: "Participatory Data Estate" }}
       />
 
       <SourceBar
@@ -33,6 +34,25 @@ export default function NivPage() {
       />
 
       <Essay>
+        <ImpactBlock
+          ifRight={
+            <>
+              Central banks and allocators gain an 18-month stress signal
+              orthogonal to the yield curve — 41.71% of variance the spread
+              cannot see.
+            </>
+          }
+          mattersTo={
+            <>Central banks, sovereign allocators, macro research desks.</>
+          }
+          notEstablished={
+            <>
+              Live forward performance. Every number is out-of-sample but
+              historical. No real-time track record exists yet.
+            </>
+          }
+        />
+
         <h2>Regenerationism — a new economic philosophy.</h2>
         <p>
           Regenerationism is the economic school this chapter proposes.
@@ -506,8 +526,8 @@ export default function NivPage() {
         </p>
 
         <ChapterFooter
-          prev={{ href: "/crystara", label: "Crystara — Structure" }}
-          next={{ href: "/participatory-data-estate", label: "PDE — Ingestion" }}
+          prev={{ href: "/crystara", label: "Crystara — Grow the architecture" }}
+          next={{ href: "/participatory-data-estate", label: "Participatory Data Estate" }}
         />
       </Essay>
     </>

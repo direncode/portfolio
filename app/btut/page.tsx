@@ -4,6 +4,7 @@ import { Essay } from "@/components/Essay";
 import { StatBlock } from "@/components/StatBlock";
 import { Callout } from "@/components/Callout";
 import { SourceBar } from "@/components/SourceBar";
+import { ImpactBlock } from "@/components/ImpactBlock";
 
 export const metadata = {
   title: "BTUT — Coordination",
@@ -15,12 +16,12 @@ export default function BtutPage() {
   return (
     <>
       <ChapterHeader
-        number="II"
-        label="Primitive · Coordination"
+        number="III"
+        label="Inversion · Coordination without the coupled equation"
         title="BTUT."
-        kicker="A new substrate for complex multi-agent systems — the class of systems the 21st century cannot run without. Traffic networks, power grids, drone swarms, logistics fleets, distributed sensors, financial market participants, autonomous vehicles, civic coordination: all of it is coordination at scale, and the dominant mathematical default — PDEs on agent density — breaks above 10,000 agents. BTUT replaces that default. Bivariate Trajectory-Undercurrent Theory is a phase transition on a scale-free network: Stag Hunt + Prisoner's Dilemma under Fermi updates, hub-weighted by τ, with a closed-form critical exponent β ≈ 0.5 in the mean-field universality class. It is also a new approach to DARPA Mathematical Challenge 13. One primitive, six live domains — traffic simulation (Eclipse SUMO at 800-vehicle peak stress, zero gridlock), robotics (ROS / Turtlebot3), 50 – 200 drone swarms (100% cooperation), civic data (franklinstreetdata.com), game modeling (bigdunc.com), and four production cloud surfaces (Python SDK, REST, Lambda, WASM). Constant 12-iteration convergence from 500 to 10,000 agents. The reduction is not an engineering optimization. It is a new coordination substrate."
-        prev={{ href: "/primitives", label: "The Four Primitives" }}
-        next={{ href: "/crystara", label: "Crystara — Structure" }}
+        kicker="The standard route to multi-agent coordination is to write down the coupled equation — a PDE on agent density — and solve it. The mathematics is settled and the cost is O(N³), which means the formulation breaks before ten thousand agents. That is a coordination substrate for a laboratory, not for the traffic networks, power grids, swarms and logistics fleets that actually run. BTUT declines the coupled formulation and looks for the O(N) one: a phase transition on a scale-free network under hub-weighted Fermi updates, with a closed-form critical exponent β ≈ 0.5 in the mean-field universality class. It is also a new approach to DARPA Mathematical Challenge 13."
+        prev={{ href: "/latent-ocean", label: "Latent Ocean" }}
+        next={{ href: "/crystara", label: "Crystara — Grow the architecture" }}
       />
 
       <SourceBar
@@ -36,6 +37,28 @@ export default function BtutPage() {
       />
 
       <Essay>
+        <ImpactBlock
+          ifRight={
+            <>
+              Multi-agent coordination becomes tractable at populations where
+              the coupled Fokker–Planck formulation breaks — unblocking
+              traffic, grids, swarms, logistics.
+            </>
+          }
+          mattersTo={
+            <>
+              DARPA Mathematical Challenge 13; national infrastructure
+              programmes.
+            </>
+          }
+          notEstablished={
+            <>
+              Validated to 10K agents. Planetary scale is asserted from the
+              complexity class, not demonstrated.
+            </>
+          }
+        />
+
         <h2>Why complex multi-agent systems matter — and why the default fails.</h2>
         <p>
           Complex multi-agent systems are the operating substrate of
@@ -433,8 +456,8 @@ P( s_i ← s_j )  =  1 / ( 1 + exp( −(U_j − U_i) / κ ) )`}</pre>
         </Callout>
 
         <ChapterFooter
-          prev={{ href: "/primitives", label: "The Four Primitives" }}
-          next={{ href: "/crystara", label: "Crystara — Structure" }}
+          prev={{ href: "/latent-ocean", label: "Latent Ocean" }}
+          next={{ href: "/crystara", label: "Crystara — Grow the architecture" }}
         />
       </Essay>
     </>

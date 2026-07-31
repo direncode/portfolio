@@ -7,18 +7,18 @@ import { Callout } from "@/components/Callout";
 export const metadata = {
   title: "Convergence & Architecture",
   description:
-    "How the four primitives feed the single Latent Ocean engine: reduction → crystallization → signal → living ingestion.",
+    "How four of the five inversions land inside the fifth: reduction, crystallization, signal and continuous ingestion feeding the grounding discipline of Latent Ocean.",
 };
 
 export default function ConvergencePage() {
   return (
     <>
       <ChapterHeader
-        number="VI"
+        number="VII"
         label="Chapter"
         title="Convergence &amp; Architecture."
-        kicker="Four paradigms are interesting on their own. They are only a platform once they compose. This chapter is the composition argument — how a new coordination substrate (BTUT), a new AI training paradigm past transformers (TCD-JEPA), a new economic philosophy (Regenerationism, operationalized by NIV), and a new framework for digital data governance (Participatory Data Estate) become one inference-time engine: the Latent Ocean."
-        prev={{ href: "/participatory-data-estate", label: "PDE — Ingestion" }}
+        kicker="Five inversions are interesting on their own. They are only a platform once they compose. This chapter is the composition argument — how a linear coordination substrate (BTUT), a runtime-grown predictor (Crystara), a published macro scalar (NIV), and a continuously-ingested governance corpus (the Participatory Data Estate) land inside the grounding discipline of Latent Ocean."
+        prev={{ href: "/participatory-data-estate", label: "Participatory Data Estate" }}
         next={{ href: "/about", label: "About / Context" }}
       />
 
@@ -81,15 +81,26 @@ export default function ConvergencePage() {
             <strong>NIV is what crystallized structure looks like when
             projected to a scalar.</strong> The same logic — known
             primitives, transparent weights, orthogonal information — is the
-            recipe for every external signal the Ocean will emit. NIV is the
-            first instance; monetary, energy-grid, and supply-chain signals
-            follow the same template.
+            recipe for every external signal the estate will emit. NIV is
+            the first instance; monetary, energy-grid, and supply-chain
+            signals follow the same template.
           </li>
           <li>
-            <strong>PDE keeps the substrate alive.</strong> Submissions flow
-            in through Submit → Moderate → Thin → Crystallize. The approval
-            log makes the provenance chain queryable. The knowledge base is
-            not a snapshot; it is a living document.
+            <strong>The Participatory Data Estate keeps the substrate
+            alive.</strong> Submissions flow in through Submit → Moderate →
+            Thin → Crystallize. The approval log makes the provenance chain
+            queryable. The knowledge base is not a snapshot; it is a living
+            document.
+          </li>
+          <li>
+            <strong>Latent Ocean is where they land, and where grounding is
+            enforced.</strong> The other four make the substrate cheap,
+            structured, expressive and current. Latent Ocean decides what it
+            is permitted to <em>say</em> — grounding a claim in traceable
+            provenance or refusing it with a named reason. Without that
+            layer the other four produce a fast, well-structured system that
+            still cannot distinguish an absent record from an unretrieved
+            one.
           </li>
         </ol>
 
@@ -146,12 +157,14 @@ export default function ConvergencePage() {
         <p>
           The interesting consequence is that the substrate does not belong
           to any one model class. It is language-model-agnostic, it is
-          planner-agnostic, it is observer-agnostic. The four primitives
-          are the interface.
+          planner-agnostic, it is observer-agnostic. The grounding contract
+          is the interface — a model may propose anything, and what the
+          estate will support is decided by provenance rather than by
+          fluency.
         </p>
 
         <ChapterFooter
-          prev={{ href: "/participatory-data-estate", label: "PDE — Ingestion" }}
+          prev={{ href: "/participatory-data-estate", label: "Participatory Data Estate" }}
           next={{ href: "/about", label: "About / Context" }}
         />
       </Essay>

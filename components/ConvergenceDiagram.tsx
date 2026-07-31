@@ -181,48 +181,64 @@ export function ConvergenceDiagram({ className = "" }: Props) {
         ))}
 
         {/* Center engine */}
-        <g>
-          <rect
-            x={center.x - centerHalfW}
-            y={center.y - centerHalfH}
-            width={centerHalfW * 2}
-            height={centerHalfH * 2}
-            fill="#1d1d1a"
-            stroke="#c8a25a"
-            strokeWidth="1.25"
-            className="conv-engine-stroke"
-          />
-          <text
-            x={center.x}
-            y={center.y - 10}
-            textAnchor="middle"
-            fontFamily="Source Serif 4, serif"
-            fontSize="19"
-            fill="#eeeeec"
-          >
-            Latent Ocean
-          </text>
-          <text
-            x={center.x}
-            y={center.y + 14}
-            textAnchor="middle"
-            fontFamily="Inter, sans-serif"
-            fontSize="10"
-            fill="#c8a25a"
-            letterSpacing="2"
-          >
-            HORIZONTAL INTELLIGENCE
-          </text>
-          <line
-            x1={center.x - 70}
-            y1={center.y + 26}
-            x2={center.x + 70}
-            y2={center.y + 26}
-            stroke="url(#pulse)"
-            strokeWidth="1"
-            className="conv-pulse-line"
-          />
-        </g>
+        <a
+          href="https://latentocean.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <g className="conv-node cursor-pointer">
+            <rect
+              x={center.x - centerHalfW}
+              y={center.y - centerHalfH}
+              width={centerHalfW * 2}
+              height={centerHalfH * 2}
+              fill="#1d1d1a"
+              stroke="#c8a25a"
+              strokeWidth="1.25"
+              className="conv-engine-stroke"
+            />
+            <text
+              x={center.x}
+              y={center.y - 14}
+              textAnchor="middle"
+              fontFamily="Source Serif 4, serif"
+              fontSize="19"
+              fill="#eeeeec"
+            >
+              Latent Ocean
+            </text>
+            <text
+              x={center.x}
+              y={center.y + 6}
+              textAnchor="middle"
+              fontFamily="Inter, sans-serif"
+              fontSize="9"
+              fill="#c8a25a"
+              letterSpacing="1.6"
+            >
+              PROVENANCE · REFUSAL
+            </text>
+            <text
+              x={center.x}
+              y={center.y + 26}
+              textAnchor="middle"
+              fontFamily="JetBrains Mono, monospace"
+              fontSize="9"
+              fill="#c8a25a"
+            >
+              latentocean.com ↗
+            </text>
+            <line
+              x1={center.x - 70}
+              y1={center.y + 34}
+              x2={center.x + 70}
+              y2={center.y + 34}
+              stroke="url(#pulse)"
+              strokeWidth="1"
+              className="conv-pulse-line"
+            />
+          </g>
+        </a>
 
         {/* Caption bands — below all boxes, evenly distributed */}
         <text

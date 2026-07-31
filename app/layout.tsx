@@ -4,39 +4,42 @@ import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://diren.vercel.app"),
+  metadataBase: new URL("https://direncode.com"),
   title: {
-    default: "Diren Kumaratilleke — Horizontal Intelligence Primitives",
+    default: "Diren Kumaratilleke — I invert the primitive everyone takes as given",
     template: "%s — Diren Kumaratilleke",
   },
   description:
-    "Four primitives converging into one horizontal intelligence platform: BTUT (coordination), Crystara (structure discovery), NIV (macro signal), Participatory Data Estate (living ingestion). A new approach to DARPA Challenge 13; NIV beats the Fed yield curve with 41.71% orthogonal variance; Crystara beats JEPA and supervised GNNs across three real heterogeneous graphs.",
+    "Five inversions across five fields. Latent Ocean makes provenance the primitive and refusal the third state. BTUT declines the coupled equation for the O(N) formulation. Crystara grows the architecture at runtime. NIV reads capital formation rather than bond sentiment. The Participatory Data Estate makes governance corpora auditable by construction.",
   keywords: [
-    "horizontal intelligence",
-    "DARPA Mathematical Challenge 13",
+    "Latent Ocean",
+    "provenance primitive",
+    "agentic AI grounding",
+    "Codd relational model successor",
+    "Setun ternary",
     "BTUT",
+    "DARPA Mathematical Challenge 13",
     "Crystara",
     "TCD-JEPA",
+    "Regenerationism",
     "National Impact Velocity",
     "Participatory Data Estate",
-    "SGUNCCH",
-    "Latent Ocean",
     "Diren Kumaratilleke",
   ],
   authors: [{ name: "Diren Kumaratilleke" }],
   openGraph: {
-    title: "Diren Kumaratilleke — Horizontal Intelligence Primitives",
+    title: "I invert the primitive everyone takes as given",
     description:
-      "Four converging primitives — BTUT, Crystara, NIV, Participatory Data Estate — one Latent Ocean. Every claim traceable to an open repository, a published tear sheet, or a walk-forward-validated number.",
+      "Five inversions across five fields — grounding, coordination, structure, signal, ingestion. Every impact claim printed beside the condition it has not yet met.",
     type: "website",
     siteName: "Diren Kumaratilleke",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Diren Kumaratilleke — Horizontal Intelligence Primitives",
+    title: "I invert the primitive everyone takes as given",
     description:
-      "Four converging primitives. BTUT · Crystara · NIV · PDE. Repos, tear sheets, and full paper linked.",
+      "Latent Ocean · BTUT · Crystara · NIV · Participatory Data Estate. Live systems, repositories, and papers linked.",
   },
   robots: { index: true, follow: true },
 };

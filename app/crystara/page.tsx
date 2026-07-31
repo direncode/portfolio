@@ -4,6 +4,7 @@ import { Essay } from "@/components/Essay";
 import { StatBlock } from "@/components/StatBlock";
 import { Callout } from "@/components/Callout";
 import { SourceBar } from "@/components/SourceBar";
+import { ImpactBlock } from "@/components/ImpactBlock";
 
 export const metadata = {
   title: "Crystara — Structure",
@@ -15,12 +16,12 @@ export default function CrystaraPage() {
   return (
     <>
       <ChapterHeader
-        number="III"
-        label="Primitive · Structure"
+        number="IV"
+        label="Inversion · Grow the architecture at runtime"
         title="Crystara."
-        kicker="A new AI training paradigm past transformers. Transformers scale a fixed architectural object — self-attention — by pouring more parameters, more data, and more compute through it. Crystara (TCD-JEPA) refuses the premise. Instead of scaling the predictor, it grows the predictor: a recursive three-system loop explores the energy landscape with Fisher-information-metric Langevin dynamics, runs Vietoris-Rips persistent homology on the exploration trajectories, and crystallizes the stable topological features into typed H₀ / H₁ / H₂ predictor modules at runtime. The architecture is not designed; it is discovered. Across three real heterogeneous graphs — Georgetown CSET semiconductor (519 entities), GDELT global news (380 entities), SEC EDGAR (9,725 entities / ~3.9M edges) — Crystara adds +20 to +36.6 AUC points to baseline JEPA, beats supervised GAT (DeepMind), GCN (Google Brain), and GraphSAGE on the semiconductor graph, and scales to entity counts where GAT runs out of memory. On the semiconductor graph, the pipeline crystallizes 16 interpretable modules that map 1-to-1 to real industry clusters — with no labels, no prompting. The first runtime-discovered predictor architecture for the JEPA family, and the first concrete instance of a paradigm that moves past transformer scaling."
+        kicker="The prevailing assumption is that architecture is fixed and compute is the variable: hold self-attention constant, pour more parameters and more tokens through it, ride the loss curve down. Every frontier model is the same object at a larger size. Crystara (TCD-JEPA) declines the fixed-architecture premise and grows the predictor instead — a recursive three-system loop explores the energy landscape under Fisher-information-metric Langevin dynamics, runs Vietoris–Rips persistent homology over the exploration trajectories, and crystallizes stable topological features into typed H₀ / H₁ / H₂ predictor modules while training runs. The architecture is not designed. It is discovered."
         prev={{ href: "/btut", label: "BTUT — Coordination" }}
-        next={{ href: "/niv", label: "NIV — Signal" }}
+        next={{ href: "/niv", label: "NIV — Read capital formation" }}
       />
 
       <SourceBar
@@ -30,6 +31,17 @@ export default function CrystaraPage() {
       />
 
       <Essay>
+        <ImpactBlock
+          ifRight={
+            <>
+              Predictors grow structure at runtime instead of scaling a fixed
+              architecture — a different axis from parameter count.
+            </>
+          }
+          mattersTo={<>Labs constrained by compute rather than data.</>}
+          notEstablished={<>Three graphs. Not a general result.</>}
+        />
+
         <h2>Past transformers.</h2>
         <p>
           The dominant paradigm of the 2020s is transformer scaling:
@@ -380,7 +392,7 @@ export default function CrystaraPage() {
 
         <ChapterFooter
           prev={{ href: "/btut", label: "BTUT — Coordination" }}
-          next={{ href: "/niv", label: "NIV — Signal" }}
+          next={{ href: "/niv", label: "NIV — Read capital formation" }}
         />
       </Essay>
     </>
