@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 export const alt =
-  "Diren Kumaratilleke — Horizontal Intelligence Primitives";
+  "The returns are in the representation, not the scale — Diren Kumaratilleke";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -60,7 +60,7 @@ export default async function Image() {
             color: "#c8a25a",
           }}
         >
-          I invert the primitive everyone takes as given.
+          The returns are in the representation, not the scale.
         </div>
 
         {/* Subtitle */}
@@ -74,10 +74,10 @@ export default async function Image() {
             lineHeight: 1.35,
           }}
         >
-          Diren Kumaratilleke — five inversions across five fields.
+          Diren Kumaratilleke — one claim, five systems that instantiate it.
         </div>
 
-        {/* Four-primitive grid */}
+        {/* Five systems */}
         <div
           style={{
             display: "flex",
@@ -89,22 +89,22 @@ export default async function Image() {
             {
               name: "Latent Ocean",
               role: "GROUNDING",
-              beat: "Provenance as the primitive · refusal as the third state",
+              beat: "Prove absence, don't retrieve harder",
             },
             {
               name: "BTUT",
               role: "COORDINATION",
-              beat: "Decline the coupled equation · find the O(N) formulation",
+              beat: "O(N) instead of more machines",
             },
             {
               name: "Crystara",
               role: "AI TRAINING",
-              beat: "Grow the architecture at runtime, don't scale a fixed one",
+              beat: "Grow the architecture instead of scaling a fixed one",
             },
             {
               name: "NIV",
               role: "REGENERATIONISM",
-              beat: "Read capital formation, not bond sentiment",
+              beat: "Does capital compound, or accumulate as friction?",
             },
             {
               name: "PDE",

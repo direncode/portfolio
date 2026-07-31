@@ -40,9 +40,8 @@ export default function LatentOceanPage() {
           1958 machine had three states per digit; the third was a number.
           SQL repeats the mistake: NULL collapses unknown, inapplicable and
           absent into one token. I made the third state refusal, with a
-          named reason. Under Kleene conjunction{" "}
-          <code>min(0,+1) = 0</code>, abstention survives composition
-          instead of being swallowed.
+          named reason. Under Kleene conjunction <code>min(0,+1) = 0</code>,
+          abstention survives composition.
         </p>
         <p>
           Proving absence takes more than an empty result. The estate emits
@@ -52,8 +51,9 @@ export default function LatentOceanPage() {
           entries.
         </p>
         <p>
-          Absences are not one object. Three of five shrink with effort. Two
-          never do.
+          More data does not produce this. Only a representation carrying
+          provenance does. Absences are not one object either: three of five
+          shrink with effort, two never do.
         </p>
         <table>
           <thead>
@@ -71,10 +71,10 @@ export default function LatentOceanPage() {
           A contradiction is carried into the answer with both derivations
           intact, never resolved silently. A contract funding a{" "}
           <em>programme</em> cannot be attributed to a specific{" "}
-          <em>flight</em> — that link was never in the record. That
-          boundary is the irreducible floor. Above it, everything is a
-          budget question. Below it, nothing is. A signed proof of where it
-          sits does not decay as an operator&rsquo;s data improves.
+          <em>flight</em> — that link was never in the record. That boundary
+          is the irreducible floor. Above it, everything is a budget
+          question. Below it, nothing is. A signed proof of where it sits
+          does not decay as data improves.
         </p>
 
         <ChapterSection n={2} />

@@ -37,7 +37,9 @@ export default function CrystaraPage() {
           I made the architecture an output. A predictor fails in structured
           ways — differently on clusters, cycles, and the boundaries
           between them. One fixed head spans all of it with a single
-          inductive bias.
+          inductive bias. The return came from the representation, not from
+          making the fixed one bigger — the same principle as every other
+          system here, in a different field.
         </p>
         <p>
           Three systems run in a loop. A ViT backbone publishes the energy
@@ -53,13 +55,12 @@ export default function CrystaraPage() {
         </p>
         <p>
           Persistence is the right selection criterion because of the
-          stability theorem. The bottleneck distance between two
-          persistence diagrams is bounded by the sup-norm distance between
-          the functions generating them. Perturb the trajectories slightly
-          and the diagram moves slightly, with a proven bound. Langevin
-          trajectories are stochastic by construction, so that guarantee is
-          exactly what a selection rule needs. Clustering at a chosen k
-          gives no such bound.
+          stability theorem: bottleneck distance between two persistence
+          diagrams is bounded by the sup-norm distance between the functions
+          generating them. Perturb the trajectories slightly and the diagram
+          moves slightly, with a proven bound. Langevin trajectories are
+          stochastic by construction, so that guarantee is exactly what a
+          selection rule needs. Clustering at a chosen k gives none.
         </p>
 
         <ChapterSection n={2} />
@@ -100,7 +101,7 @@ export default function CrystaraPage() {
         <p>
           Nine shown; the rest and all persistence scores are in the repo.
           The H₁ and H₂ modules are the point — cyclic dependencies and
-          stage boundaries are what a single head averages away.
+          stage boundaries are what one head averages away.
         </p>
 
         <ChapterSection n={3} />

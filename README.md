@@ -1,18 +1,25 @@
 # Diren Kumaratilleke — direncode.com
 
-> **I invert the primitive everyone takes as given.**
+> **The returns are in the representation, not the scale.**
 
-Each system starts the same way. Find the assumption its field treats as
-settled — the one so foundational nobody reopens it — and refuse it. Then
-build what follows.
+That is an economic claim, and every system below is one instance of it.
+Each began by finding the assumption its field treats as settled — that
+capability comes from more — and refusing it.
 
-| The field takes as given | Instead | System |
+| Scale says | Representation does | System |
 | --- | --- | --- |
-| Provenance annotates a tuple | Make it the composing unit — and make refusal a state | [Latent Ocean](https://latentocean.com) |
-| Coordination solves the coupled equation | Find the O(N) formulation | [BTUT](https://btut.ai) |
-| Architectures are fixed and scaled | Grow the architecture at runtime | [Crystara](https://github.com/direncode/tcd-jepa) |
-| Recession indicators read bond sentiment | Read physical capital formation | [NIV](https://regenerationism.ai) |
-| A governance corpus is published, then stale | Moderation as a public state transition | [PDE](https://github.com/direncode/sguncch) |
+| More data, more retrieval | A representation that can prove absence | [Latent Ocean](https://latentocean.com) |
+| More machines | An O(N) representation of the same phase transition | [BTUT](https://btut.ai) |
+| More parameters | An architecture grown to the shape of the data | [Crystara](https://github.com/direncode/tcd-jepa) |
+| More indicators | A representation of capital formation itself | [NIV](https://regenerationism.ai) |
+| A bigger corpus | A corpus whose changes are legible | [PDE](https://github.com/direncode/sguncch) |
+
+**[NIV](https://regenerationism.ai) is where the claim becomes testable at
+the scale of an economy.** It measures whether capital formation compounds
+or accumulates as friction — which is the same question as whether AI capex
+is investment or drag. Capital that compounds raises the efficiency term.
+Capital that accumulates as friction raises slack and drag. That reading is
+an application, not a validated result; the episode is still running.
 
 **Start here:** [latentocean.com/spacex/off-earth](https://latentocean.com/spacex/off-earth)
 — the network-cut gate. Under a severed network the estate refuses and names
@@ -48,7 +55,9 @@ Five hundred words each. Anyone wanting more clicks the repo.
   supervised GAT, GCN, GraphSAGE there. Loses to GAT on GDELT. 16 modules
   discovered 1-to-1 with real industry clusters, no labels.
 - **NIV** — ROC-AUC 0.8538 at 18 months across 504 months (1970–2024)
-  against ~0.72 for the 10Y/3M spread. 41.71% orthogonal variance.
+  against ~0.72 for the 10Y/3M spread. 41.71% orthogonal variance. Gini
+  importance picks the regenerative-capital term at 0.9328 against the
+  spread's 0.0298. Effective sample is ~8 recessions, not 504 months.
   [SSRN 6664138](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6664138).
 - **Participatory Data Estate** — SGUNCCH live: 40 policies, 8 departments,
   time-constant auth, RLS on every table, public approval ledger.
@@ -68,7 +77,7 @@ app/
   participatory-data-estate/     V    Ingestion
   opengraph-image.tsx            dynamic OG (1200×630)
 components/
-  Inversion.tsx                  the five, one line each
+  Thesis.tsx                     the claim, five instances one line each
   ChapterSection.tsx             section headers, Bound, Equation
   ChapterHeader / ChapterFooter / Essay / SiteNav / SiteFooter
 public/

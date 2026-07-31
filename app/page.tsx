@@ -1,4 +1,4 @@
-import { Inversion } from "@/components/Inversion";
+import { Thesis } from "@/components/Thesis";
 
 const DOCS = [
   {
@@ -40,17 +40,26 @@ export default function HomePage() {
         </h1>
 
         <p className="mt-6 font-serif text-2xl md:text-[2.1rem] text-accent leading-[1.2] tracking-tightish text-balance">
-          I invert the primitive everyone takes as given.
+          The returns are in the representation, not the scale.
         </p>
 
         <p className="mt-5 text-[17px] md:text-lg text-ink-200 max-w-3xl leading-relaxed">
-          Each system below starts the same way. Find the assumption its
-          field treats as settled — the one so foundational nobody reopens
-          it — and refuse it. Then build what follows. This is not a
-          résumé. It is the tape.
+          That is an economic claim, and every system below is one instance
+          of it. Each began by finding the assumption its field treats as
+          settled — that capability comes from more — and refusing it. The
+          claim is falsifiable in each case, and each chapter says what
+          would falsify it. This is not a résumé. It is the tape.
         </p>
 
-        <Inversion className="mt-9" />
+        <Thesis className="mt-9" />
+
+        <p className="mt-5 text-[15px] text-ink-300 max-w-3xl leading-relaxed">
+          <a href="/niv" className="text-ink-100 hover:text-accent transition-colors">NIV</a>{" "}
+          is where the claim becomes testable at the scale of an economy. It
+          measures whether capital formation compounds or accumulates as
+          friction — which is the same question as whether AI capex is
+          investment or drag.
+        </p>
 
         <div className="mt-9 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 border border-ink-800 divide-x divide-y md:divide-y-0 divide-ink-800">
           {STATS.map((d, i) => (
