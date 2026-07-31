@@ -1,5 +1,19 @@
 import { Inversion } from "@/components/Inversion";
 
+const DOCS = [
+  {
+    label: "The network-cut gate",
+    href: "https://latentocean.com/spacex/off-earth",
+  },
+  { label: "NIV paper", href: "/NIV_Paper.pdf" },
+  {
+    label: "SSRN 6664138",
+    href: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6664138",
+  },
+  { label: "NIV tear sheet", href: "/NIV_TearSheet.pdf" },
+  { label: "BTUT tear sheet", href: "/BTUT_Tear_Sheet.pdf" },
+];
+
 const STATS = [
   { v: "19", l: "Years old" },
   { v: "7–9", l: "Months building" },
@@ -48,6 +62,24 @@ export default function HomePage() {
                 {d.l}
               </div>
             </div>
+          ))}
+        </div>
+
+        <div className="mt-6 flex flex-wrap items-baseline gap-x-5 gap-y-2 text-[13px]">
+          <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-ink-500">
+            Documents
+          </span>
+          {DOCS.map((d, i) => (
+            <a
+              key={i}
+              href={d.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink-300 hover:text-accent transition-colors"
+            >
+              {d.label}
+              <span className="text-accent ml-1">↗</span>
+            </a>
           ))}
         </div>
       </div>
