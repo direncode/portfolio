@@ -74,10 +74,10 @@ export default async function Image() {
             lineHeight: 1.35,
           }}
         >
-          Diren Kumaratilleke — four results, four fields, one move.
+          Diren Kumaratilleke — three results, three fields, one move.
         </div>
 
-        {/* Four results */}
+        {/* Three results */}
         <div
           style={{
             display: "flex",
@@ -86,11 +86,6 @@ export default async function Image() {
           }}
         >
           {[
-            {
-              name: "Latent Ocean",
-              role: "GROUNDING",
-              beat: "The world's first AI systems IDE",
-            },
             {
               name: "BTUT",
               role: "COORDINATION",

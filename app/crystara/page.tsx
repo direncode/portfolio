@@ -13,7 +13,7 @@ export default function CrystaraPage() {
   return (
     <>
       <ChapterHeader
-        number="III"
+        number="II"
         label="Structure"
         title="Crystara."
         kicker="Finding emergent structure from latent embeddings — the architecture discovered at runtime rather than specified in advance."

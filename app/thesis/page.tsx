@@ -17,7 +17,7 @@ export default function ThesisPage() {
         label="Thesis"
         title="Representation, not scale."
         kicker="The binding constraint is not the magnitude of the input. It is the representation the field committed to early and stopped questioning."
-        next={{ href: "/latent-ocean", label: "Latent Ocean" }}
+        next={{ href: "/btut", label: "BTUT" }}
       />
 
       <Essay>
@@ -212,10 +212,9 @@ export default function ThesisPage() {
           so it does not age with model generations.
         </p>
         <p>
-          I have built one implementation that satisfies this criterion. It
-          is defined so that anything could. A criterion authored by someone
-          whose product satisfies it has to say so on its face, which is
-          what this paragraph is for.
+          The criterion is defined so that anything could satisfy it. It
+          names a property a system either has or does not, and it is
+          deliberately silent on how that property is obtained.
         </p>
 
         <Section numeral="IX" title="What Would Falsify This" />
@@ -243,7 +242,7 @@ export default function ThesisPage() {
           </p>
         </Bound>
 
-        <ChapterFooter next={{ href: "/latent-ocean", label: "Latent Ocean" }} />
+        <ChapterFooter next={{ href: "/btut", label: "BTUT" }} />
       </Essay>
     </>
   );

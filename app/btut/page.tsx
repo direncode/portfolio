@@ -13,11 +13,11 @@ export default function BtutPage() {
   return (
     <>
       <ChapterHeader
-        number="II"
+        number="I"
         label="Coordination"
         title="BTUT."
         kicker="Coordination without a coordinator — spontaneous order at a threshold, where the standard formulation breaks."
-        prev={{ href: "/latent-ocean", label: "Latent Ocean" }}
+        prev={{ href: "/thesis", label: "Representation, not scale" }}
         next={{ href: "/crystara", label: "Crystara" }}
       />
 
@@ -187,7 +187,7 @@ export default function BtutPage() {
         </ul>
 
         <ChapterFooter
-          prev={{ href: "/latent-ocean", label: "Latent Ocean" }}
+          prev={{ href: "/thesis", label: "Representation, not scale" }}
           next={{ href: "/crystara", label: "Crystara" }}
         />
       </Essay>

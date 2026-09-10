@@ -28,20 +28,9 @@ export const INVERSIONS: Instance[] = [
     system: "BTUT",
     href: "/btut",
   },
-  {
-    discarded: "The provenance-free tuple",
-    recovered: "Provenance as the primitive; the third state made epistemic",
-    system: "Latent Ocean",
-    href: "/latent-ocean",
-  },
 ];
 
 export const RESULTS = [
-  {
-    name: "Latent Ocean",
-    line: "the world's first AI systems IDE",
-    href: "/latent-ocean",
-  },
   {
     name: "BTUT",
     line: "coordination without a coordinator, at scale",
@@ -59,7 +48,7 @@ export const RESULTS = [
   },
 ];
 
-/** The four inversions, compact — closes the method paragraph. */
+/** The three inversions, compact — closes the method paragraph. */
 export function Inversions({ className = "" }: { className?: string }) {
   return (
     <ul className={`border-y border-ink-800 divide-y divide-ink-800 ${className}`}>
@@ -87,7 +76,7 @@ export function Inversions({ className = "" }: { className?: string }) {
   );
 }
 
-/** The four results, named by what they are. */
+/** The three results, named by what they are. */
 export function Results({ className = "" }: { className?: string }) {
   return (
     <ul className={`divide-y divide-ink-800 border-y border-ink-800 ${className}`}>

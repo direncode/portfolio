@@ -3,7 +3,7 @@
 > **The binding constraint is not the magnitude of the input. It is the
 > representation the field committed to early and stopped questioning.**
 
-Four results, four fields, one move. Each recovers something a field made
+Three results, three fields, one move. Each recovers something a field made
 unavailable to itself. The discard was correct when made; it became the
 constraint later. Recovering it requires inverting the primitive, not adding
 capacity.
@@ -13,19 +13,12 @@ capacity.
 | **NIV** | Bond sentiment | Physical capital formation |
 | **Crystara** | Architecture specified | Structure discovered |
 | **BTUT** | The coupled equation | The O(N) formulation |
-| **Latent Ocean** | The provenance-free tuple | Provenance as the primitive; the third state made epistemic |
 
 **[Representation, not scale](https://direncode.com/thesis)** — the argument
 in full: the historical sequence from writing to sovereign debt, what none of
 it encoded, and a criterion for granting a system authority.
 
-**Start here:** [latentocean.com/spacex](https://www.latentocean.com/spacex)
-— the live estate. Under a severed network it refuses and names the reason
-rather than answering from cache.
-
-**Papers:** [A Successor to Codd](./public/LatentOcean_SuccessorToCodd.pdf) ·
-[A Successor to Setun](./public/LatentOcean_SuccessorToSetun.pdf) ·
-[SSRN 6664138](./public/NIV_SSRN_6664138.pdf) ·
+**Papers:** [SSRN 6664138](./public/NIV_SSRN_6664138.pdf) ·
 [NIV tear sheet](./public/NIV_TearSheet.pdf) ·
 [BTUT tear sheet](./public/BTUT_Tear_Sheet.pdf)
 
@@ -34,12 +27,8 @@ rather than answering from cache.
 Nineteen. Dubai. Gap semester from UNC, building full time. Seven to nine
 months, zero co-authors.
 
-## The four results
+## The three results
 
-- **[Latent Ocean](https://latentocean.com)** — the world's first AI systems
-  IDE. A model proposes a declarative spec, the estate grounds it or refuses
-  with a named reason, a steward promotes. Nothing generated, written, or
-  evaluated.
 - **[BTUT](https://btut.ai)** — coordination without a coordinator, at
   scale. Spontaneous order at a threshold, where the coupled mean-field
   formulation breaks.
@@ -59,22 +48,10 @@ months, zero co-authors.
    fold
 4. **Sources** — repo, paper, tear sheet, live site
 
-Seven hundred words each, except Latent Ocean, which carries two formal
-results. Anyone wanting more clicks the paper.
+Seven hundred words each. Anyone wanting more clicks the paper.
 
 ## Evidence
 
-- **Latent Ocean** — 554 tests passing with zero regressions on the relational
-  successor (three theorems contribute 20). 50 green on the ternary successor:
-  21 browser port, 22 reference, 7 absence certificate — two independent
-  implementations of one algebra. Energy factor **6.99** (21,528 float units
-  against 3,078 ternary) pinned by a zero-dependency golden test, still
-  recovering structure at ARI 0.6+. Composition law ed25519-signed at τ = 0.2
-  over 10 corpora and 113 modules, nine cells summing to exactly 1,404,816
-  triads. Sorted Merkle non-membership proof, re-derivable offline. Eleven
-  governed MCP tools: `overview`, `connect`, `relations`, `coverage`,
-  `aggregate`, `rollup`, `watch`, `indications`, `ask`, `records`, `verify`.
-  Five deployed estates.
 - **BTUT** — constant 12-iteration convergence from 500 to 10,000 agents.
   20–105× existing mean-field-game solver frameworks. γ_c ≈ 1.33, β ≈ 0.5.
   Six live domains.
@@ -96,10 +73,6 @@ results. Anyone wanting more clicks the paper.
 | **NIV** | [niv-engine](https://github.com/direncode/niv-engine) · [regenerationism](https://github.com/direncode/regenerationism) · [flux-regenerationism](https://github.com/direncode/flux-regenerationism) |
 | **Governance lineage** | [sguncch](https://github.com/direncode/sguncch) · [flux-sguncch](https://github.com/direncode/flux-sguncch) |
 
-Latent Ocean's implementation repositories are private. The formal results are
-published as the two papers above; the running system is at
-[latentocean.com](https://latentocean.com).
-
 All repos: [github.com/direncode](https://github.com/direncode)
 
 ## Stack
@@ -111,15 +84,13 @@ renderable, no runtime services.
 app/
   page.tsx            homepage — one screen
   thesis/             Representation, not scale
-  latent-ocean/       I    Grounding
-  btut/               II   Coordination
-  crystara/           III  Structure
-  niv/                IV   Signal
+  btut/               I    Coordination
+  crystara/           II   Structure
+  niv/                III  Signal
 components/
-  Thesis.tsx          the four inversions and the four results
+  Thesis.tsx          the three inversions and the three results
   ChapterSection.tsx  section headers, Bound, Equation
 public/
-  LatentOcean_SuccessorToCodd.pdf · LatentOcean_SuccessorToSetun.pdf
   NIV_SSRN_6664138.pdf · NIV_Paper.pdf · NIV_TearSheet.pdf
   BTUT_Tear_Sheet.pdf
 ```

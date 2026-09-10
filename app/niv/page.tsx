@@ -13,7 +13,7 @@ export default function NivPage() {
   return (
     <>
       <ChapterHeader
-        number="IV"
+        number="III"
         label="Signal"
         title="NIV."
         kicker="Thrust as the foundation for regenerative economies — the physical mechanics of capital formation, measured against cumulative friction."

@@ -10,13 +10,8 @@ export const metadata: Metadata = {
     template: "%s — Diren Kumaratilleke",
   },
   description:
-    "The binding constraint is not the magnitude of the input. It is the representation the field committed to early and stopped questioning. Four results across four fields: Latent Ocean, BTUT, Crystara, NIV.",
+    "The binding constraint is not the magnitude of the input. It is the representation the field committed to early and stopped questioning. Three results across three fields: BTUT, Crystara, NIV.",
   keywords: [
-    "Latent Ocean",
-    "provenance primitive",
-    "agentic AI grounding",
-    "Codd relational model successor",
-    "Setun ternary",
     "BTUT",
     "DARPA Mathematical Challenge 13",
     "Crystara",
@@ -31,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Representation, not scale",
     description:
-      "Four results across four fields, one move. Each recovers something a field made unavailable to itself. Every claim is printed beside the condition it has not yet met.",
+      "Three results across three fields, one move. Each recovers something a field made unavailable to itself. Every claim is printed beside the condition it has not yet met.",
     type: "website",
     siteName: "Diren Kumaratilleke",
     locale: "en_US",
@@ -40,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Representation, not scale",
     description:
-      "Latent Ocean · BTUT · Crystara · NIV. Live systems, repositories and papers linked.",
+      "BTUT · Crystara · NIV. Live systems, repositories and papers linked.",
   },
   robots: { index: true, follow: true },
 };
